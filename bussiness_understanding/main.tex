@@ -1,0 +1,209 @@
+% hello
+\input{../preamble.tex}
+
+
+
+\makeglossaries
+\input{../bussiness_glossary.tex}
+\input{../data_mining_glossary.tex}
+
+\begin{document}
+\MyTitle{Bussiness Understanding Report}
+\tableofcontents
+\printglossary[type=bus]
+\printglossary[type=dm]
+
+\section{Main papers that will be used in this work}
+
+\Gls{latex} is not cool. It never works.
+
+A \gls{model} is a model.
+
+\begin{itemize}
+    \item the fluprint database paper \cite{tomicFluPRINTDatasetMultidimensional2019}
+    \item other papers
+\end{itemize}
+
+\section{Influenza mortality papers}
+
+\subsection{US mortality associated influenza abstract}
+\cite{thompsonMortalityAssociatedInfluenza2003}
+Context  Influenza and respiratory syncytial virus (RSV) cause substantial
+morbidity and mortality. Statistical methods used to estimate deaths in the
+United States attributable to influenza have not accounted for RSV circulation.
+
+Objective  To develop a statistical model using national mortality and viral
+surveillance data to estimate annual influenza- and RSV-associated deaths in
+the United States, by age group, virus, and influenza type and subtype.
+
+Design, Setting, and Population  Age-specific Poisson regression models using
+national viral surveillance data for the 1976-1977 through 1998-1999 seasons
+were used to estimate influenza-associated deaths. Influenza- and
+RSV-associated deaths were simultaneously estimated for the 1990-1991 through
+1998-1999 seasons.
+
+Main Outcome Measures  Attributable deaths for 3 categories: underlying
+pneumonia and influenza, underlying respiratory and circulatory, and all
+causes.
+
+Results  Annual estimates of influenza-associated deaths increased
+significantly beween the 1976-1977 and 1998-1999 seasons for all 3 death
+categories (P<.001 for each category). For the 1990-1991 through 1998-1999
+seasons, the greatest mean numbers of deaths were associated with influenza
+A(H3N2) viruses, followed by RSV, influenza B, and influenza A(H1N1). Influenza
+viruses and RSV, respectively, were associated with annual means (SD) of 8097
+(3084) and 2707 (196) underlying pneumonia and influenza deaths, 36 155 (11
+055) and 11 321 (668) underlying respiratory and circulatory deaths, and 51 203
+(15 081) and 17 358 (1086) all-cause deaths. For underlying respiratory and
+circulatory deaths, 90\% of influenza- and 78\% of RSV-associated deaths occurred
+among persons aged 65 years or older. Influenza was associated with more deaths
+than RSV in all age groups except for children younger than 1 year. On average,
+influenza was associated with 3 times as many deaths as RSV.
+
+Conclusions  Mortality associated with both influenza and RSV circulation
+disproportionately affects elderly persons. Influenza deaths have increased
+substantially in the last 2 decades, in part because of aging of the
+population, underscoring the need for better prevention measures, including
+more effective vaccines and vaccination programs for elderly persons.
+
+Influenza infections result in substantial morbidity and mortality nearly every
+year1,2 and estimates of this burden have played a pivotal role in formulating
+influenza vaccination policy in the United States.3 However, numbers of deaths
+attributable to influenza are difficult to estimate directly because influenza
+infections typically are not confirmed virologically or specified on hospital
+discharge forms or death certificates. In addition, many influenza-associated
+deaths occur from secondary complications when influenza viruses are no longer
+detectable.4,5 Nonetheless, wintertime influenza epidemics have been shown to
+be associated with increased hospitalizations and mortality for many diagnoses,
+including congestive heart failure, chronic obstructive pulmonary disease,
+pneumonia, and bacterial superinfections.6-9
+
+Respiratory syncytial virus (RSV) epidemics often overlap with influenza
+epidemics,8,10 and RSV infections have been associated with substantial
+morbidity and mortality in young children and more recently in older
+adults.10-14 Like influenza, RSV infections can precipitate both cardiac and
+pulmonary complications.15-17 Respiratory syncytial virus infections are rarely
+diagnosed in adults, in part because available rapid antigen-detection tests
+are insensitive in adults and few tests for RSV are requested for this age
+group by medical practitioners.16,18 It is likely that some deaths previously
+attributed to influenza are actually associated with RSV infection.13,14,19
+
+In this study, we provide age-specific estimates of deaths attributable to
+influenza, by virus type and subtype, and to RSV using Poisson regression
+models that incorporates national respiratory viral surveillance data. Recent
+deliberations of the Advisory Committee on Immunization Practices (ACIP)
+regarding influenza vaccination recommendations3 guided our choice of age
+groups for these analyses.
+
+\subsection{England influenza mortality}
+\cite{greenMortalityAttributableInfluenza2013}
+Very different influenza seasons have been observed from 2008/09-2011/12 in
+England and Wales, with the reported burden varying overall and by age group.
+The objective of this study was to estimate the impact of influenza on
+all-cause and cause-specific mortality during this period. Age-specific
+generalised linear regression models fitted with an identity link were
+developed, modelling weekly influenza activity through multiplying clinical
+influenza-like illness consultation rates with proportion of samples positive
+for influenza A or B. To adjust for confounding factors, a similar activity
+indicator was calculated for Respiratory Syncytial Virus. Extreme temperature
+and seasonal trend were controlled for. Following a severe influenza season in
+2008/09 in 65+yr olds (estimated excess of 13,058 influenza A all-cause
+deaths), attributed all-cause mortality was not significant during the 2009
+pandemic in this age group and comparatively low levels of influenza A
+mortality were seen in post-pandemic seasons. The age shift of the burden of
+seasonal influenza from the elderly to young adults during the pandemic
+continued into 2010/11; a comparatively larger impact was seen with the same
+circulating A(H1N1)pdm09 strain, with the burden of influenza A all-cause
+excess mortality in 15–64 yr olds the largest reported during 2008/09–2011/12
+(436 deaths in 15–44 yr olds and 1,274 in 45–64 yr olds). On average, 76\% of
+seasonal influenza A all-age attributable deaths had a cardiovascular or
+respiratory cause recorded (average of 5,849 influenza A deaths per season),
+with nearly a quarter reported for other causes (average of 1,770 influenza A
+deaths per season), highlighting the importance of all-cause as well as
+cause-specific estimates. No significant influenza B attributable mortality was
+detected by season, cause or age group. This analysis forms part of the
+preparatory work to establish a routine mortality monitoring system ahead of
+introduction of the UK universal childhood seasonal influenza vaccination
+programme in 2013/14.
+
+\subsection{Global mortality paper}
+\cite{iulianoEstimatesGlobalSeasonal2018}
+Background
+Estimates of influenza-associated mortality are important for national and
+international decision making on public health priorities. Previous estimates
+of 250.000 500.000 annual influenza deaths are outdated. We updated the
+estimated number of global annual influenza-associated respiratory deaths using
+country-specific influenza-associated excess respiratory mortality estimates
+from 1999–2015.
+Methods
+We estimated country-specific influenza-associated respiratory excess mortality
+rates (EMR) for 33 countries using time series log-linear regression models
+with vital death records and influenza surveillance data. To extrapolate
+estimates to countries without data, we divided countries into three analytic
+divisions for three age groups (<65 years, 65-74 years, and >=75 years) using
+WHO Global Health Estimate (GHE) respiratory infection mortality rates. We
+calculated mortality rate ratios (MRR) to account for differences in risk of
+influenza death across countries by comparing GHE respiratory infection
+mortality rates from countries without EMR estimates with those with estimates.
+To calculate death estimates for individual countries within each age-specific
+analytic division, we multiplied randomly selected mean annual EMRs by the
+country's MRR and population. Global 95\% credible interval (CrI) estimates were
+obtained from the posterior distribution of the sum of country-specific
+estimates to represent the range of possible influenza-associated deaths in a
+season or year. We calculated influenza-associated deaths for children younger
+than 5 years for 92 countries with high rates of mortality due to respiratory
+infection using the same methods.
+Findings
+EMR-contributing countries represented 57\% of the global population. The
+estimated mean annual influenza-associated respiratory EMR ranged from 0.1 to
+6.4 per 100.000 individuals for people younger than 65 years, 2.9 to 44.0 per
+100.000 individuals for people aged between 65 and 74 years, and 17.9 to 223.5
+per 100.000 for people older than 75 years. We estimated that 291 243–645 832
+seasonal influenza-associated respiratory deaths (4.0–8.8 per 100.000
+individuals) occur annually. The highest mortality rates were estimated in
+sub-Saharan Africa (2.8–16.5 per 100 000 individuals), southeast Asia (3.5-9.2
+per 100.000 individuals), and among people aged 75 years or older (51.3-99.4
+per 100.000 individuals). For 92 countries, we estimated that among children
+younger than 5 years, 9243-105 690 influenza-associated respiratory deaths
+occur annually.
+Interpretation
+These global influenza-associated respiratory mortality estimates are higher
+than previously reported, suggesting that previous estimates might have
+underestimated disease burden. The contribution of non-respiratory causes of
+death to global influenza-associated mortality should be investigated.
+
+\section{Vaccine success criteria}
+\cite{zhouHospitalizationsAssociatedInfluenza2012}
+
+Background. Age-specific comparisons of influenza and respiratory syncytial
+virus (RSV) hospitalization rates can inform prevention efforts, including
+vaccine development plans. Previous US studies have not estimated jointly the
+burden of these viruses using similar data sources and over many seasons.
+
+Methods. We estimated influenza and RSV hospitalizations in 5 age categories
+(<1, 1–4, 5–49, 50–64, and >=65 years) with data for 13 states from 1993–1994
+through 2007–2008. For each state and age group, we estimated the contribution
+of influenza and RSV to hospitalizations for respiratory and circulatory
+disease by using negative binomial regression models that incorporated weekly
+influenza and RSV surveillance data as covariates.
+
+Results. Mean rates of influenza and RSV hospitalizations were 63.5 (95\%
+confidence interval [CI], 37.5–237) and 55.3 (95\% CI, 44.4–107) per 100000
+person-years, respectively. The highest hospitalization rates for influenza
+were among persons aged >=65 years (309/100000; 95\% CI, 186–1100) and those aged
+<1 year (151/100000; 95\% CI, 151–660). For RSV, children aged <1 year had the
+highest hospitalization rate (2350/100000; 95\% CI, 2220–2520) followed by those
+aged 1–4 years (178/100000; 95\% CI, 155–230). Age-standardized annual rates per
+100000 person-years varied substantially for influenza (33–100) but less for
+RSV (42–77).
+
+Conclusions. Overall US hospitalization rates for influenza and RSV are
+similar; however, their age-specific burdens differ dramatically. Our estimates
+are consistent with those from previous studies focusing either on influenza or
+RSV. Our approach provides robust national comparisons of hospitalizations
+associated with these 2 viral respiratory pathogens by age group and over time.
+
+
+\bibliographystyle{unsrt}
+\bibliography{../references.bib}
+\end{document}

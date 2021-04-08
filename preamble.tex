@@ -1,0 +1,28 @@
+\documentclass{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{glossaries}
+\newglossary[bsg]{bus}{bsd}{bsn}{Bussiness glossary}
+\newglossary[dmg]{dm}{dmd}{dmn}{Data mining glossary}
+
+\graphicspath{ {images/} }
+
+\DeclareUnicodeCharacter{2008}{-}% support older LaTeX versions
+\DeclareUnicodeCharacter{2003}{ }% support older LaTeX versions
+
+\newcommand{\uu}{Utrecht University}
+\newcommand{\MyTitle}[1]{
+    \title{
+    {#1}\\
+    {\large Utrecht University}\\
+    }
+    \author{Mike Vink}
+    \date{ \today }
+    \maketitle
+}
+
+
+
+
