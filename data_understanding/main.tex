@@ -1,0 +1,131 @@
+% hello
+\input{../preamble.tex}
+
+\makeglossaries
+\input{../bussiness_glossary.tex}
+\input{../data_mining_glossary.tex}
+\input{../acronyms.tex}
+
+\begin{document}
+\MyTitle{Data Understanding Report}
+\tableofcontents
+\printglossary[type=bus]
+\printglossary[type=dm]
+\printglossary[type=\acronymtype]
+
+\section{Initial data collection}
+
+\subsection{Technicalities}
+
+\subsubsection{MySQL database set up and data import}
+
+By following the guide on the
+\href{https://github.com/LogIN-/fluprint}{FluPrint Github Repository} the MySQL
+server was set up. In this work the FluPrint github was first added as a
+submodule. This module provides the php scripts to import raw data csv's into
+the MySQL database. The operating system and versions of php and MySQL used in
+this work were OSX "Big Sur" (on Mac Book air 2017), php 7.3.24 (built-in mac
+version), and MySQL 8.0.23 (homebrew).
+
+In the \href{https://github.com/LogIN-/fluprint}{guide} the dependencies to run
+the php import script were installed first. This was also done in this work,
+except that the hash-file verification step was skipped.
+
+After the php dependencies were installed the MySQL server was started. By
+default homebrew recommends to use the \lstinline{homebrew services [option] [SERVICE]} command to start the MySQL server. However, in this work the server
+is started using \lstinline{mysql.server start} which provides a socket that
+was symlinked using \lstinline{sudo ln -s /tmp/mysql.sock /var/mysql/mysql.sock}. This was done to prevent an error
+(\href{https://stackoverflow.com/questions/15016376/cant-connect-to-local-mysql-server-through-socket-homebrew/18090173}{StackOverflow: cant connect to local mysql server through socket homebrew}) thrown
+by the php import scripts. Before the import scripts were run a user was added to the
+MySQL server and a database was created \ref{lst:addUser}, the password type had to be \lstinline{mysql_native_password}
+(\href{https://stackoverflow.com/questions/62873680/how-to-resolve-sqlstatehy000-2054-the-server-requested-authentication-metho}{how to resolve [SQLSTATEHY000] 2054 the server requested authentication method.}).
+
+\begin{lstlisting}[language=sql, caption=Adding user and database to sql server, label={lst:addUser}]
+mysql> CREATE USER 'mike'@'localhost' IDENTIFIED BY ';lkj';
+mysql> GRANT ALL PRIVILEGES ON * . * TO 'mike'@'localhost';
+mysql> ALTER USER 'mike'@'localhost' IDENTIFIED WITH mysql_native_password BY 'mike';
+mysql> CREATE DATABASE fluprint;
+\end{lstlisting}
+
+The databasename, the username, and password were added to the
+\lstinline{config/configuration.json} of the FlruPrint github module. At this
+point the configuration for the php import scripts was finished, and the raw
+data downloaded in \lstinline{data/upload} were imported in the MySQL server
+using \lstinline{php bin/import.php}.
+
+\subsection{Data Requirements}
+
+The following subsections will list the attributes required from the data per
+data mining goal.
+
+\subsubsection{Explore and describe SQL queries and corresponding csv tables.}
+
+\subsubsection{Model and visualise the different clinical study populations.}
+
+\subsubsection{Model and visualise the difference between vaccination types.}
+
+\subsubsection{Model and visualise repeat vaccination effects.}
+
+\subsubsection{Apply standard feature selection methods to the most interesting dataset.}
+
+\subsubsection{Fit classification models to the most interesting dataset.}
+
+\citep{chattopadhyaySinglecellTechnologiesMonitoring2014}
+The complex heterogeneity of cells, and their interconnectedness with each
+other, are major challenges to identifying clinically relevant measurements
+that reflect the state and capability of the immune system. Highly multiplexed,
+single-cell technologies may be critical for identifying correlates of disease
+or immunological interventions as well as for elucidating the underlying
+mechanisms of immunity. Here we review limitations of bulk measurements and
+explore advances in single-cell technologies that overcome these problems by
+expanding the depth and breadth of functional and phenotypic analysis in space
+and time. The geometric increases in complexity of data make formidable hurdles
+for exploring, analyzing and presenting results. We summarize recent approaches
+to making such computations tractable and discuss challenges for integrating
+heterogeneous data obtained using these single-cell technologies.
+
+\citep{galliEndOmicsHigh2019}
+High-dimensional single-cell (HDcyto) technologies, such as mass cytometry
+(CyTOF) and flow cytometry, are the key techniques that hold a great promise
+for deciphering complex biological processes. During the last decade, we
+witnessed an exponential increase of novel HDcyto technologies that are able to
+deliver an in-depth profiling in different settings, such as various autoimmune
+diseases and cancer. The concurrent advance of custom data-mining algorithms
+has provided a rich substrate for the development of novel tools in
+translational medicine research. HDcyto technologies have been successfully
+used to investigate cellular cues driving pathophysiological conditions, and to
+identify disease-specific signatures that may serve as diagnostic biomarkers or
+therapeutic targets. These technologies now also offer the possibility to
+describe a complete cellular environment, providing unanticipated insights into
+human biology. In this review, we present an update on the current cutting-edge
+HDcyto technologies and their applications, which are going to be fundamental
+in providing further insights into human immunology and pathophysiology of
+various diseases. Importantly, we further provide an overview of the main
+algorithms currently available for data mining, together with the conceptual
+workflow for high-dimensional cytometric data handling and analysis. Overall,
+this review aims to be a handy overview for immunologists on how to design,
+develop and read HDcyto data.
+
+\citep{simoniMassCytometryPowerful2018}
+Advancement in methodologies for single cell analysis has historically been a
+major driver of progress in immunology. Currently, high dimensional flow
+cytometry, mass cytometry and various forms of single cell sequencing-based
+analysis methods are being widely adopted to expose the staggering
+heterogeneity of immune cells in many contexts. Here, we focus on mass
+cytometry, a form of flow cytometry that allows for simultaneous interrogation
+of more than 40 different marker molecules, including cytokines and
+transcription factors, without the need for spectral compensation. We argue
+that mass cytometry occupies an important niche within the landscape of
+single-cell analysis platforms that enables the efficient and in-depth study of
+diverse immune cell subsets with an ability to zoom-in on myeloid and lymphoid
+compartments in various tissues in health and disease. We further discuss the
+unique features of mass cytometry that are favorable for combining multiplex
+peptide-MHC multimer technology and phenotypic characterization of antigen
+specific T cells. By referring to recent studies revealing the complexities of
+tumor immune infiltrates, we highlight the particular importance of this
+technology for studying cancer in the context of cancer immunotherapy. Finally,
+we provide thoughts on current technical limitations and how we imagine these
+being overcome.
+
+\printbibliography
+\end{document}

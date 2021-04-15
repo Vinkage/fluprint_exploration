@@ -1,0 +1,3 @@
+[submodule "fluprint"]
+	path = fluprint
+	url = https://github.com/LogIN-/fluprint

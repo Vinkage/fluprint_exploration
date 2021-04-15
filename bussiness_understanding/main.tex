@@ -1,436 +1,338 @@
 % hello
 \input{../preamble.tex}
 
-
-
 \makeglossaries
 \input{../bussiness_glossary.tex}
 \input{../data_mining_glossary.tex}
+\input{../acronyms.tex}
 
 \begin{document}
 \MyTitle{Bussiness Understanding Report}
 \tableofcontents
 \printglossary[type=bus]
 \printglossary[type=dm]
+\printglossary[type=\acronymtype]
 
-\section{Main papers that will be used in this work}
-
-\Gls{latex} is not cool. It never works.
-
-A \gls{model} is a model.
-
-\begin{itemize}
-    \item the fluprint database paper \cite{tomicFluPRINTDatasetMultidimensional2019}
-    \item other papers
-\end{itemize}
 
 \section{background}
 
-\cite{GuidanceIndustryClinical2007}
-Influenza viruses are enveloped ribonucleic acid viruses belonging to the family of
-Orthomyxoviridae and are divided into three distinct types on the basis of antigenic differences
-of internal structural proteins (Ref. 2). Two influenza types, Type A and B, are responsible for
-yearly epidemic outbreaks of respiratory illness in humans and are further classified based on the
-structure of two major external glycoproteins, hemagglutinin (HA) and neuraminidase (NA).
-Type B viruses, which are largely restricted to the human host, have a single HA and NA
-subtype. In contrast, numerous HA and NA Type A influenza subtypes have been identified to
-date. Type A strains infect a wide variety of avian and mammalian species.
-Type A and B influenza variant strains emerge as a result of frequent antigenic change,
-principally from mutations in the HA and NA glycoproteins. These variant strains may arise
-through one of two mechanisms: selective point mutations in the viral genome (Refs. 3 and 4) or
-from reassortment between two co-circulating strains (Refs. 5 and 6).
-Since 1977, influenza A virus subtypes H1N1 and H3N2, and influenza B viruses have been in
-global circulation in humans. The current U.S. licensed inactivated trivalent vaccines are
-formulated to prevent influenza illness caused by these influenza viruses. Because of the
-frequent emergence of new influenza variant strains, the antigenic composition of influenza
-vaccines needs to be evaluated yearly, and the trivalent inactivated influenza vaccines are
-reformulated almost every year. The immune response elicited by previous vaccination may not
-be protective against new variants.
-The Centers for Disease Control and Prevention’s (CDC’s) Advisory Committee on
-Immunization Practices (ACIP) has expanded the recommendations for receipt of influenza
-vaccination to include an increasing scope of at risk populations, currently including pregnant
-women, persons 50 years of age and older, and children 6 to 59 months of age (Refs. 7, 8, and 9).
+Influenza viruses are enveloped \gls{rnaVirus} (\acrshort{rna} virus(es)) and
+are divided into three types on the basis of \gls{antigen}ic differences of internal
+structural proteins \citep{fdaGuidanceIndustryClinical2007}.
 
-Increased demand for influenza vaccines, including that resulting from the broader
-recommendations, the withdrawal from the U.S. market by several influenza vaccine
-manufacturers, and intermittent decreases in vaccine production due to manufacturing problems
-have led to shortages or delays in the availability of influenza vaccine over the past several
-seasons. These shortages highlight both the complexity of the production process and the need
-to increase the availability of influenza vaccines from multiple manufacturers. Currently, even
-with full production, manufacturing capacity would not produce enough seasonal influenza
-vaccine to vaccinate all those for whom the vaccine is now recommended. Finally, the
-availability of adequate supplies of licensed seasonal inactivated influenza vaccines from
-multiple manufacturers will be of value in responding to the emergence of a new pandemic
-influenza strain.
+Two influenza virus types, Type A and B, cause yearly epidemic outbreaks in humans
+and are further classified based on the structure of two major external
+\gls{glycoprotein}s, hemagglutinin (\acrshort{ha}) and neuraminidase (\acrshort{na})
+\citep{fdaGuidanceIndustryClinical2007}.
 
-\subsection{Influenza mortality papers}
+Type B viruses, which are largely restricted to the human host, have a single
+\acrshort{ha} and \acrshort{na} subtype.  In contrast, numerous \acrshort{ha}
+and \acrshort{na} Type A influenza subtypes have been identified to date.  Type
+A and B influenza variant strains emerge as a result of frequent
+\gls{antigen}ic change, principally from \gls{mutation}s in the \acrshort{ha}
+and \acrshort{na} \gls{glycoprotein}s \citep{fdaGuidanceIndustryClinical2007}.
 
-\cite{thompsonMortalityAssociatedInfluenza2003}
-Context  Influenza and respiratory syncytial virus (RSV) cause substantial
-morbidity and mortality. Statistical methods used to estimate deaths in the
-United States attributable to influenza have not accounted for RSV circulation.
+Since 1977, influenza A virus subtypes H1N1 and H3N2, and influenza B viruses
+have been in global circulation in humans. The current U.S. licensed
+\gls{tiv} are formulated to prevent influenza illness
+caused by these influenza viruses.  Because of the frequent emergence of new
+influenza variant strains, the \gls{antigen}ic composition of influenza vaccines
+needs to be evaluated yearly, and the \gls{tiv} are reformulated almost every
+year.
 
-Objective  To develop a statistical model using national mortality and viral
-surveillance data to estimate annual influenza- and RSV-associated deaths in
-the United States, by age group, virus, and influenza type and subtype.
+Currently, even with full production, manufacturing capacity would not produce
+enough seasonal influenza vaccine to vaccinate all those for whom the vaccine
+is now recommended \citep{fdaGuidanceIndustryClinical2007}.
 
-Design, Setting, and Population  Age-specific Poisson regression models using
-national viral surveillance data for the 1976-1977 through 1998-1999 seasons
-were used to estimate influenza-associated deaths. Influenza- and
-RSV-associated deaths were simultaneously estimated for the 1990-1991 through
-1998-1999 seasons.
+\subsection{Influenza mortality estimation models}
 
-Main Outcome Measures  Attributable deaths for 3 categories: underlying
-pneumonia and influenza, underlying respiratory and circulatory, and all
-causes.
+Numerous works apply regression models to describe seasonal population
+influenza mortality \citep{zhouHospitalizationsAssociatedInfluenza2012,
+greenMortalityAttributableInfluenza2013, iulianoEstimatesGlobalSeasonal2018}.
+Reported are varying age-specific influenza burdens during different seasonal
+epidemics for different regions, but in general young children an elderly are
+found to be more susceptible to influenza and are adviced to vaccinated
+annually \citep{zhouHospitalizationsAssociatedInfluenza2012}.
 
-Results  Annual estimates of influenza-associated deaths increased
-significantly beween the 1976-1977 and 1998-1999 seasons for all 3 death
-categories (P<.001 for each category). For the 1990-1991 through 1998-1999
-seasons, the greatest mean numbers of deaths were associated with influenza
-A(H3N2) viruses, followed by RSV, influenza B, and influenza A(H1N1). Influenza
-viruses and RSV, respectively, were associated with annual means (SD) of 8097
-(3084) and 2707 (196) underlying pneumonia and influenza deaths, 36 155 (11
-055) and 11 321 (668) underlying respiratory and circulatory deaths, and 51 203
-(15 081) and 17 358 (1086) all-cause deaths. For underlying respiratory and
-circulatory deaths, 90\% of influenza- and 78\% of RSV-associated deaths occurred
-among persons aged 65 years or older. Influenza was associated with more deaths
-than RSV in all age groups except for children younger than 1 year. On average,
-influenza was associated with 3 times as many deaths as RSV.
-
-Conclusions  Mortality associated with both influenza and RSV circulation
-disproportionately affects elderly persons. Influenza deaths have increased
-substantially in the last 2 decades, in part because of aging of the
-population, underscoring the need for better prevention measures, including
-more effective vaccines and vaccination programs for elderly persons.
-
-Influenza infections result in substantial morbidity and mortality nearly every
-year1,2 and estimates of this burden have played a pivotal role in formulating
-influenza vaccination policy in the United States.3 However, numbers of deaths
-attributable to influenza are difficult to estimate directly because influenza
-infections typically are not confirmed virologically or specified on hospital
-discharge forms or death certificates. In addition, many influenza-associated
-deaths occur from secondary complications when influenza viruses are no longer
-detectable.4,5 Nonetheless, wintertime influenza epidemics have been shown to
-be associated with increased hospitalizations and mortality for many diagnoses,
-including congestive heart failure, chronic obstructive pulmonary disease,
-pneumonia, and bacterial superinfections.6-9
-
-Respiratory syncytial virus (RSV) epidemics often overlap with influenza
-epidemics,8,10 and RSV infections have been associated with substantial
-morbidity and mortality in young children and more recently in older
-adults.10-14 Like influenza, RSV infections can precipitate both cardiac and
-pulmonary complications.15-17 Respiratory syncytial virus infections are rarely
-diagnosed in adults, in part because available rapid antigen-detection tests
-are insensitive in adults and few tests for RSV are requested for this age
-group by medical practitioners.16,18 It is likely that some deaths previously
-attributed to influenza are actually associated with RSV infection.13,14,19
-
-In this study, we provide age-specific estimates of deaths attributable to
-influenza, by virus type and subtype, and to RSV using Poisson regression
-models that incorporates national respiratory viral surveillance data. Recent
-deliberations of the Advisory Committee on Immunization Practices (ACIP)
-regarding influenza vaccination recommendations3 guided our choice of age
-groups for these analyses.
-
-\cite{greenMortalityAttributableInfluenza2013}
-Very different influenza seasons have been observed from 2008/09-2011/12 in
-England and Wales, with the reported burden varying overall and by age group.
-The objective of this study was to estimate the impact of influenza on
-all-cause and cause-specific mortality during this period. Age-specific
-generalised linear regression models fitted with an identity link were
-developed, modelling weekly influenza activity through multiplying clinical
-influenza-like illness consultation rates with proportion of samples positive
-for influenza A or B. To adjust for confounding factors, a similar activity
-indicator was calculated for Respiratory Syncytial Virus. Extreme temperature
-and seasonal trend were controlled for. Following a severe influenza season in
-2008/09 in 65+yr olds (estimated excess of 13,058 influenza A all-cause
-deaths), attributed all-cause mortality was not significant during the 2009
-pandemic in this age group and comparatively low levels of influenza A
-mortality were seen in post-pandemic seasons. The age shift of the burden of
-seasonal influenza from the elderly to young adults during the pandemic
-continued into 2010/11; a comparatively larger impact was seen with the same
-circulating A(H1N1)pdm09 strain, with the burden of influenza A all-cause
-excess mortality in 15–64 yr olds the largest reported during 2008/09–2011/12
-(436 deaths in 15–44 yr olds and 1,274 in 45–64 yr olds). On average, 76\% of
-seasonal influenza A all-age attributable deaths had a cardiovascular or
-respiratory cause recorded (average of 5,849 influenza A deaths per season),
-with nearly a quarter reported for other causes (average of 1,770 influenza A
-deaths per season), highlighting the importance of all-cause as well as
-cause-specific estimates. No significant influenza B attributable mortality was
-detected by season, cause or age group. This analysis forms part of the
-preparatory work to establish a routine mortality monitoring system ahead of
-introduction of the UK universal childhood seasonal influenza vaccination
-programme in 2013/14.
-
-\cite{iulianoEstimatesGlobalSeasonal2018}
-Background
-Estimates of influenza-associated mortality are important for national and
-international decision making on public health priorities. Previous estimates
-of 250.000 500.000 annual influenza deaths are outdated. We updated the
-estimated number of global annual influenza-associated respiratory deaths using
-country-specific influenza-associated excess respiratory mortality estimates
-from 1999–2015.
-Methods
-We estimated country-specific influenza-associated respiratory excess mortality
-rates (EMR) for 33 countries using time series log-linear regression models
-with vital death records and influenza surveillance data. To extrapolate
-estimates to countries without data, we divided countries into three analytic
-divisions for three age groups (<65 years, 65-74 years, and >=75 years) using
-WHO Global Health Estimate (GHE) respiratory infection mortality rates. We
-calculated mortality rate ratios (MRR) to account for differences in risk of
-influenza death across countries by comparing GHE respiratory infection
-mortality rates from countries without EMR estimates with those with estimates.
-To calculate death estimates for individual countries within each age-specific
-analytic division, we multiplied randomly selected mean annual EMRs by the
-country's MRR and population. Global 95\% credible interval (CrI) estimates were
-obtained from the posterior distribution of the sum of country-specific
-estimates to represent the range of possible influenza-associated deaths in a
-season or year. We calculated influenza-associated deaths for children younger
-than 5 years for 92 countries with high rates of mortality due to respiratory
-infection using the same methods.
-Findings
-EMR-contributing countries represented 57\% of the global population. The
-estimated mean annual influenza-associated respiratory EMR ranged from 0.1 to
-6.4 per 100.000 individuals for people younger than 65 years, 2.9 to 44.0 per
-100.000 individuals for people aged between 65 and 74 years, and 17.9 to 223.5
-per 100.000 for people older than 75 years. We estimated that 291 243–645 832
-seasonal influenza-associated respiratory deaths (4.0–8.8 per 100.000
-individuals) occur annually. The highest mortality rates were estimated in
-sub-Saharan Africa (2.8–16.5 per 100 000 individuals), southeast Asia (3.5-9.2
-per 100.000 individuals), and among people aged 75 years or older (51.3-99.4
-per 100.000 individuals). For 92 countries, we estimated that among children
-younger than 5 years, 9243-105 690 influenza-associated respiratory deaths
-occur annually.
-Interpretation
-These global influenza-associated respiratory mortality estimates are higher
-than previously reported, suggesting that previous estimates might have
-underestimated disease burden. The contribution of non-respiratory causes of
-death to global influenza-associated mortality should be investigated.
+Specifically, within the US based work of
+\cite{zhouHospitalizationsAssociatedInfluenza2012}, the highest hospitalization
+rates for influenza were among persons aged $>=$65 years and those aged $<$1 year.
+And, age-standardized annual rates per 100000 person-years varied substantially
+for influenza. A similar pattern is in
+\cite{greenMortalityAttributableInfluenza2013}, where an age shift in Wales and
+England seasonal influenza burden was observed following the 2009 swine flue
+pandemic. These patterns can confound decision making on national and
+international public health policies. The necessity of informed decision making
+is apperant from estimates of influenza attributed mortality, it is
+estimated that globally 291.243–645.832 influenza associated seasonal deaths
+occur annually \citep{iulianoEstimatesGlobalSeasonal2018}.
 
 \subsection{Vaccine success criteria}
-\cite{zhouHospitalizationsAssociatedInfluenza2012}
 
-Background. Age-specific comparisons of influenza and respiratory syncytial
-virus (RSV) hospitalization rates can inform prevention efforts, including
-vaccine development plans. Previous US studies have not estimated jointly the
-burden of these viruses using similar data sources and over many seasons.
+Due to the volume and vulnerability of population groups most at risk for
+influenze, the young and the elderly, a placebo controlled vaccine efficacy
+study is extremely costly \citep{zhouHospitalizationsAssociatedInfluenza2012}.
+Instead the haemagglutination-inhibiting (HAI) antibody test for influenza
+virus antibody is used to assess vaccine protection
+\citep{dejongHaemagglutinationinhibitingAntibodyInfluenza2003}. The policy for
+a succesful vaccine is an 4-fold increase in HAI antibody titre after
+vaccination and a geometric mean HAI titer of $\geq$ 40. The last is predicted
+to reduce influenza risk by 50\%
+\cite{dejongHaemagglutinationinhibitingAntibodyInfluenza2003}.
 
-Methods. We estimated influenza and RSV hospitalizations in 5 age categories
-(<1, 1–4, 5–49, 50–64, and >=65 years) with data for 13 states from 1993–1994
-through 2007–2008. For each state and age group, we estimated the contribution
-of influenza and RSV to hospitalizations for respiratory and circulatory
-disease by using negative binomial regression models that incorporated weekly
-influenza and RSV surveillance data as covariates.
+\subsection{Finding immunological factors predisposing vaccine HAI antibody response using machine learning}
 
-Results. Mean rates of influenza and RSV hospitalizations were 63.5 (95\%
-confidence interval [CI], 37.5–237) and 55.3 (95\% CI, 44.4–107) per 100000
-person-years, respectively. The highest hospitalization rates for influenza
-were among persons aged >=65 years (309/100000; 95\% CI, 186–1100) and those aged
-<1 year (151/100000; 95\% CI, 151–660). For RSV, children aged <1 year had the
-highest hospitalization rate (2350/100000; 95\% CI, 2220–2520) followed by those
-aged 1–4 years (178/100000; 95\% CI, 155–230). Age-standardized annual rates per
-100000 person-years varied substantially for influenza (33–100) but less for
-RSV (42–77).
+It is known that pre-existing T cell populations are correlated with a HAI
+antibody response after vaccination. But, the role of T cells in mediating that
+response is uncertain. In one work it was found that under certain
+circumstances CD8+ T cells specific to conserved viral epitopes correlated with
+protection against symptomatic influenza
+\citep{sridharCellularImmuneCorrelates2013}.In other work, populations of CD4+
+T cells that associated with protective antibody responses after seasonal
+influenza vaccinations were found \citep{bentebibelInductionICOSCXCR3}.
+\cite{trieuLongtermMaintenanceInfluenzaSpecific2017} reports a stable CD8+ T
+cell response and an increased CD4+ T cell response after vaccination. It was
+also reported that repeat vaccinations are an important factor in maintaining
+CD4+ T cell population \citep{trieuLongtermMaintenanceInfluenzaSpecific2017}.
+How exactly these T cell populations factor into protective influenza immunity
+and vaccination reponse is not well understood.
 
-Conclusions. Overall US hospitalization rates for influenza and RSV are
-similar; however, their age-specific burdens differ dramatically. Our estimates
-are consistent with those from previous studies focusing either on influenza or
-RSV. Our approach provides robust national comparisons of hospitalizations
-associated with these 2 viral respiratory pathogens by age group and over time.
+Machine learning has been applied to clinical datasets to find influenza
+protection markers, such as the described T cell populations and titers of
+related molecules \citep{furmanApoptosisOtherImmune2013,
+sobolevAdjuvantedInfluenzaH1N1Vaccination2016, tsangGlobalAnalysesHuman2014}.
+These type of studies suffer from data quality issues, such as: inconsistencies
+between findings depending on the epidemic season, only focussing on one type
+of biological assay to get data, and a low amount of patients/samples. A
+succesful vaccination is also often not well defined.
 
-\cite{GuidanceIndustryClinical2007}
-something about the effectiveness of vaccines.
+\subsection{Bussiness objectives}
 
-\cite{dejongHaemagglutinationinhibitingAntibodyInfluenza2003}
+Due to the high volume population that needs vaccines, it is important to study
+immune correlates to vaccine response. For example, repeat vaccination might
+not be necessary if the response is low, or a different vaccine is desired on a
+person to person basis depending on immune correlates. Moreover, identifying
+patterns between vaccine response and immune correlates furthers the
+understanding of the underlying immunological mechanism of influenza
+protection.
 
-The results of the haemagglutination-inhibiting (HI) antibody test for
-influenza virus antibody in human sera closely match those produced by virus
-neutralization assays and are predictive of protection. On the basis of the
-data derived from 12 publications concerning healthy adults, we estimated the
-median HI titre protecting 50\% of the vaccinees against the virus concerned at
-28. This finding supports the current policy requiring vaccines to induce serum
-HI titres of > or = 40 to the vaccine viruses in the majority of the vaccinees.
-Unfortunately similar studies are scanty for the elderly, the group most at
-risk of influenza. There still remain many unsolved technical problems with the
-HI assay and we recommend that these problems be studied and the virus
-neutralization test as a predictor of resistance to influenza be assessed.
-Although the studies on this issue often give conflicting results, they
-generally show that HI antibody responses to influenza vaccination tend to
-diminish with increasing age, when health is often compromized. Advanced age in
-itself seems not to be an independent factor in this process. However, even in
-completely healthy elderly individuals the response to vaccination with an
-antigenically new virus may be strongly reduced compared with younger
-vaccinees.
+This work uses the FluPrint database, which aims to solve some of the data
+quality issues of prior studies using clinical datasets comprised of blood and
+serum sample assays. It does so by incorporating eigth clinical studies
+conducted between 2007 to 2015 using in total 740 patients, including different
+types of assays and normalizing their values, and by providing a binary
+classification of high- and low-responder to a vaccine.
 
-\subsection{antibody response vaccine}
-\cite{sridharCellularImmuneCorrelates2013}
-The role of T cells in mediating heterosubtypic protection against natural
-influenza illness in humans is uncertain.  The 2009 H1N1 pandemic (pH1N1)
-provided a unique natural experiment to determine whether crossreactive
-cellular immunity limits symptomatic illness in antibody-naive individuals. We
-followed 342 healthy adults through the UK pandemic waves and correlated the
-responses of pre-existing T cells to the pH1N1 virus and conserved core protein
-epitopes with clinical outcomes after incident pH1N1 infection. Higher
-frequencies of pre-existing T cells to conserved CD8 epitopes were found in
-individuals who developed less severe illness, with total symptom score having
-the strongest inverse correlation with the frequency of interferon-g (IFN-g)+
-interleukin-2 (IL-2)− CD8+ T cells (r = −0.6, P = 0.004). Within this
-functional CD8+IFN-g+IL-2− population, cells with the CD45RA+ chemokine (C-C)
-receptor 7 (CCR7)− phenotype inversely correlated with symptom score and had
-lung-homing and cytotoxic potential. In the absence of crossreactive
-neutralizing antibodies, CD8+ T cells specific to conserved viral epitopes
-correlated with crossprotection against symptomatic influenza. This protective
-immune correlate could guide universal influenza vaccine development.
+The objectives of this work are to answer:
+\begin{itemize}
+        \item Which datasets in the FluPrint database are most interesting?
+        \item How do different clinical studies compare?
+        \item What are the differences in efficacy between vaccination types?
+        \item What is the effect of repeat vaccination on vaccine response?
+        \item What immunological factors correlate to a high vaccine response?
+\end{itemize}
 
-\cite{bentebibelInductionICOSCXCR3}
-The role of T cells in mediating heterosubtypic protection against natural
-influenza illness in humans is uncertain.  The 2009 H1N1 pandemic (pH1N1)
-provided a unique natural experiment to determine whether crossreactive
-cellular immunity limits symptomatic illness in antibody-naive individuals. We
-followed 342 healthy adults through the UK pandemic waves and correlated the
-responses of pre-existing T cells to the pH1N1 virus and conserved core protein
-epitopes with clinical outcomes after incident pH1N1 infection. Higher
-frequencies of pre-existing T cells to conserved CD8 epitopes were found in
-individuals who developed less severe illness, with total symptom score having
-the strongest inverse correlation with the frequency of interferon-g (IFN-g)+
-interleukin-2 (IL-2)− CD8+ T cells (r = −0.6, P = 0.004). Within this
-functional CD8+IFN-g+IL-2− population, cells with the CD45RA+ chemokine (C-C)
-receptor 7 (CCR7)− phenotype inversely correlated with symptom score and had
-lung-homing and cytotoxic potential. In the absence of crossreactive
-neutralizing antibodies, CD8+ T cells specific to conserved viral epitopes
-correlated with crossprotection against symptomatic influenza. This protective
-immune correlate could guide universal influenza vaccine development.
+Since this work is an independent study performed for an assignment, the
+success criteria for these objective will be loosely defined as providing a
+statistical description or to provide insigth in the questions posed in the
+objectives.
 
-\cite{trieuLongtermMaintenanceInfluenzaSpecific2017}
-Background. Annual vaccination for healthcare workers and other high-risk
-groups is the mainstay of the public health strategy to combat influenza.
-Inactivated influenza vaccines confer protection by inducing neutralizing
-antibodies efficiently against homologous and closely matched virus strains. In
-the absence of neutralizing antibodies, cross-reactive T cells have been shown
-to limit disease severity. However, animal studies and a study in
-immunocompromised children suggested that repeated vaccination hampers CD8+ T
-cells. Yet the impact of repeated annual influenza vaccination on both
-cross-reactive CD4+ and CD8+ T cells has not been explored, particularly in
-healthy adults.  Methods. We assembled a unique cohort of healthcare workers
-who received a single AS03-adjuvanted H1N1pdm09 vaccine in 2009 and
-subsequently either repeated annual vaccination or no further vaccination
-during 2010–2013. Blood samples were collected before the influenza season or
-vaccination to assess antibody and T-cell responses.  Results. Antibody titers
-to H1N1pdm09 persisted above the protective level in both the repeated- and
-single-vaccination groups.  The interferon γ+ (IFN-γ+) and multifunctional CD4+
-T-cell responses were maintained in the repeated group but declined
-significantly in the single-vaccination group. The IFN-γ+CD8+ T cells remained
-stable in both groups.  Conclusions. This study provides the immunological
-evidence base for continuing annual influenza vaccination in adults.
+The rationale for these questions and succes criteria  are based on the scope
+of the 3EC project as part of the Applied data science profile and the data
+available. The paper of \cite{tomicFluPRINTDatasetMultidimensional2019} on
+which this work is mostly based on provides these questions as interesting
+directions for further analysis, but does not directly provide the data
+necessary to answer them, only the MySQL database containing a great volume of
+data.
 
-\subsection{Machine learning usage}
+\section{Assess situation}
 
-\cite{furmanApoptosisOtherImmune2013}
-Despite the importance of the immune system in many diseases, there are
-currently no objective benchmarks of immunological health. In an effort to
-identifying such markers, we used influenza vaccination in 30 young (20–30
-years) and 59 older subjects (60 to >89 years) as models for strong and weak
-immune responses, respectively, and assayed their serological responses to
-influenza strains as well as a wide variety of other parameters, including gene
-expression, antibodies to hemagglutinin peptides, serum cytokines, cell subset
-phenotypes and in vitro cytokine stimulation. Using machine learning, we
-identified nine variables that predict the antibody response with 84\% accuracy.
-Two of these variables are involved in apoptosis, which positively associated
-with the response to vaccination and was confirmed to be a contributor to
-vaccine responsiveness in mice. The identification of these biomarkers provides
-new insights into what immune features may be most important for immune health.
+\subsection{data sources}
 
-\cite{sobolevAdjuvantedInfluenzaH1N1Vaccination2016}
-Adjuvanted vaccines afford invaluable protection against disease, and the
-molecular and cellular changes they induce offer direct insight into human
-immunobiology. Here we show that within 24 h of receiving adjuvanted swine flu
-vaccine, healthy individuals made expansive, complex molecular and cellular
-responses that included overt lymphoid as well as myeloid contributions.
-Unexpectedly, this early response was subtly but significantly different in
-people older than ~35 years. Wide-ranging adverse clinical events can seriously
-confound vaccine adoption, but whether there are immunological correlates of
-these is unknown.  Here we identify a molecular signature of adverse events
-that was commonly associated with an existing B cell phenotype. Thus
-immunophenotypic variation among healthy humans may be manifest in complex
-pathophysiological responses.
+The only source of data used in the project is provided by
+\cite{tomicFluPRINTDatasetMultidimensional2019}. It is a MySQL database for
+which the installation is described in the
+\href{https://github.com/LogIN-/fluprint}{FluPrint Github Repository}. A
+template query is also provided by the authors on the github page belonging to
+an unpublished work by the same authors
+\href{https://github.com/LogIN-/simon-manuscript}{SIMON Github Repository}.
+According to the authors, this data is the most interesting for the bussiness
+objective of finding repeat vaccination effects and will be used in this work
+too \cite{tomicSIMONAutomatedMachine2019}. The authors give this brief
+description of the data:
 
-\cite{tsangGlobalAnalysesHuman2014}
-A major goal of systems biology is the development of models that accurately
-predict responses to perturbation. Constructing such models requires the
-collection of dense measurements of system states, yet transformation of data
-into predictive constructs remains a challenge. To begin to model human
-immunity, we analyzed immune parameters in depth both at baseline and in
-response to influenza vaccination. Peripheral blood mononuclear cell
-transcriptomes, serum titers, cell subpopulation frequencies, and B cell
-responses were assessed in 63 individuals before and after vaccination and were
-used to develop a systematic framework to dissect inter- and intra-individual
-variation and build predictive models of postvaccination antibody responses.
-Strikingly, independent of age and pre-existing antibody titers, accurate
-models could be constructed using pre-perturbation cell populations alone,
-which were validated using independent baseline time points. Most of the
-parameters contributing to prediction delineated temporally stable baseline
-differences across individuals, raising the prospect of immune monitoring
-before intervention.
+\begin{displayquote}
+The influenza datasets were obtained from the Stanford Data Miner maintained by
+    the Human Immune Monitoring Center at Stanford University. This included
+    total of 177 csv files, which were automatically imported to the MySQL
+    database to facilitate further analysis. The database, named FluPRINT and
+    its source code, including the installation tutorial are freely available
+    here and on project's website. Following database installation, you can
+    obtain data used in the SIMON publication by following MySQL database
+    query:
+\end{displayquote}
 
-\subsection{Problems of previous studies}
-\cite{chattopadhyaySinglecellTechnologiesMonitoring2014}
-The complex heterogeneity of cells, and their interconnectedness with each
-other, are major challenges to identifying clinically relevant measurements
-that reflect the state and capability of the immune system. Highly multiplexed,
-single-cell technologies may be critical for identifying correlates of disease
-or immunological interventions as well as for elucidating the underlying
-mechanisms of immunity. Here we review limitations of bulk measurements and
-explore advances in single-cell technologies that overcome these problems by
-expanding the depth and breadth of functional and phenotypic analysis in space
-and time. The geometric increases in complexity of data make formidable hurdles
-for exploring, analyzing and presenting results. We summarize recent approaches
-to making such computations tractable and discuss challenges for integrating
-heterogeneous data obtained using these single-cell technologies.
+\begin{lstlisting}[language=sql, caption=Query of initial SIMON data, label={lst:QueryTemplate}]
+SELECT donors.id                        AS donor_id,
+       donor_visits.age                 AS age,
+       donor_visits.vaccine_resp        AS outcome,
+       experimental_data.name_formatted AS data_name,
+       experimental_data.data           AS data
+FROM   donors
+       LEFT JOIN donor_visits
+              ON donors.id = donor_visits.donor_id
+                 AND donor_visits.visit_id = 1
+       INNER JOIN experimental_data
+               ON donor_visits.id = experimental_data.donor_visits_id
+                  AND experimental_data.donor_id = donor_visits.donor_id
+WHERE  donors.gender IS NOT NULL
+       AND donor_visits.vaccine_resp IS NOT NULL
+       AND donor_visits.vaccine = 4
+ORDER  BY donors.study_donor_id DESC
+\end{lstlisting}
 
-\cite{galliEndOmicsHigh2019}
-High-dimensional single-cell (HDcyto) technologies, such as mass cytometry
-(CyTOF) and flow cytometry, are the key techniques that hold a great promise
-for deciphering complex biological processes. During the last decade, we
-witnessed an exponential increase of novel HDcyto technologies that are able to
-deliver an in-depth profiling in different settings, such as various autoimmune
-diseases and cancer. The concurrent advance of custom data-mining algorithms
-has provided a rich substrate for the development of novel tools in
-translational medicine research. HDcyto technologies have been successfully
-used to investigate cellular cues driving pathophysiological conditions, and to
-identify disease-specific signatures that may serve as diagnostic biomarkers or
-therapeutic targets. These technologies now also offer the possibility to
-describe a complete cellular environment, providing unanticipated insights into
-human biology. In this review, we present an update on the current cutting-edge
-HDcyto technologies and their applications, which are going to be fundamental
-in providing further insights into human immunology and pathophysiology of
-various diseases. Importantly, we further provide an overview of the main
-algorithms currently available for data mining, together with the conceptual
-workflow for high-dimensional cytometric data handling and analysis. Overall,
-this review aims to be a handy overview for immunologists on how to design,
-develop and read HDcyto data.
+\subsection{Tools and techniques}
 
-\cite{simoniMassCytometryPowerful2018}
-Advancement in methodologies for single cell analysis has historically been a
-major driver of progress in immunology. Currently, high dimensional flow
-cytometry, mass cytometry and various forms of single cell sequencing-based
-analysis methods are being widely adopted to expose the staggering
-heterogeneity of immune cells in many contexts. Here, we focus on mass
-cytometry, a form of flow cytometry that allows for simultaneous interrogation
-of more than 40 different marker molecules, including cytokines and
-transcription factors, without the need for spectral compensation. We argue
-that mass cytometry occupies an important niche within the landscape of
-single-cell analysis platforms that enables the efficient and in-depth study of
-diverse immune cell subsets with an ability to zoom-in on myeloid and lymphoid
-compartments in various tissues in health and disease. We further discuss the
-unique features of mass cytometry that are favorable for combining multiplex
-peptide-MHC multimer technology and phenotypic characterization of antigen
-specific T cells. By referring to recent studies revealing the complexities of
-tumor immune infiltrates, we highlight the particular importance of this
-technology for studying cancer in the context of cancer immunotherapy. Finally,
-we provide thoughts on current technical limitations and how we imagine these
-being overcome.
+Installation of the FluPrint database will require an installation on a
+unix operating system of \href{https://www.mysql.com/}{MySQL},
+\href{https://www.php.net/manual/en/install.php}{PHP}. More details are at the
+\href{https://github.com/LogIN-/fluprint}{FluPrint Github Repository}.
 
-\bibliographystyle{unsrt}
-\bibliography{../references.bib}
+Database querying was done using the \href{https://neovim.io/}{neovim} toolset,
+personal configuration can be found
+\href{https://github.com/Vinkage/mike_neovim/tree/feature}{here}.
+
+Since the work this paper is based on uses the R toolset, it is also used here
+\citep{tomicFluPRINTDatasetMultidimensional2019,
+tomicSIMONAutomatedMachine2019}.  Especially crucial is the
+\href{https://cran.r-project.org/web/packages/mulset/index.html}{R package
+mulset}, which was made by the authors. This package is used to deal with
+missing data between different clinical studies and years, and thus will be
+used to generate complete data tables in this paper too. All scripts in this
+work were composed using tidyverse packages in combination with modelling
+packages.
+
+\subsection{Requirements of the project}
+
+Requirements of this work are to show ability in using data science methods.
+As such, most of the insights will inevitably be a replication of the work done
+by the authors of the FluPrint database \cite{tomicSIMONAutomatedMachine2019},
+but all the scripts and analysis done are original work and are supplied
+together with the final deliverable.
+
+Since the data type used here is a database this makes it more complicated for
+an examinator to reproduce all code, especially since installing the database
+requires a unix operating system. This is not considered problematic
+since the queried tables from the database will be included in the final
+deliverable.
+
+Reporting of the project follows the CRISP-DM methodology, where at each
+stage of the project a separate report is written during the analysis work. In
+the end the most important information is kept and incorporated in a final
+report that is assumed to be graded in conjunction with the code.
+
+\subsection{Assumptions of the project}
+
+This work assumes that the focus point of the evaluation lies on the
+methodology used, and the ability to apply the basic data science methods
+learned in the Applied Data Science profile. The answer to business objectives
+is assumed to be subjective, and it is assumed that the methods used and
+clarity of insights into the data gained are more important.
+
+It is also assumed that the FluPrint database and other methods used by the
+authors \cite{tomicFluPRINTDatasetMultidimensional2019,
+tomicSIMONAutomatedMachine2019} are of high quality, and that this is
+appropriate for this work. Out of the scope of this work is investigating
+whether the preprocessing done for the data in the database is valid, since we
+are not domain experts. A method for querying, cleaning, and generating
+complete data tables has been provided by the authors and will also be used in
+this work. It is assumed that the SQL and R methods (in particular the mulset R
+package) in question are allowed to be used as a starting point in this
+assignment.
+
+\subsection{Constraints of the project}
+
+This work is an unsupervised assignment, and only personal hardware were
+available. This put constraints on dataset size and computational requirements
+of analyses. The work was done on a Macbook air (2017) with the OSX big-sur
+operating system. This means that unix tools were available and there were no
+technical constraints. The filetypes are only csv files generated by the SQL
+server.
+
+\section{Data mining goals}
+
+All bussiness objectives described involve querying data from the FluPrint
+database. The goal of the authors of the FluPrint database was to provide a
+unqiue opportunity to study immune correlates of high vaccine responders across
+different years and clinical studies. The authors also provide a binary
+classification for donors. In this work we first and foremost explore the
+database, and lastly we apply feature selection methods and classification
+models on the most interesting dataset.
+
+The bussiness objectives can be translated in data mining terminology like so:
+\begin{itemize}
+        \item Explore and describe SQL queries and corresponding csv tables.
+        \item Model and visualise the different clinical study populations.
+        \item Model and visualise the difference between vaccination types.
+        \item Model and visualise repeat vaccination effects.
+        \item Apply standard feature selection methods to the most interesting dataset.
+        \item Fit classification models to the most interesting dataset.
+\end{itemize}
+
+In data mining terms, the problem type is a combination of exploratory data
+analysis and classification. Since this work is for a 3EC assignment for the
+Applied Data Science profile and most of the goals are exploratory analyses,
+success criteria for all goals are subjective. For exploratory and visual type
+goals the quality is expected to be of the same level as the publications of
+the authors \cite{tomicFluPRINTDatasetMultidimensional2019,
+tomicSIMONAutomatedMachine2019}.  For the classification type goals we follow
+the model evaluation procedure used by the authors
+\cite{tomicSIMONAutomatedMachine2019}, models were evaluated by the AUROC
+metric, and accuracy, specificity and sensitivity were also reported. Insights
+produced by this work were benchmarked against the work of the original
+authors.
+
+\section{Project plan}
+
+\f{sql_querying_plan}
+{Project plan for the SQL related data mining goal.}
+{plan:sql}
+
+The first part of the project involved querying the database, and collecting
+and describing the available data \autoref{plan:sql}. The first goal is to
+understand the tables in the SQL database, their key relations, and to describe
+the attributes within the tables. Valuable info on this part is already
+provided in the original publication of the database
+\cite{tomicFluPRINTDatasetMultidimensional2019}, but it was also investigated
+in this work. The tools that will be used are SQL for querying and R for
+statistical descriptions.
+
+The second phase of this plan was an iterative process of finding suitable data
+to answer the modelling and visualisation data mining goals. This is a more
+involved process since it requires exploration of the database to answer the
+questions, and therefore was estimated to take time.
+
+\f{model_and_vis_plan}
+{Project plan for the modelling and visualisation data mining goals.}
+{plan:vis}
+
+Relations between attributes in the generated datasets are visualised and
+modelled to see if there exist a pattern in the data that is relevant for the
+business objectives \autoref{plan:vis}. A critical point in this plan is
+deciding whether an objective cannot be answered with the available data. In
+that case the goal was revised and the second phase of the SQL query plan was
+reiterated. When deciding if the exploratory analysis was of sufficient
+quality, the work by the authors of the database used in this work was used as
+a subjective benchmark \cite{tomicSIMONAutomatedMachine2019,
+tomicFluPRINTDatasetMultidimensional2019}.
+
+\f{feature_selection_classification}
+{Project plan for the classification and feature selection data mining goal.}
+{plan:cls}
+
+For the final two data mining goals the plan was to find the immune correlates
+of high immune responders using a wrapper based feature selection strategy
+\autoref{plan:cls}
+
+\printbibliography
 \end{document}

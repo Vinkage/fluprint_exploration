@@ -2,15 +2,48 @@
 
 \usepackage[utf8]{inputenc}
 \usepackage{graphicx}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{csquotes}
 \usepackage{hyperref}
-\usepackage{glossaries}
+\newcommand\myshade{85}
+\colorlet{mylinkcolor}{violet}
+\colorlet{mycitecolor}{YellowOrange}
+\colorlet{myurlcolor}{Aquamarine}
+
+\hypersetup{
+  linkcolor  = mylinkcolor!\myshade!black,
+  citecolor  = mycitecolor!\myshade!black,
+  urlcolor   = myurlcolor!\myshade!black,
+  colorlinks = true,
+}
+
+\usepackage[acronym]{glossaries}
+
+\usepackage{listings}
+\lstset{
+    frame=Trbl,
+    numbers=left,
+    breaklines=true,
+    basicstyle=\ttfamily,
+    postbreak=\mbox{\textcolor{red}{$\hookrightarrow$}\space}
+}
+
+\usepackage[maxnames=3,style=authoryear,natbib=true]{biblatex}
+\addbibresource{./references.bib}
+% \bibliographystyle{unsrtnat}
+% \setcitestyle{authoryear}
+
+
 \newglossary[bsg]{bus}{bsd}{bsn}{Bussiness glossary}
 \newglossary[dmg]{dm}{dmd}{dmn}{Data mining glossary}
 
-\graphicspath{ {images/} }
+\graphicspath{ {../images/} }
 
 \DeclareUnicodeCharacter{2008}{-}% support older LaTeX versions
 \DeclareUnicodeCharacter{2003}{ }% support older LaTeX versions
+
+\let\oldautoref\autoref
+\renewcommand{\autoref}[1]{(\oldautoref{#1})}
 
 \newcommand{\uu}{Utrecht University}
 \newcommand{\MyTitle}[1]{
@@ -22,7 +55,12 @@
     \date{ \today }
     \maketitle
 }
-
-
+\newcommand{\f}[3]{%
+\begin{figure}
+    \includegraphics[width=\textwidth]{#1}
+    \caption{#2}
+    \label{#3}
+\end{figure}
+}
 
 
