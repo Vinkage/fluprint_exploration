@@ -15,7 +15,7 @@
 
 \section{Initial data collection}
 
-\subsection{Technicalities}
+\subsection{Technical description data collection}
 
 \subsubsection{MySQL database set up and data import}
 
@@ -55,20 +55,90 @@ using \lstinline{php bin/import.php}.
 
 \subsection{Data Requirements}
 
-The following subsections will list the attributes required from the data per
-data mining goal.
+The following subsections will list the information required from the data per
+data mining goals that are needed to answer the following business questions:
 
-\subsubsection{Explore and describe SQL queries and corresponding csv tables.}
+\begin{itemize}
+        \item Which datasets in the FluPrint database are most interesting?
+        \item How do different clinical studies compare?
+        \item What are the differences in efficacy between vaccination types?
+        \item What is the effect of repeat vaccination on vaccine response?
+        \item What immunological factors correlate to a high vaccine response?
+\end{itemize}
 
-\subsubsection{Model and visualise the different clinical study populations.}
+\subsubsection{Requirements per data mining goal}
 
-\subsubsection{Model and visualise the difference between vaccination types.}
+\begin{displayquote}
+"Explore and describe SQL queries and corresponding csv tables."
+\end{displayquote}
 
-\subsubsection{Model and visualise repeat vaccination effects.}
+Falling under this data mining objective are the outputs and tasks related to
+data collection and description. These comprise a report on the initial
+collection of the data, selection of data, and description of general
+properties of the data. The data in this case is in a database format, thus
+here we describe the tables, keys, and attributes in the database, and also
+include descriptive statistics about the data. The goal is to replicate the
+description done in \cite{tomicFluPRINTDatasetMultidimensional2019} as well.
+Using these descriptions we provide insight into which datasets in the database
+are most interesting, and why in \cite{tomicSIMONAutomatedMachine2019} one
+dataset in particular was chosen.
 
-\subsubsection{Apply standard feature selection methods to the most interesting dataset.}
+\begin{displayquote}
+"Model and visualise the different clinical study populations."
+\end{displayquote}
+\begin{displayquote}
+"Model and visualise the difference between vaccination types."
+\end{displayquote}
+\begin{displayquote}
+"Model and visualise repeat vaccination effects."
+\end{displayquote}
 
-\subsubsection{Fit classification models to the most interesting dataset.}
+In order to answer the business question "How do clinical studies compare?"
+subpopulations and groups of attributes need to be visualised and compared
+across different clinical studies. The data required must have rows
+corresponding to donors in a particular clinical study and columns that are
+attributes of tables in the database, these could be biological assay results
+or information about the donors. Thus we aimed to export one csv from the
+database per clinical study by querying for different clinical studies.
+
+We aimed to generate csv files of donors corresponding to received vaccine
+types to answer the business question "What are the differences in efficacy
+between vaccination types?". One simple method to indicate the difference
+between vaccines would be to report the proportion of high-reponders across all
+donors, or to use a simple model to find the best predictor for a high
+response. These comparisons require one table per vaccine type, with rows
+corresponding to donors and columns that include the vaccine response
+classification, in addition to other immune assay and donor attributes.
+
+The objective in question "What is the effect of repeat vaccination on vaccine
+response?" requires data from long running clinical studies. One dataset that
+is used by the database authors and was investigated to answer this question
+was already available, here we aimed to describe and visualise any patterns we
+could find in this dataset and other long running clinical study datasets. This
+required data from a subset of clinical studies that spanned multiple years, at
+this point in the project the data for these clinical studies should have been
+available, and we just had to choose those that spanned multiple years.
+
+\begin{displayquote}
+"Apply standard feature selection methods to the most interesting dataset."
+\end{displayquote}
+
+\begin{displayquote}
+"Fit classification models to the most interesting dataset."
+\end{displayquote}
+
+These last two data mining objectives were chosen to comprise the data
+preparation and modelling phases of this project. The authors of fluprint set
+up an automated machine learning pipeline to investigate the longest running
+clinical study dataset in the database. In this work we use a conventional data
+mining modelling process to replicate these results. This dataset contains any
+immunological assay results for all donors in the clinical study on their first
+vist, and their classification as a high or low vaccine responder. To fulfill
+the above two data mining goals, we used this dataset.
+
+\section{Data description}
+
+\subsection{Volumetric analysis}
 
 \citep{chattopadhyaySinglecellTechnologiesMonitoring2014}
 The complex heterogeneity of cells, and their interconnectedness with each
