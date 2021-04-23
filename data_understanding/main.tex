@@ -130,15 +130,29 @@ available, and we just had to choose those that spanned multiple years.
 These last two data mining objectives were chosen to comprise the data
 preparation and modelling phases of this project. The authors of fluprint set
 up an automated machine learning pipeline to investigate the longest running
-clinical study dataset in the database. In this work we use a conventional data
-mining modelling process to replicate these results. This dataset contains any
-immunological assay results for all donors in the clinical study on their first
-vist, and their classification as a high or low vaccine responder. To fulfill
-the above two data mining goals, we used this dataset.
+clinical dataset in the database. In this work we use a conventional data
+mining modelling process to replicate these results.
 
 \section{Data description}
 
 \subsection{Volumetric analysis}
+
+In the work of \cite{tomicFluPRINTDatasetMultidimensional2019} data on
+indiviuals enrolled in influenza vaccine studies at the Stanford-LPCH Vaccine
+Program was collected, this data was archived at the Stanford Data Miner. This
+archive was filtered by assays used in influenza studies, resulting in data
+from 740 healthy donors, enrolled in influenza vaccine studies conducted by the
+Stanford-LPCH Vaccine Program from 2007 to 2015.
+
+\fptable{studies_table}{.7}
+{Reference table of clinical studies}
+{Clinical study ID used (but remapped) in the database, age information,
+vaccine type information, and assay data types of clinical studies are in the
+rest of the columns.}
+{tbl:studiesDesc}
+
+
+i'm some text \autoref{tbl:studiesDesc}
 
 \citep{chattopadhyaySinglecellTechnologiesMonitoring2014}
 The complex heterogeneity of cells, and their interconnectedness with each
