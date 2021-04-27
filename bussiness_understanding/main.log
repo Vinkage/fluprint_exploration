@@ -1,12 +1,13 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Arch Linux) (preloaded format=pdflatex 2021.4.18)  19 APR 2021 12:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Arch Linux) (preloaded format=pdflatex 2021.4.18)  27 APR 2021 18:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**main.tex
-(./main.tex
+**/home/mike/Projects/fluprint_exploration/bussiness_understanding/main
+(/home/mike/Projects/fluprint_exploration/bussiness_understanding/main.tex
 LaTeX2e <2020-10-01> patch level 2
-L3 programming layer <2020-12-03> xparse <2020-03-03> (../preamble.tex
-(/usr/share/texmf-dist/tex/latex/base/article.cls
+L3 programming layer <2020-12-03> xparse <2020-03-03>
+(/home/mike/Projects/fluprint_exploration/bussiness_understanding/../preamble.t
+ex (/usr/share/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2020/04/10 v1.4m Standard LaTeX document class
 (/usr/share/texmf-dist/tex/latex/base/size10.clo
 File: size10.clo 2020/04/10 v1.4m Standard LaTeX file (size option)
@@ -222,29 +223,147 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip49
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 18.
+(/usr/share/texmf-dist/tex/latex/tools/tabularx.sty
+Package: tabularx 2020/01/15 v2.11c `tabularx' package (DPC)
 
-(/usr/share/texmf-dist/tex/latex/glossaries/base/glossaries.sty
-Package: glossaries 2020/03/19 v4.46 (NLCT)
+(/usr/share/texmf-dist/tex/latex/tools/array.sty
+Package: array 2020/10/01 v2.5c Tabular extension package (FMi)
+\col@sep=\dimen145
+\ar@mcellbox=\box47
+\extrarowheight=\dimen146
+\NC@list=\toks19
+\extratabsurround=\skip50
+\backup@length=\skip51
+\ar@cellbox=\box48
+)
+\TX@col@width=\dimen147
+\TX@old@table=\dimen148
+\TX@old@col=\dimen149
+\TX@target=\dimen150
+\TX@delta=\dimen151
+\TX@cols=\count268
+\TX@ftn=\toks20
+)
+(/usr/share/texmf-dist/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen152
+\lightrulewidth=\dimen153
+\cmidrulewidth=\dimen154
+\belowrulesep=\dimen155
+\belowbottomsep=\dimen156
+\aboverulesep=\dimen157
+\abovetopsep=\dimen158
+\cmidrulesep=\dimen159
+\cmidrulekern=\dimen160
+\defaultaddspace=\dimen161
+\@cmidla=\count269
+\@cmidlb=\count270
+\@aboverulesep=\dimen162
+\@belowrulesep=\dimen163
+\@thisruleclass=\count271
+\@lastruleclass=\count272
+\@thisrulewidth=\dimen164
+)
+(/usr/share/texmf-dist/tex/latex/pdfpages/pdfpages.sty
+Package: pdfpages 2020/01/28 v0.5q Insert pages of external PDF documents (AM)
 
 (/usr/share/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
+(/usr/share/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count273
+\calc@Bcount=\count274
+\calc@Adimen=\dimen165
+\calc@Bdimen=\dimen166
+\calc@Askip=\skip52
+\calc@Bskip=\skip53
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count275
+\calc@Cskip=\skip54
+)
+(/usr/share/texmf-dist/tex/latex/eso-pic/eso-pic.sty
+Package: eso-pic 2020/10/14 v3.0a eso-pic (RN)
+\ESO@tempdima=\dimen167
+\ESO@tempdimb=\dimen168
+)
+\AM@pagewidth=\dimen169
+\AM@pageheight=\dimen170
+
+(/usr/share/texmf-dist/tex/latex/pdfpages/pppdftex.def
+File: pppdftex.def 2020/01/28 v0.5q Pdfpages driver for pdfTeX (AM)
+)
+\AM@pagebox=\box49
+\AM@global@opts=\toks21
+\AM@pagecnt=\count276
+\AM@toc@title=\toks22
+\c@AM@survey=\count277
+\AM@templatesizebox=\box50
+)
+(/usr/share/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2020/10/26 v3.5g Customizing captions (AR)
+
+(/usr/share/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2020/10/21 v2.2e caption3 kernel (AR)
+\captionmargin=\dimen171
+\captionmargin@=\dimen172
+\captionwidth=\dimen173
+\caption@tempdima=\dimen174
+\caption@indent=\dimen175
+\caption@parindent=\dimen176
+\caption@hangindent=\dimen177
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count278
+\c@continuedfloat=\count279
+Package caption Info: hyperref package is loaded.
+)
+(/usr/share/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+
+(/usr/share/texmf-dist/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+)
+\Gm@cnth=\count280
+\Gm@cntv=\count281
+\c@Gm@tempcnt=\count282
+\Gm@bindingoffset=\dimen178
+\Gm@wd@mp=\dimen179
+\Gm@odd@mp=\dimen180
+\Gm@even@mp=\dimen181
+\Gm@layoutwidth=\dimen182
+\Gm@layoutheight=\dimen183
+\Gm@layouthoffset=\dimen184
+\Gm@layoutvoffset=\dimen185
+\Gm@dimlist=\toks23
+)
+(/usr/share/texmf-dist/tex/latex/appendix/appendix.sty
+Package: appendix 2020/02/08 v1.2c extra appendix facilities
+\c@@pps=\count283
+\c@@ppsavesec=\count284
+\c@@ppsaveapp=\count285
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 23.
+
+(/usr/share/texmf-dist/tex/latex/glossaries/base/glossaries.sty
+Package: glossaries 2020/03/19 v4.46 (NLCT)
+
 (/usr/share/texmf-dist/tex/latex/xkeyval/xkeyval.sty
 Package: xkeyval 2020/11/20 v2.8 package option processing (HA)
 
 (/usr/share/texmf-dist/tex/generic/xkeyval/xkeyval.tex
 (/usr/share/texmf-dist/tex/generic/xkeyval/xkvutils.tex
-\XKV@toks=\toks19
-\XKV@tempa@toks=\toks20
+\XKV@toks=\toks24
+\XKV@tempa@toks=\toks25
 )
-\XKV@depth=\count268
+\XKV@depth=\count286
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
 (/usr/share/texmf-dist/tex/latex/mfirstuc/mfirstuc.sty
 Package: mfirstuc 2017/11/14 v2.06 (NLCT)
-\@glsmfirst=\toks21
-\@glsmrest=\toks22
+\@glsmfirst=\toks26
+\@glsmrest=\toks27
 )
 (/usr/share/texmf-dist/tex/latex/textcase/textcase.sty
 Package: textcase 2019/09/14 v1.00 Text only upper/lower case changing (DPC)
@@ -257,7 +376,7 @@ Package: datatool-base 2019/09/27 v2.32 (NLCT)
 
 (/usr/share/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2020/09/23 v2.17i AMS math features
-\@mathmargin=\skip50
+\@mathmargin=\skip55
 
 For additional information on amsmath, use the `?' option.
 (/usr/share/texmf-dist/tex/latex/amsmath/amstext.sty
@@ -265,57 +384,57 @@ Package: amstext 2000/06/29 v2.01 AMS text
 
 (/usr/share/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks23
-\ex@=\dimen145
+\@emptytoks=\toks28
+\ex@=\dimen186
 ))
 (/usr/share/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen146
+\pmbraise@=\dimen187
 )
 (/usr/share/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count269
+\inf@bad=\count287
 LaTeX Info: Redefining \frac on input line 234.
-\uproot@=\count270
-\leftroot@=\count271
+\uproot@=\count288
+\leftroot@=\count289
 LaTeX Info: Redefining \overline on input line 399.
-\classnum@=\count272
-\DOTSCASE@=\count273
+\classnum@=\count290
+\DOTSCASE@=\count291
 LaTeX Info: Redefining \ldots on input line 496.
 LaTeX Info: Redefining \dots on input line 499.
 LaTeX Info: Redefining \cdots on input line 620.
-\Mathstrutbox@=\box47
-\strutbox@=\box48
-\big@size=\dimen147
+\Mathstrutbox@=\box51
+\strutbox@=\box52
+\big@size=\dimen188
 LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
-\macc@depth=\count274
-\c@MaxMatrixCols=\count275
+\macc@depth=\count292
+\c@MaxMatrixCols=\count293
 \dotsspace@=\muskip17
-\c@parentequation=\count276
-\dspbrk@lvl=\count277
-\tag@help=\toks24
-\row@=\count278
-\column@=\count279
-\maxfields@=\count280
-\andhelp@=\toks25
-\eqnshift@=\dimen148
-\alignsep@=\dimen149
-\tagshift@=\dimen150
-\tagwidth@=\dimen151
-\totwidth@=\dimen152
-\lineht@=\dimen153
-\@envbody=\toks26
-\multlinegap=\skip51
-\multlinetaggap=\skip52
-\mathdisplay@stack=\toks27
+\c@parentequation=\count294
+\dspbrk@lvl=\count295
+\tag@help=\toks29
+\row@=\count296
+\column@=\count297
+\maxfields@=\count298
+\andhelp@=\toks30
+\eqnshift@=\dimen189
+\alignsep@=\dimen190
+\tagshift@=\dimen191
+\tagwidth@=\dimen192
+\totwidth@=\dimen193
+\lineht@=\dimen194
+\@envbody=\toks31
+\multlinegap=\skip56
+\multlinetaggap=\skip57
+\mathdisplay@stack=\toks32
 LaTeX Info: Redefining \[ on input line 2923.
 LaTeX Info: Redefining \] on input line 2924.
 )
 (/usr/share/texmf-dist/tex/latex/substr/substr.sty
 Package: substr 2009/10/20 v1.2 Handle substrings
-\c@su@anzahl=\count281
+\c@su@anzahl=\count299
 )
 (/usr/share/texmf-dist/tex/latex/datatool/datatool-fp.sty
 Package: datatool-fp 2019/09/27 v2.32 (NLCT)
@@ -326,19 +445,19 @@ Package: fp 1995/04/02
 `Fixed Point Package', Version 0.8, April 2, 1995 (C) Michael Mehlich
 (/usr/share/texmf-dist/tex/latex/fp/defpattern.sty
 Package: defpattern 1994/10/12
-\actioncount=\count282
+\actioncount=\count300
 )
 (/usr/share/texmf-dist/tex/latex/fp/fp-basic.sty
 Package: fp-basic 1996/05/13
-\FP@xs=\count283
-\FP@xia=\count284
-\FP@xib=\count285
-\FP@xfa=\count286
-\FP@xfb=\count287
-\FP@rega=\count288
-\FP@regb=\count289
-\FP@regs=\count290
-\FP@times=\count291
+\FP@xs=\count301
+\FP@xia=\count302
+\FP@xib=\count303
+\FP@xfa=\count304
+\FP@xfb=\count305
+\FP@rega=\count306
+\FP@regb=\count307
+\FP@regs=\count308
+\FP@times=\count309
 )
 (/usr/share/texmf-dist/tex/latex/fp/fp-addons.sty
 Package: fp-addons 1995/03/15
@@ -357,7 +476,7 @@ Package: fp-pas 1994/08/29
 )
 (/usr/share/texmf-dist/tex/latex/fp/fp-random.sty
 Package: fp-random 1995/02/23
-\FPseed=\count292
+\FPseed=\count310
 )
 (/usr/share/texmf-dist/tex/latex/fp/fp-eqn.sty
 Package: fp-eqn 1995/04/03
@@ -368,101 +487,101 @@ Package: fp-upn 1996/10/21
 (/usr/share/texmf-dist/tex/latex/fp/fp-eval.sty
 Package: fp-eval 1995/04/03
 )))
-\@dtl@toks=\toks28
-\@dtl@tmpcount=\count293
-\dtl@tmplength=\skip53
-\dtl@sortresult=\count294
-\@dtl@numgrpsepcount=\count295
-\@dtl@datatype=\count296
-\dtl@codeA=\count297
-\dtl@codeB=\count298
-\@dtl@foreach@level=\count299
+\@dtl@toks=\toks33
+\@dtl@tmpcount=\count311
+\dtl@tmplength=\skip58
+\dtl@sortresult=\count312
+\@dtl@numgrpsepcount=\count313
+\@dtl@datatype=\count314
+\dtl@codeA=\count315
+\dtl@codeB=\count316
+\@dtl@foreach@level=\count317
 )
 (/usr/share/texmf-dist/tex/latex/glossaries/base/glossaries-compatible-307.sty
 Package: glossaries-compatible-307 2020/03/19 v4.46 (NLCT)
 )
-\gls@level=\count300
-\@gls@tmpb=\toks29
-\gls@tmplen=\skip54
-\glskeylisttok=\toks30
-\glslabeltok=\toks31
-\glsshorttok=\toks32
-\glslongtok=\toks33
+\gls@level=\count318
+\@gls@tmpb=\toks34
+\gls@tmplen=\skip59
+\glskeylisttok=\toks35
+\glslabeltok=\toks36
+\glsshorttok=\toks37
+\glslongtok=\toks38
 (/usr/share/texmf-dist/tex/latex/glossaries/styles/glossary-hypernav.sty
 Package: glossary-hypernav 2020/03/19 v4.46 (NLCT)
 )
 (/usr/share/texmf-dist/tex/latex/glossaries/styles/glossary-list.sty
 Package: glossary-list 2020/03/19 v4.46 (NLCT)
-\glslistdottedwidth=\skip55
+\glslistdottedwidth=\skip60
 )
 (/usr/share/texmf-dist/tex/latex/glossaries/styles/glossary-long.sty
 Package: glossary-long 2020/03/19 v4.46 (NLCT)
 
 (/usr/share/texmf-dist/tex/latex/tools/longtable.sty
 Package: longtable 2020/01/07 v4.13 Multi-page Table package (DPC)
-\LTleft=\skip56
-\LTright=\skip57
-\LTpre=\skip58
-\LTpost=\skip59
-\LTchunksize=\count301
-\LTcapwidth=\dimen154
-\LT@head=\box49
-\LT@firsthead=\box50
-\LT@foot=\box51
-\LT@lastfoot=\box52
-\LT@cols=\count302
-\LT@rows=\count303
-\c@LT@tables=\count304
-\c@LT@chunks=\count305
-\LT@p@ftn=\toks34
+\LTleft=\skip61
+\LTright=\skip62
+\LTpre=\skip63
+\LTpost=\skip64
+\LTchunksize=\count319
+\LTcapwidth=\dimen195
+\LT@head=\box53
+\LT@firsthead=\box54
+\LT@foot=\box55
+\LT@lastfoot=\box56
+\LT@cols=\count320
+\LT@rows=\count321
+\c@LT@tables=\count322
+\c@LT@chunks=\count323
+\LT@p@ftn=\toks39
 )
-\glsdescwidth=\skip60
-\glspagelistwidth=\skip61
+\glsdescwidth=\skip65
+\glspagelistwidth=\skip66
 )
 (/usr/share/texmf-dist/tex/latex/glossaries/styles/glossary-super.sty
 Package: glossary-super 2020/03/19 v4.46 (NLCT)
 
 (/usr/share/texmf-dist/tex/latex/supertabular/supertabular.sty
 Package: supertabular 2020/02/02 v4.1g the supertabular environment
-\c@tracingst=\count306
-\ST@wd=\dimen155
-\ST@rightskip=\skip62
-\ST@leftskip=\skip63
-\ST@parfillskip=\skip64
-\ST@pageleft=\dimen156
-\ST@headht=\dimen157
-\ST@tailht=\dimen158
-\ST@pagesofar=\dimen159
-\ST@pboxht=\dimen160
-\ST@lineht=\dimen161
-\ST@prevht=\dimen162
-\ST@toadd=\dimen163
-\ST@dimen=\dimen164
-\ST@pbox=\box53
+\c@tracingst=\count324
+\ST@wd=\dimen196
+\ST@rightskip=\skip67
+\ST@leftskip=\skip68
+\ST@parfillskip=\skip69
+\ST@pageleft=\dimen197
+\ST@headht=\dimen198
+\ST@tailht=\dimen199
+\ST@pagesofar=\dimen256
+\ST@pboxht=\dimen257
+\ST@lineht=\dimen258
+\ST@prevht=\dimen259
+\ST@toadd=\dimen260
+\ST@dimen=\dimen261
+\ST@pbox=\box57
 ))
 (/usr/share/texmf-dist/tex/latex/glossaries/styles/glossary-tree.sty
 Package: glossary-tree 2020/03/19 v4.46 (NLCT)
-\glstreeindent=\skip65
+\glstreeindent=\skip70
 ))
 (/usr/share/texmf-dist/tex/latex/listings/listings.sty
-\lst@mode=\count307
-\lst@gtempboxa=\box54
-\lst@token=\toks35
-\lst@length=\count308
-\lst@currlwidth=\dimen165
-\lst@column=\count309
-\lst@pos=\count310
-\lst@lostspace=\dimen166
-\lst@width=\dimen167
-\lst@newlines=\count311
-\lst@lineno=\count312
-\lst@maxwidth=\dimen168
+\lst@mode=\count325
+\lst@gtempboxa=\box58
+\lst@token=\toks40
+\lst@length=\count326
+\lst@currlwidth=\dimen262
+\lst@column=\count327
+\lst@pos=\count328
+\lst@lostspace=\dimen263
+\lst@width=\dimen264
+\lst@newlines=\count329
+\lst@lineno=\count330
+\lst@maxwidth=\dimen265
 
 (/usr/share/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
-\c@lstnumber=\count313
-\lst@skipnumbers=\count314
-\lst@framebox=\box55
+\c@lstnumber=\count331
+\lst@skipnumbers=\count332
+\lst@framebox=\box59
 )
 (/usr/share/texmf-dist/tex/latex/listings/listings.cfg
 File: listings.cfg 2020/03/24 1.8d listings configuration
@@ -474,67 +593,67 @@ Package: biblatex 2020/08/23 v3.15a programmable bibliographies (PK/MW)
 
 (/usr/share/texmf-dist/tex/latex/logreq/logreq.sty
 Package: logreq 2010/08/04 v1.0 xml request logger
-\lrq@indent=\count315
+\lrq@indent=\count333
 
 (/usr/share/texmf-dist/tex/latex/logreq/logreq.def
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 ))
-\c@tabx@nest=\count316
-\c@listtotal=\count317
-\c@listcount=\count318
-\c@liststart=\count319
-\c@liststop=\count320
-\c@citecount=\count321
-\c@citetotal=\count322
-\c@multicitecount=\count323
-\c@multicitetotal=\count324
-\c@instcount=\count325
-\c@maxnames=\count326
-\c@minnames=\count327
-\c@maxitems=\count328
-\c@minitems=\count329
-\c@citecounter=\count330
-\c@maxcitecounter=\count331
-\c@savedcitecounter=\count332
-\c@uniquelist=\count333
-\c@uniquename=\count334
-\c@refsection=\count335
-\c@refsegment=\count336
-\c@maxextratitle=\count337
-\c@maxextratitleyear=\count338
-\c@maxextraname=\count339
-\c@maxextradate=\count340
-\c@maxextraalpha=\count341
-\c@abbrvpenalty=\count342
-\c@highnamepenalty=\count343
-\c@lownamepenalty=\count344
-\c@maxparens=\count345
-\c@parenlevel=\count346
-\blx@tempcnta=\count347
-\blx@tempcntb=\count348
-\blx@tempcntc=\count349
-\blx@maxsection=\count350
-\blx@maxsegment@0=\count351
-\blx@notetype=\count352
-\blx@parenlevel@text=\count353
-\blx@parenlevel@foot=\count354
-\blx@sectionciteorder@0=\count355
-\blx@entrysetcounter=\count356
-\blx@biblioinstance=\count357
-\labelnumberwidth=\skip66
-\labelalphawidth=\skip67
-\biblabelsep=\skip68
-\bibitemsep=\skip69
-\bibnamesep=\skip70
-\bibinitsep=\skip71
-\bibparsep=\skip72
-\bibhang=\skip73
+\c@tabx@nest=\count334
+\c@listtotal=\count335
+\c@listcount=\count336
+\c@liststart=\count337
+\c@liststop=\count338
+\c@citecount=\count339
+\c@citetotal=\count340
+\c@multicitecount=\count341
+\c@multicitetotal=\count342
+\c@instcount=\count343
+\c@maxnames=\count344
+\c@minnames=\count345
+\c@maxitems=\count346
+\c@minitems=\count347
+\c@citecounter=\count348
+\c@maxcitecounter=\count349
+\c@savedcitecounter=\count350
+\c@uniquelist=\count351
+\c@uniquename=\count352
+\c@refsection=\count353
+\c@refsegment=\count354
+\c@maxextratitle=\count355
+\c@maxextratitleyear=\count356
+\c@maxextraname=\count357
+\c@maxextradate=\count358
+\c@maxextraalpha=\count359
+\c@abbrvpenalty=\count360
+\c@highnamepenalty=\count361
+\c@lownamepenalty=\count362
+\c@maxparens=\count363
+\c@parenlevel=\count364
+\blx@tempcnta=\count365
+\blx@tempcntb=\count366
+\blx@tempcntc=\count367
+\blx@maxsection=\count368
+\blx@maxsegment@0=\count369
+\blx@notetype=\count370
+\blx@parenlevel@text=\count371
+\blx@parenlevel@foot=\count372
+\blx@sectionciteorder@0=\count373
+\blx@entrysetcounter=\count374
+\blx@biblioinstance=\count375
+\labelnumberwidth=\skip71
+\labelalphawidth=\skip72
+\biblabelsep=\skip73
+\bibitemsep=\skip74
+\bibnamesep=\skip75
+\bibinitsep=\skip76
+\bibparsep=\skip77
+\bibhang=\skip78
 \blx@bcfin=\read2
 \blx@bcfout=\write3
 \blx@langwohyphens=\language86
-\c@mincomprange=\count358
-\c@maxcomprange=\count359
-\c@mincompwidth=\count360
+\c@mincomprange=\count376
+\c@maxcomprange=\count377
+\c@mincompwidth=\count378
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
 
@@ -545,88 +664,88 @@ Package biblatex Info: Trying to load biblatex style data model...
 Package biblatex Info: ... file 'authoryear.dbx' not found.
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
-\c@afterword=\count361
-\c@savedafterword=\count362
-\c@annotator=\count363
-\c@savedannotator=\count364
-\c@author=\count365
-\c@savedauthor=\count366
-\c@bookauthor=\count367
-\c@savedbookauthor=\count368
-\c@commentator=\count369
-\c@savedcommentator=\count370
-\c@editor=\count371
-\c@savededitor=\count372
-\c@editora=\count373
-\c@savededitora=\count374
-\c@editorb=\count375
-\c@savededitorb=\count376
-\c@editorc=\count377
-\c@savededitorc=\count378
-\c@foreword=\count379
-\c@savedforeword=\count380
-\c@holder=\count381
-\c@savedholder=\count382
-\c@introduction=\count383
-\c@savedintroduction=\count384
-\c@namea=\count385
-\c@savednamea=\count386
-\c@nameb=\count387
-\c@savednameb=\count388
-\c@namec=\count389
-\c@savednamec=\count390
-\c@translator=\count391
-\c@savedtranslator=\count392
-\c@shortauthor=\count393
-\c@savedshortauthor=\count394
-\c@shorteditor=\count395
-\c@savedshorteditor=\count396
-\c@labelname=\count397
-\c@savedlabelname=\count398
-\c@institution=\count399
-\c@savedinstitution=\count400
-\c@lista=\count401
-\c@savedlista=\count402
-\c@listb=\count403
-\c@savedlistb=\count404
-\c@listc=\count405
-\c@savedlistc=\count406
-\c@listd=\count407
-\c@savedlistd=\count408
-\c@liste=\count409
-\c@savedliste=\count410
-\c@listf=\count411
-\c@savedlistf=\count412
-\c@location=\count413
-\c@savedlocation=\count414
-\c@organization=\count415
-\c@savedorganization=\count416
-\c@origlocation=\count417
-\c@savedoriglocation=\count418
-\c@origpublisher=\count419
-\c@savedorigpublisher=\count420
-\c@publisher=\count421
-\c@savedpublisher=\count422
-\c@language=\count423
-\c@savedlanguage=\count424
-\c@origlanguage=\count425
-\c@savedoriglanguage=\count426
-\c@pageref=\count427
-\c@savedpageref=\count428
-\shorthandwidth=\skip74
-\shortjournalwidth=\skip75
-\shortserieswidth=\skip76
-\shorttitlewidth=\skip77
-\shortauthorwidth=\skip78
-\shorteditorwidth=\skip79
-\locallabelnumberwidth=\skip80
-\locallabelalphawidth=\skip81
-\localshorthandwidth=\skip82
-\localshortjournalwidth=\skip83
-\localshortserieswidth=\skip84
-\localshorttitlewidth=\skip85
-\localshortauthorwidth=\skip86
-\localshorteditorwidth=\skip87
+\c@afterword=\count379
+\c@savedafterword=\count380
+\c@annotator=\count381
+\c@savedannotator=\count382
+\c@author=\count383
+\c@savedauthor=\count384
+\c@bookauthor=\count385
+\c@savedbookauthor=\count386
+\c@commentator=\count387
+\c@savedcommentator=\count388
+\c@editor=\count389
+\c@savededitor=\count390
+\c@editora=\count391
+\c@savededitora=\count392
+\c@editorb=\count393
+\c@savededitorb=\count394
+\c@editorc=\count395
+\c@savededitorc=\count396
+\c@foreword=\count397
+\c@savedforeword=\count398
+\c@holder=\count399
+\c@savedholder=\count400
+\c@introduction=\count401
+\c@savedintroduction=\count402
+\c@namea=\count403
+\c@savednamea=\count404
+\c@nameb=\count405
+\c@savednameb=\count406
+\c@namec=\count407
+\c@savednamec=\count408
+\c@translator=\count409
+\c@savedtranslator=\count410
+\c@shortauthor=\count411
+\c@savedshortauthor=\count412
+\c@shorteditor=\count413
+\c@savedshorteditor=\count414
+\c@labelname=\count415
+\c@savedlabelname=\count416
+\c@institution=\count417
+\c@savedinstitution=\count418
+\c@lista=\count419
+\c@savedlista=\count420
+\c@listb=\count421
+\c@savedlistb=\count422
+\c@listc=\count423
+\c@savedlistc=\count424
+\c@listd=\count425
+\c@savedlistd=\count426
+\c@liste=\count427
+\c@savedliste=\count428
+\c@listf=\count429
+\c@savedlistf=\count430
+\c@location=\count431
+\c@savedlocation=\count432
+\c@organization=\count433
+\c@savedorganization=\count434
+\c@origlocation=\count435
+\c@savedoriglocation=\count436
+\c@origpublisher=\count437
+\c@savedorigpublisher=\count438
+\c@publisher=\count439
+\c@savedpublisher=\count440
+\c@language=\count441
+\c@savedlanguage=\count442
+\c@origlanguage=\count443
+\c@savedoriglanguage=\count444
+\c@pageref=\count445
+\c@savedpageref=\count446
+\shorthandwidth=\skip79
+\shortjournalwidth=\skip80
+\shortserieswidth=\skip81
+\shorttitlewidth=\skip82
+\shortauthorwidth=\skip83
+\shorteditorwidth=\skip84
+\locallabelnumberwidth=\skip85
+\locallabelalphawidth=\skip86
+\localshorthandwidth=\skip87
+\localshortjournalwidth=\skip88
+\localshortserieswidth=\skip89
+\localshorttitlewidth=\skip90
+\localshortauthorwidth=\skip91
+\localshorteditorwidth=\skip92
 Package biblatex Info: Trying to load compatibility code...
 Package biblatex Info: ... file 'blx-compat.def' found.
 
@@ -638,8 +757,8 @@ Package: expl3 2020-12-03 L3 programming layer (loader)
 
 (/usr/share/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2020-09-24 L3 backend support: PDF output (pdfTeX)
-\l__kernel_color_stack_int=\count429
-\l__pdf_internal_box=\box56
+\l__kernel_color_stack_int=\count447
+\l__pdf_internal_box=\box60
 ))
 Package biblatex Info: expl3
 (biblatex)             2020-12-03 L3 programming layer (loader) 
@@ -660,19 +779,19 @@ Package biblatex Info: ... file 'biblatex.def' found.
 
 (/usr/share/texmf-dist/tex/latex/biblatex/biblatex.def
 File: biblatex.def 2020/08/23 v3.15a biblatex compatibility (PK/MW)
-\c@textcitecount=\count430
-\c@textcitetotal=\count431
-\c@textcitemaxnames=\count432
-\c@biburlbigbreakpenalty=\count433
-\c@biburlbreakpenalty=\count434
-\c@biburlnumpenalty=\count435
-\c@biburlucpenalty=\count436
-\c@biburllcpenalty=\count437
+\c@textcitecount=\count448
+\c@textcitetotal=\count449
+\c@textcitemaxnames=\count450
+\c@biburlbigbreakpenalty=\count451
+\c@biburlbreakpenalty=\count452
+\c@biburlnumpenalty=\count453
+\c@biburlucpenalty=\count454
+\c@biburllcpenalty=\count455
 \biburlbigskip=\muskip18
 \biburlnumskip=\muskip19
 \biburlucskip=\muskip20
 \biburllcskip=\muskip21
-\c@smartand=\count438
+\c@smartand=\count456
 )
 Package biblatex Info: Trying to load natbib compatibility...
 Package biblatex Info: ... file 'blx-natbib.def' found.
@@ -692,8 +811,8 @@ Package biblatex Info: ... file 'standard.bbx' found.
 
 (/usr/share/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
 File: standard.bbx 2020/08/23 v3.15a biblatex bibliography style (PK/MW)
-\c@bbx:relatedcount=\count439
-\c@bbx:relatedtotal=\count440
+\c@bbx:relatedcount=\count457
+\c@bbx:relatedtotal=\count458
 ))
 Package biblatex Info: Trying to load citation style 'authoryear'...
 Package biblatex Info: ... file 'authoryear.cbx' found.
@@ -727,11 +846,15 @@ Package glossaries Info: Writing glossary file main.bsn on input line 4.
 \glo@dm@file=\write8
 Package glossaries Info: Writing glossary file main.dmn on input line 4.
 
-(../bussiness_glossary.tex) (../data_mining_glossary.tex) (../acronyms.tex)
+(/home/mike/Projects/fluprint_exploration/bussiness_understanding/../bussiness_
+glossary.tex)
+(/home/mike/Projects/fluprint_exploration/bussiness_understanding/../data_minin
+g_glossary.tex)
+(/home/mike/Projects/fluprint_exploration/bussiness_understanding/../acronyms.t
+ex)
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... none found.
-
-No file main.aux.
+ (/home/mike/Projects/fluprint_exploration/bussiness_understanding/main.aux)
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 9.
 LaTeX Font Info:    ... okay on input line 9.
 LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 9.
@@ -750,17 +873,17 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 9.
 LaTeX Font Info:    ... okay on input line 9.
 (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count441
-\scratchdimen=\dimen169
-\scratchbox=\box57
-\nofMPsegments=\count442
-\nofMParguments=\count443
-\everyMPshowfont=\toks36
-\MPscratchCnt=\count444
-\MPscratchDim=\dimen170
-\MPnumerator=\count445
-\makeMPintoPDFobject=\count446
-\everyMPtoPDFconversion=\toks37
+\scratchcounter=\count459
+\scratchdimen=\dimen266
+\scratchbox=\box61
+\nofMPsegments=\count460
+\nofMParguments=\count461
+\everyMPshowfont=\toks41
+\MPscratchCnt=\count462
+\MPscratchDim=\dimen267
+\MPnumerator=\count463
+\makeMPintoPDFobject=\count464
+\everyMPtoPDFconversion=\toks42
 ) (/usr/share/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -781,16 +904,71 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 (/usr/share/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count447
+\c@section@level=\count465
 )
 LaTeX Info: Redefining \ref on input line 9.
 LaTeX Info: Redefining \pageref on input line 9.
 LaTeX Info: Redefining \nameref on input line 9.
+
+(/home/mike/Projects/fluprint_exploration/bussiness_understanding/main.out)
+(/home/mike/Projects/fluprint_exploration/bussiness_understanding/main.out)
 \@outlinefile=\write9
-\c@lstlisting=\count448
+
+(/usr/share/texmf-dist/tex/latex/pdflscape/pdflscape.sty
+Package: pdflscape 2019/12/05 v0.12 Display of landscape pages in PDF (HO)
+
+(/usr/share/texmf-dist/tex/latex/graphics/lscape.sty
+Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
+)
+Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
+)
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: listings package is loaded.
+Package caption Info: longtable package is loaded.
+
+(/usr/share/texmf-dist/tex/latex/caption/ltcaption.sty
+Package: ltcaption 2020/05/30 v1.4b longtable captions (AR)
+)
+Package caption Info: supertabular package is loaded.
+Package caption Info: End \AtBeginDocument code.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: <default>
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(92.14519pt, 430.00462pt, 92.14519pt)
+* v-part:(T,H,B)=(95.39737pt, 556.47656pt, 143.09605pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=430.00462pt
+* \textheight=556.47656pt
+* \oddsidemargin=19.8752pt
+* \evensidemargin=19.8752pt
+* \topmargin=-13.87262pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=10.0pt
+* \footskip=30.0pt
+* \marginparwidth=65.0pt
+* \marginparsep=11.0pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+\c@lstlisting=\count466
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
-
 (/usr/share/texmf-dist/tex/latex/biblatex/lbx/english.lbx
 File: english.lbx 2020/08/23 v3.15a biblatex localization (PK/MW)
 )
@@ -798,317 +976,64 @@ Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Automatic encoding selection.
 (biblatex)             Assuming data encoding 'utf8'.
 Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file 'main.bbl' not found.
+Package biblatex Info: ... file 'main.bbl' found.
 
-No file main.bbl.
+(/home/mike/Projects/fluprint_exploration/bussiness_understanding/main.bbl)
 Package biblatex Info: Reference section=0 on input line 9.
 Package biblatex Info: Reference segment=0 on input line 9.
+
+(/home/mike/Projects/fluprint_exploration/bussiness_understanding/main.toc)
 \tf@toc=\write10
+
 No file main.bsd.
 No file main.dmd.
-(./main.acr)
-
-LaTeX Warning: Citation 'fdaGuidanceIndustryClinical2007' on page 1 undefined o
-n input line 21.
-
-
-LaTeX Warning: Citation 'fdaGuidanceIndustryClinical2007' on page 1 undefined o
-n input line 26.
-
-
-Overfull \hbox (93.603pt too wide) in paragraph at lines 23--27
-[][][]\OT1/cmr/m/n/10 gly-co-pro-tein[][]s, hemag-glu-tinin ([][][]HA[][]) and 
-neu-raminidase ([][][]NA[][]) ([]). 
- []
-
-
-LaTeX Warning: Citation 'fdaGuidanceIndustryClinical2007' on page 1 undefined o
-n input line 33.
-
+(/home/mike/Projects/fluprint_exploration/bussiness_understanding/main.acr)
 [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-
-LaTeX Warning: Citation 'fdaGuidanceIndustryClinical2007' on page 2 undefined o
-n input line 45.
-
-
-LaTeX Warning: Citation 'zhouHospitalizationsAssociatedInfluenza2012' on page 2
- undefined on input line 51.
-
-
-LaTeX Warning: Citation 'greenMortalityAttributableInfluenza2013' on page 2 und
-efined on input line 51.
-
-
-LaTeX Warning: Citation 'iulianoEstimatesGlobalSeasonal2018' on page 2 undefine
-d on input line 51.
-
-
-LaTeX Warning: Citation 'zhouHospitalizationsAssociatedInfluenza2012' on page 2
- undefined on input line 55.
-
-
-Overfull \hbox (176.70006pt too wide) in paragraph at lines 49--56
-\OT1/cmr/m/n/10 fluenza mor-tal-ity ([]; [];
- []
-
-
-Overfull \hbox (60.11569pt too wide) in paragraph at lines 49--56
-\OT1/cmr/m/n/10 and are ad-viced to vac-ci-nated an-nu-ally ([]). 
- []
-
-
-LaTeX Warning: Citation 'zhouHospitalizationsAssociatedInfluenza2012' on page 2
- undefined on input line 58.
-
-
-LaTeX Warning: Citation 'greenMortalityAttributableInfluenza2013' on page 2 und
-efined on input line 62.
-
-
-LaTeX Warning: Citation 'iulianoEstimatesGlobalSeasonal2018' on page 2 undefine
-d on input line 68.
-
-
-Overfull \hbox (74.55899pt too wide) in paragraph at lines 57--69
-[]\OT1/cmr/m/n/10 Specifically, within the US based work of [],
- []
-
-
-Overfull \hbox (163.56549pt too wide) in paragraph at lines 57--69
-\OT1/cmr/m/n/10 person-years var-ied sub-stan-tially for in-fluenza. A sim-i-la
-r pat-tern is in [],
- []
-
-
-LaTeX Warning: Citation 'zhouHospitalizationsAssociatedInfluenza2012' on page 2
- undefined on input line 74.
-
-
-LaTeX Warning: Citation 'dejongHaemagglutinationinhibitingAntibodyInfluenza2003
-' on page 2 undefined on input line 77.
-
-
-LaTeX Warning: Citation 'dejongHaemagglutinationinhibitingAntibodyInfluenza2003
-' on page 2 undefined on input line 81.
-
-
-Overfull \hbox (149.9362pt too wide) in paragraph at lines 72--82
-\OT1/cmr/m/n/10 an-ti-body is used to as-sess vac-cine pro-tec-tion ([]).
- []
-
-
-Overfull \hbox (66.32497pt too wide) in paragraph at lines 72--82
-\OT1/cmr/m/n/10 duce in-fluenza risk by 50% []. 
- []
-
-
-LaTeX Warning: Citation 'sridharCellularImmuneCorrelates2013' on page 2 undefin
-ed on input line 90.
-
-
-LaTeX Warning: Citation 'bentebibelInductionICOSCXCR3' on page 2 undefined on i
-nput line 92.
-
-
-LaTeX Warning: Citation 'trieuLongtermMaintenanceInfluenzaSpecific2017' on page
- 2 undefined on input line 93.
-
-
-LaTeX Warning: Citation 'trieuLongtermMaintenanceInfluenzaSpecific2017' on page
- 2 undefined on input line 96.
-
-
-Overfull \hbox (106.79825pt too wide) in paragraph at lines 85--99
-\OT1/cmr/m/n/10 body re-sponses af-ter sea-sonal in-fluenza vac-ci-na-tions wer
-e found ([]).
- []
-
-
-Overfull \hbox (14.94922pt too wide) in paragraph at lines 85--99
-\OT1/cmr/m/n/10 CD4+ T cell pop-u-la-tion ([]).
- []
-
-[2]
-
-LaTeX Warning: Citation 'furmanApoptosisOtherImmune2013' on page 3 undefined on
- input line 103.
-
-
-LaTeX Warning: Citation 'sobolevAdjuvantedInfluenzaH1N1Vaccination2016' on page
- 3 undefined on input line 103.
-
-
-LaTeX Warning: Citation 'tsangGlobalAnalysesHuman2014' on page 3 undefined on i
-nput line 103.
-
-
-Overfull \hbox (143.37917pt too wide) in paragraph at lines 100--108
-\OT1/cmr/m/n/10 molecules ([]; [];
- []
-
-
-LaTeX Warning: Citation 'tomicFluPRINTDatasetMultidimensional2019' on page 3 un
-defined on input line 142.
-
-[3]
-
-LaTeX Warning: Citation 'tomicFluPRINTDatasetMultidimensional2019' on page 4 un
-defined on input line 153.
-
-
-LaTeX Warning: Citation 'tomicSIMONAutomatedMachine2019' on page 4 undefined on
- input line 161.
-
-
-Overfull \hbox (134.92545pt too wide) in paragraph at lines 152--163
-\OT1/cmr/m/n/10 The only source of data used in the project is pro-vided by [].
-
- []
-
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2] [3]
 (/usr/share/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
 )
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 175.
+nput line 173.
 LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <10> not available
-(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 176.
- [4]
-
-LaTeX Warning: Citation 'tomicFluPRINTDatasetMultidimensional2019' on page 5 un
-defined on input line 207.
-
-
-LaTeX Warning: Citation 'tomicSIMONAutomatedMachine2019' on page 5 undefined on
- input line 207.
-
-
-Overfull \hbox (92.66943pt too wide) in paragraph at lines 205--214
-\OT1/cmr/m/n/10 ([]; []).
- []
-
-
-LaTeX Warning: Citation 'tomicSIMONAutomatedMachine2019' on page 5 undefined on
- input line 219.
-
-
-LaTeX Warning: Citation 'tomicFluPRINTDatasetMultidimensional2019' on page 5 un
-defined on input line 244.
-
-
-LaTeX Warning: Citation 'tomicSIMONAutomatedMachine2019' on page 5 undefined on
- input line 244.
-
-
-Overfull \hbox (117.19725pt too wide) in paragraph at lines 242--252
-\OT1/cmr/m/n/10 au-thors []; []
- []
-
-[5]
-Overfull \hbox (14.38953pt too wide) in paragraph at lines 264--271
-\OT1/cmr/m/n/10 All bussi-ness ob-jec-tives de-scribed in-volve query-ing data 
-from the FluPrint database.
- []
-
-
-LaTeX Warning: Citation 'tomicFluPRINTDatasetMultidimensional2019' on page 6 un
-defined on input line 288.
-
-
-LaTeX Warning: Citation 'tomicSIMONAutomatedMachine2019' on page 6 undefined on
- input line 288.
-
-
-LaTeX Warning: Citation 'tomicSIMONAutomatedMachine2019' on page 6 undefined on
- input line 290.
-
-
-Overfull \hbox (84.89163pt too wide) in paragraph at lines 282--294
-[]\OT1/cmr/m/n/10 ; [].
- []
-
-<../images//sql_querying_plan.png, id=107, 1304.875pt x 562.1pt>
-File: ../images//sql_querying_plan.png Graphic file (type png)
-<use ../images//sql_querying_plan.png>
-Package pdftex.def Info: ../images//sql_querying_plan.png  used on input line 2
-99.
-(pdftex.def)             Requested size: 345.0pt x 148.61272pt.
-[6]
-
-LaTeX Warning: Reference `plan:sql' on page 7 undefined on input line 302.
-
-
-LaTeX Warning: Citation 'tomicFluPRINTDatasetMultidimensional2019' on page 7 un
-defined on input line 306.
-
-<../images//model_and_vis_plan.png, id=114, 883.3pt x 471.7625pt>
-File: ../images//model_and_vis_plan.png Graphic file (type png)
-<use ../images//model_and_vis_plan.png>
-Package pdftex.def Info: ../images//model_and_vis_plan.png  used on input line 
-317.
-(pdftex.def)             Requested size: 345.0pt x 184.26016pt.
-
-LaTeX Warning: Reference `plan:vis' on page 7 undefined on input line 321.
-
-
-LaTeX Warning: Citation 'tomicSIMONAutomatedMachine2019' on page 7 undefined on
- input line 327.
-
-
-LaTeX Warning: Citation 'tomicFluPRINTDatasetMultidimensional2019' on page 7 un
-defined on input line 327.
-
-
-Overfull \hbox (84.89163pt too wide) in paragraph at lines 319--328
-[]\OT1/cmr/m/n/10 ; []. 
- []
-
-<../images//feature_selection_classification.png, id=115, 1194.4625pt x 401.5pt
+(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 174.
+ [4] [5]
+<../images//v2_desc_exploration.png, id=204, 1334.9875pt x 271.0125pt>
+File: ../images//v2_desc_exploration.png Graphic file (type png)
+<use ../images//v2_desc_exploration.png>
+Package pdftex.def Info: ../images//v2_desc_exploration.png  used on input line
+ 291.
+(pdftex.def)             Requested size: 430.00462pt x 87.2923pt.
+<../images//feature_selection_classification.png, id=208, 1194.4625pt x 401.5pt
 >
 File: ../images//feature_selection_classification.png Graphic file (type png)
 <use ../images//feature_selection_classification.png>
 Package pdftex.def Info: ../images//feature_selection_classification.png  used 
-on input line 331.
-(pdftex.def)             Requested size: 345.0pt x 115.9664pt.
-
-LaTeX Warning: Reference `plan:cls' on page 7 undefined on input line 335.
-
-
-LaTeX Warning: Empty bibliography on input line 337.
-
-[7 <../images//sql_querying_plan.png (PNG copy)>] [8 <../images//model_and_vis_
-plan.png (PNG copy)> <../images//feature_selection_classification.png (PNG copy
-)>] (./main.aux)
-
-Package rerunfilecheck Warning: File `main.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  1B156049D3CE09D48574B87EC3259E26;927.
-
-LaTeX Warning: There were undefined references.
+on input line 323.
+(pdftex.def)             Requested size: 430.00462pt x 144.53989pt.
+ [6 </home/mike/Projects/fluprint_exploration/bussiness_understanding/../images
+//v2_desc_exploration.png>] [7 </home/mike/Projects/fluprint_exploration/bussin
+ess_understanding/../images//feature_selection_classification.png (PNG copy)>] 
+[8]
+(/home/mike/Projects/fluprint_exploration/bussiness_understanding/main.aux)
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: 1B156049D3CE09D48574B87EC3259E26;927.
 
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-
-Package biblatex Warning: Please (re)run Biber on the file:
-(biblatex)                main
-(biblatex)                and rerun LaTeX afterwards.
+Package biblatex Warning: Please rerun LaTeX.
+(biblatex)                Page breaks have changed.
 
 Package logreq Info: Writing requests to 'main.run.xml'.
  ) 
 Here is how much of TeX's memory you used:
- 19943 strings out of 479383
- 330867 string characters out of 5875830
- 1241767 words of memory out of 5000000
- 36696 multiletter control sequences out of 15000+600000
- 409316 words of font info for 48 fonts, out of 8000000 for 9000
+ 22762 strings out of 479383
+ 382403 string characters out of 5875830
+ 1317259 words of memory out of 5000000
+ 39440 multiletter control sequences out of 15000+600000
+ 409963 words of font info for 50 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 98i,6n,100p,1008b,1432s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 98i,6n,100p,3197b,1668s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{glo:tiv} has been referenced but does not exist, 
 replaced by a fixed one
 
@@ -1127,16 +1052,18 @@ t, replaced by a fixed one
 {/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/te
 xmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fonts
 /type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-r10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/s
-hare/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmtt10.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super
-/sfrm1000.pfb>
-Output written on main.pdf (8 pages, 283942 bytes).
+amsfonts/cm/cmcsc10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr
+/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmti10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pf
+b></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
+Output written on /home/mike/Projects/fluprint_exploration/bussiness_understand
+ing/main.pdf (8 pages, 248419 bytes).
 PDF statistics:
- 174 PDF objects out of 1000 (max. 8388607)
- 150 compressed objects within 2 object streams
- 53 named destinations out of 1000 (max. 500000)
- 16 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 295 PDF objects out of 1000 (max. 8388607)
+ 268 compressed objects within 3 object streams
+ 66 named destinations out of 1000 (max. 500000)
+ 115 words of extra memory for PDF output out of 10000 (max. 10000000)
 

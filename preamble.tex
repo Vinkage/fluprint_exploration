@@ -9,6 +9,7 @@
 \usepackage{booktabs}
 \usepackage{pdfpages}
 \usepackage{caption,geometry}
+\usepackage[toc,page]{appendix}
 \newcommand\myshade{85}
 \colorlet{mylinkcolor}{violet}
 \colorlet{mycitecolor}{YellowOrange}
@@ -82,6 +83,25 @@
     \label{#5}
 }
 \end{table}
+
+\restoregeometry
+}
+
+\newcommand{\fpfig}[5]{%
+
+\newgeometry{scale=1}
+\thispagestyle{empty}
+
+\begin{figure}
+{%
+    \centering
+    \includegraphics[scale=.7]{#1}
+    \captionsetup{width=0.8\linewidth}
+    \captionof{table}{\textbf{#3} #4}
+    \par
+    \label{#5}
+}
+\end{figure}
 
 \restoregeometry
 }

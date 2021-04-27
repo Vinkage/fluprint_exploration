@@ -1,0 +1,741 @@
+id,study_donor_id,study_id,study_internal_id,gender,race
+1,e27ad74ff9a5f2f32d8e852533f054c0,30,30,Female,Asian
+2,4a89ac4d3f4dc869e5c8e8cf862cffda,30,30,Male,Other
+3,a2cde6e54dec92422b0427dd49244350,30,30,Female,Caucasian
+4,0f7d8d1c13e876017ea465f99d25581f,30,30,Male,Other
+5,1ed2f6409584b7b4e9720b28d794fe91,30,30,Female,Caucasian
+6,a575678405e9615bfb87eccfa031f7fc,30,30,Male,Other
+7,c52302047f9e7693aca7243ddc466fc0,30,30,Female,Other
+8,be6ee2078a8ad0b058bbdceada1c96ec,30,30,Female,Asian
+9,a9ba6af70a8f3ccc1cb3cd8bc04811ff,30,30,Female,Other
+10,b655c88d082235cf3d52cb777dbaafe8,30,30,Female,Caucasian
+11,03d578c530a64d37515b550eb2125013,30,30,Female,Caucasian
+12,791d68669fa4223b4e00776896b531b7,30,30,Male,Caucasian
+49,3e2ee5697678e710177cd364f4de3c91,29,29,Male,Caucasian
+50,5eec4188fbafe6601bb58d009abfefec,29,29,Female,Caucasian
+51,78202694486a8f23fbfbdb1a613ce9ab,29,29,Male,Other
+52,f5e2420d21d206bc427d2f37fefff634,29,29,Female,Other
+53,eaa64f4aa153b181c9c32298770f1a24,29,29,Female,Asian
+54,d4b94c5e96ab76b4dd84f260601cf794,29,29,Male,Asian
+55,9e5d8ecf3098b6bb4a807b9a3be48ffc,29,29,Female,Asian
+56,1056302fd0f75b48d9e6e292522d2368,29,29,Female,Caucasian
+57,d0a10ab4633a181969a09fb0343af4e0,29,29,Female,Asian
+58,327fae317448415028a3d51ad63e55c0,29,29,Female,Caucasian
+59,b159576299428b67b92c59988409ef60,29,29,Male,Caucasian
+60,8d3e3ff9877dd000eecdf353ec298dae,29,29,Female,Asian
+61,09cc0f914f431c688874c42a51359951,29,29,Female,Other
+62,045fb888d552a666e3f7e8af70df69d2,29,29,Female,Caucasian
+63,d0aa3437642c28c0a18b9242ba3b1ea6,29,29,Male,Caucasian
+64,619a1c74ea85937cc674d9c5601c187b,29,29,Male,Caucasian
+65,686352a0703140bcc6b54613f2705eeb,29,29,Male,Caucasian
+66,04a63c4baa6421642babe53e9c93ce34,29,29,Male,Asian
+67,a8458893c433163b111bcee1bec79f33,29,29,Female,Asian
+68,e3b20359241c6ca097a6f4fc1495084a,29,29,Male,Caucasian
+69,947deefe3b04f3bd348c13cd81375f6d,29,29,Female,Caucasian
+70,fbb2aea9da9c6b91a365b592e5365e17,29,29,Female,Other
+71,20a63cf9f7a6eb89d014f449ed8cb06e,29,29,Male,Other
+72,ec33635a6022c396554a2331edd5bc5a,29,29,Male,Other
+73,227fd6108bb679aa62447d0ba4f524ca,29,29,Male,Black or African American
+74,895f96a636aad5cc803726029be184b8,29,29,Female,Caucasian
+75,bdf4403faf6a6683724d5511a7754a68,29,29,Male,Black or African American
+76,42d29308b081b3c76521373e2a9e7f1e,29,29,Male,NULL
+77,75a6cc9339a47546dc2c6f7eeba12919,29,29,Female,Asian
+78,a9ab80e065edc96850810c14085db61b,29,29,Female,Asian
+79,444b70f93f43f7c9fef2442d584c5047,29,29,Female,Caucasian
+80,26592a0f1f27f4a85e240b44a6412a07,29,29,Female,Other
+81,275c7f335d28723de73a080c3bf30aff,29,29,Female,Caucasian
+82,a20ffb0c36e3ba0b2b83a88e88c0c7a3,29,29,Male,Caucasian
+83,b06d12468cd8b78994a7aa2d19a2673d,29,29,Female,Caucasian
+84,020507bbc67bc44ea6f2659d90fab1e0,29,29,Female,Asian
+85,d6043e8b63fb123cd7d44e645feb8b25,29,29,Female,Other
+86,01fc093788d72d81902db2f202e654f1,29,29,Female,Asian
+87,f1caa9587d944dbdd97b4b46dcf1e756,29,29,Male,Asian
+88,d02a4781b494dc1d000c3b1402ccfbf7,29,29,Male,Asian
+89,1fc3001995c980ebade6f74ec5572861,29,29,Female,Caucasian
+90,0b47526fc02b751c838ea91f1d43c8cb,29,29,Male,Caucasian
+91,accf763f8d03c1f1e7df76dcd6d630e3,29,29,Male,Caucasian
+92,acbdac4d0b73caaceb985fcb46191fba,29,29,Male,Caucasian
+93,3c70607d6a183fcc59d1725dd5bac3ce,29,29,Female,Caucasian
+94,8e98710663ed3503ca0271b722be1f15,29,29,Male,Caucasian
+95,27dac8ecb700b71bcaeaeee2313eb7f0,29,29,Female,Asian
+100,cb0bddb9c7689d6c9045043f40d074c5,28,Flu Study 28,Female,Asian
+101,527847e5ca39e341173162866bcd4910,28,Flu Study 28,Female,Asian
+102,fdb2aa24231bf6a9e07409121707cf0d,28,Flu Study 28,Female,Other
+103,a97474ecdafff36e06f8324b43e337a3,28,Flu Study 28,Female,Other
+104,b9c41d04b73d5800657fdff88fb73741,28,Flu Study 28,Female,Caucasian
+105,03e1966ee88984c81335323cd722e782,28,Flu Study 28,Female,Caucasian
+106,afd620e4560bf0917fece9bfc2369cc9,28,Flu Study 28,Male,Caucasian
+107,95e64046d1727f4dff9c06c68a1027cf,28,Flu Study 28,Male,Caucasian
+108,a3eb55c403b7fe029bf54b951af3d30e,28,Flu Study 28,Female,Caucasian
+109,8316eb2b8f9488564087cfda874bcc72,28,Flu Study 28,Male,Caucasian
+110,7aa446dd924388ff6d19afac17bee2fc,28,Flu Study 28,Male,Asian
+111,aa29076211a8538d2ff84e01732725fb,28,Flu Study 28,Male,Other
+112,4ffc74f4c112a50846fedea6b62d64dd,28,Flu Study 28,Female,Other
+113,1f38f0e75804d9952626e7d2df708068,28,Flu Study 28,Female,Other
+114,51ce99cfc940f9cc31e0243a5570afe8,28,Flu Study 28,Female,Caucasian
+115,6de1232f894b7f2ea643ff7f384bcf1b,28,Flu Study 28,Female,Caucasian
+116,71d8f56e51b95e5d008bf8bed9a60e7f,28,Flu Study 28,Female,Caucasian
+117,283e19268d2e200e0220bd0e8ca82046,28,Flu Study 28,Female,Caucasian
+118,5a5befc9e821bac42497f9cb8343bd86,28,Flu Study 28,Female,Other
+119,6659cb1686ad6b80c5d8033d49bc0256,28,Flu Study 28,Female,Other
+120,caa27edc811b86262a957b15ec671406,28,Flu Study 28,Male,Caucasian
+121,d69bae150d8bc6477aa8c1ac325609ca,28,Flu Study 28,Male,Caucasian
+122,ef76d33f1c8dfc1cbaf90d5cf9f62f80,28,Flu Study 28,Female,Caucasian
+123,99c9ba231143c4f18a2cbaae2eb25c51,28,Flu Study 28,Female,Caucasian
+124,eeac98a7cd28b054392c4ab897d8f365,28,Flu Study 28,Female,Caucasian
+125,84df3ef5eb85ba7a89acf4bd105fe7fa,28,Flu Study 28,Female,Caucasian
+126,70b8255cb525fead513f53944273c6ab,28,Flu Study 28,Male,Caucasian
+127,2c8e311aee8bc32346af2ba57271ad5e,28,Flu Study 28,Female,Caucasian
+128,99ee92635f499f224ecb9b73979df01b,28,Flu Study 28,Female,Caucasian
+129,c4165c60976cfc4d7cfd7db3a783eb89,28,Flu Study 28,Female,Caucasian
+130,888c1cfe51b01ece87af0d3dc695bc4d,28,Flu Study 28,Female,Other
+131,591e91aa54a6074453b58cb12589f333,28,Flu Study 28,Female,Other
+132,280456350644d9ce3979d1d659f9cb51,28,Flu Study 28,Male,Caucasian
+133,739320e5955e1b7831fe67717a4fe45e,28,Flu Study 28,Male,Caucasian
+134,c46b094fb5b807ed7cc8883c7f347e17,28,Flu Study 28,Male,Caucasian
+135,ff5a439f52ee2c381777278d68dfd94c,28,Flu Study 28,Male,Caucasian
+136,7eb61b80d0acddb4726b8c34720d8dc0,28,Flu Study 28,Female,Caucasian
+137,3906facc2cd6339278986bfebc6c493b,28,Flu Study 28,Female,Caucasian
+138,f055a48e7ba9c5830baf25a569f6aa22,28,Flu Study 28,Female,Caucasian
+139,cd741a51229707bf7891164f460f06c7,28,Flu Study 28,Male,Caucasian
+140,917296d70c59a29701d7c7a597112d86,28,Flu Study 28,Female,Caucasian
+141,088c10b26af384d47037cc7aa4fb4384,28,Flu Study 28,Female,Caucasian
+142,32661ece92d0dccb0e51f6fe0aa320a7,28,Flu Study 28,Female,Asian
+143,f541ae2b6a3eddbc1d8036413a548c0a,28,Flu Study 28,Female,Asian
+144,51f3dd85d2eb1153c059f65c6b35aa05,28,Flu Study 28,Female,Caucasian
+145,bd0a064037942cca400102f52dacf264,28,Flu Study 28,Female,Caucasian
+146,e15072ca1139a91fdfe56f84b382d497,28,Flu Study 28,Female,Black or African American
+147,aca8db56a787b25ba6723471e8a2a673,28,Flu Study 28,Female,Black or African American
+148,e6461760e48ba170b8e62afede6925f6,28,Flu Study 28,Female,Caucasian
+149,b27d546c0fc6002f0d05586019a57c2c,28,Flu Study 28,Male,Caucasian
+150,7003f79cb5b2fb447eb6cb38bdd795e6,28,Flu Study 28,Female,Caucasian
+151,36b5ba0c9ba6a372fb6bab4d981e2a53,28,Flu Study 28,Female,Caucasian
+152,68e0c3769e771722d7765ea68a11c13d,24,Flu Study 24,Female,Caucasian
+153,0fc5fd7fca11b8438bbfcdf025694435,24,Flu Study 24,Female,Other
+154,66c3618af7be22c4744edb142fbe1755,24,Flu Study 24,Male,Caucasian
+155,bf235c8f8a501f3ef931197387fc997f,24,Flu Study 24,Male,Asian
+156,5cc5e1650d3b666e13d8190a9d412b69,24,Flu Study 24,Male,Other
+157,e928d035d044d0dfb5fa007e89cd8df2,24,Flu Study 24,Male,Asian
+158,de73f0072fe08c525bd7f94c459e491c,24,Flu Study 24,Female,Caucasian
+159,593cfbf55506e5fcd0c9ed6fa256d584,24,Flu Study 24,Female,Asian
+166,c18c76a27a6e55e44708ad5ead4e8e40,21,FLU STUDY 21,Male,Asian
+167,5b230b5a220f3bd86aceed92e805104b,21,FLU STUDY 21,Female,Asian
+168,d8de92c3652feab9096c016db9d04014,21,FLU STUDY 21,Female,Asian
+169,f91854ca88af96b4fc3d84b5f7bc9aac,21,FLU STUDY 21,Female,Asian
+170,4571f8d167f4071a7749bd77033cdf2c,21,FLU STUDY 21,Female,Asian
+171,25bda230daf24b84d45c08e30b81dd3d,21,FLU STUDY 21,Male,Other
+172,a0c299017b2d3746dd309ef9e20f00f2,21,FLU STUDY 21,Female,Other
+173,6e0abda4dba312fadc2e5bf10da535bb,21,FLU STUDY 21,Male,Other
+174,dd9c421761965d0a4ddab2a8543bfe35,21,FLU STUDY 21,Female,Caucasian
+175,ce40e139538313913e4313e8cf057e34,21,FLU STUDY 21,Male,Caucasian
+176,4fd1cfc61d229d85241ac6dcc40dda80,21,FLU STUDY 21,Male,Caucasian
+177,5db6de38078d839e72b294983c8e618f,21,FLU STUDY 21,Female,Caucasian
+178,0a274914ecf0b78d5938784de0c826ec,21,FLU STUDY 21,Female,Caucasian
+179,6b167b517a5e53635437b698db8a7c3d,21,FLU STUDY 21,Female,Other
+180,6790be77afbe0ce2aa2d2bfff451ac6b,21,FLU STUDY 21,Female,Other
+181,aeb08dd9826e661e062b22e8f210d5bb,21,FLU STUDY 21,Female,Other
+182,8db3aa78864c4e5e7b91731422a4f103,21,FLU STUDY 21,Female,Caucasian
+183,32aa77d957f5712ee8184114c10b6d0e,21,FLU STUDY 21,Female,Caucasian
+184,d7a5d1e3021f808a0029942ebd869092,21,FLU STUDY 21,Male,Other
+185,67d3fa07ec6622b3063abbccfbb7cdae,21,21,Female,Other
+186,171c69a23f2aa241961852b5f08dba97,21,21,Female,Other
+187,7abb53a9519ea600cc806505ab8c4f29,21,21,Female,Other
+188,db7fe7edf8af129a4a854b9643af56d2,21,21,Male,Caucasian
+189,cef98e6abe91796b328dacc8b174827d,21,21,Male,Caucasian
+190,1b342fd13cdc5f5b3ee4f9c94ca6552b,21,FLU STUDY 21,Male,Other
+191,ffc1867fb0568cf26b201bc398c2a991,21,FLU STUDY 21,Female,Caucasian
+192,96fcd7b53726c8bd3299d0d8ce52bd7f,21,FLU STUDY 21,Female,Other
+193,1a3584e0929ea008f03005ba8c00defe,21,FLU STUDY 21,Female,Other
+194,8630a110669b33ccd9cb37b25e0cd4dd,21,FLU STUDY 21,Male,Other
+195,5d329d7cf0e0c6819c7736a126cc7150,21,FLU STUDY 21,Female,Other
+196,c86f775468540d9dffcaa4effb84ba31,21,FLU STUDY 21,Female,Hispanic/Latino
+197,b68b92749e5550227f40858777bdd2ce,21,FLU STUDY 21,Female,Asian
+198,afd8329e681ee7160510e83ba7bfb1a0,21,FLU STUDY 21,Male,Other
+199,aaa36e43745989fa35ab2949d5c78c70,21,FLU STUDY 21,Male,Other
+200,fda722a1a16a18a32ffc051a669ad2c1,21,FLU STUDY 21,Female,Other
+201,e30ba30544a3a85542ec7356b4c3ba77,21,FLU STUDY 21,Male,Other
+202,d07788f642dc6d0a026fd5a37653fed7,21,FLU STUDY 21,Male,Other
+203,73684335e503b3bf42f0eb05acdcb43f,21,FLU STUDY 21,Male,Other
+204,873188c0f590891415932b8c43ec26a4,21,FLU STUDY 21,Female,Other
+205,673fd270c7f97f8a75160566b28823e3,21,FLU STUDY 21,Female,Other
+206,0a0b52e8544beb2ed1441183930bbc5d,21,FLU STUDY 21,Female,Other
+207,f2da1439ac1ef395ebec483eb312eaa4,21,FLU STUDY 21,Female,Other
+208,7efeeacc093603e040b36f1ab37585a3,21,FLU STUDY 21,Male,Other
+209,598e0dcf977be007ca61ffdaa77b9d8d,21,FLU STUDY 21,Female,Other
+210,68f27e94487ab2c8a31277d48e9aaa23,21,FLU STUDY 21,Female,Other
+211,77407825fa007d0bdf8bcbf4515782e7,21,FLU STUDY 21,Female,Asian
+212,02a91eac395cc63b4b0f45544e435106,21,FLU STUDY 21,Male,Other
+213,2eaeb48530fa6b5b772260c4caeb6fda,21,FLU STUDY 21,Female,Caucasian
+214,c8e1b286f79daf4fbc727d1fffe2b6bc,21,FLU STUDY 21,Male,Other
+215,b44c08c0053d956b2a13b2fc9af6a3ba,21,FLU STUDY 21,Male,Other
+216,a59183819e646af033419763842a8263,21,FLU STUDY 21,Male,Hispanic/Latino
+217,e3542d30ab00107619fe16b75f359d35,21,FLU STUDY 21,Female,Other
+218,ca25ec8403831a55d12482b8ed3b9c3a,21,FLU STUDY 21,Female,Hispanic/Latino
+219,699364483983f5e6b90b3ad0a6fcc161,21,FLU STUDY 21,Male,Other
+220,3ce2ed003df1b3b28afb199ecd6ce545,21,FLU STUDY 21,Male,Other
+221,fd81877da0f9c156c27f05da420029e4,21,FLU STUDY 21,Male,Caucasian
+222,f597a575f369c0ae291957a7698a3a9d,21,FLU STUDY 21,Female,Caucasian
+223,f8b2a3bd50d3e4d1f44b69cb4df45f31,21,FLU STUDY 21,Female,Caucasian
+224,efab6292d2c671caf3f994e71b0369dd,21,FLU STUDY 21,Male,Caucasian
+225,ce66055388682f6ed8fd7d3d03b62909,21,21,Female,Other
+226,c22efc0c1ff60ecd871fd1611dc8534e,21,21,Female,Other
+227,37affbfed2fdbf6a010bfb15d7552b0b,21,21,Male,Other
+228,71e026b218e48f4a414ac23c1d581581,21,21,Male,Other
+229,0bb2649ef05e5138a152df6daade362b,21,21,Male,Other
+230,284fd21c39740af5e3b98a80dc144bf6,21,21,Male,Other
+231,d881a4c0ade09f7fb93e680d12d43ffe,21,21,Female,Other
+232,68788e2529761014921a32d5190d6d1d,21,21,Female,Other
+233,f6fe87f2d3a7948759add0d5b9bd3a61,21,21,Male,Other
+234,eff3cc48e13a0ca471ec76722a094a26,21,21,Male,Other
+235,f19f398ae845956109182c6752d17835,21,21,Female,Other
+237,0b5e35fb1f96659b8d9de1cca17916bb,21,21,Male,Other
+238,eeb90ffaed001d94cd51fed63c09e3b0,21,21,Female,Other
+239,b9351570cf5eac2486f19acb9d367ace,21,21,Female,Other
+240,7846189dde966749ac6b2319c49fc346,21,21,Female,Other
+241,255772bbd5915552b9a076f46b2c9438,21,21,Female,Other
+243,dd933832b10c41af2556629717807267,21,21,Male,Other
+244,badacedc5b370208da342003d516f978,21,21,Male,Other
+245,ac7fe5ca541aba412f8c43e184e33eb2,21,21,Male,Asian
+246,c4e2c263514097ef9c61569ebbd9752c,21,21,Male,Other
+247,400a3b3589fdd8243b75569a17a6e0ba,21,FLU STUDY 21,Female,Caucasian
+250,e7fae460096fdb0c91b37030936345d0,21,FLU STUDY 21,Female,Caucasian
+251,869905aa76908a3d237648e8556d0178,21,FLU STUDY 21,Female,American Indian or Alaska Native
+252,16956355957bbb4f502a74cfe9afede1,21,FLU STUDY 21,Female,Asian
+253,9485f301408ae4b7c89899cb5c4f2bd6,21,FLU STUDY 21,Male,Caucasian
+254,ed73563eba301e45aef0cc1288f9d581,18,Flu 18,Female,Other
+255,8172ac5693dcafc7f9bf2938971ea9e4,18,Flu 18,Female,Other
+256,5993fee1333fbf300bae409204a470c2,18,Flu 18,Female,Caucasian
+257,81c15f98e45052295c6f84e3be3d2edc,18,Flu 18,Male,Caucasian
+258,3f1f2b1910f588e1644a714c2f685e9f,18,Flu 18,Female,Other
+259,151f5d4a58d7d7ce6c83653496ff48e7,18,Flu 18,Male,Caucasian
+260,ef5d72ae9b5881bb744bb61fcaf3a1ae,18,Flu 18,Female,Other
+261,f5799d245219ada6fe53afbbe2835372,18,Flu 18,Female,Caucasian
+262,c9de179f9543c1ca45bfc0d6dca8f2c1,18,Flu 18,Female,Caucasian
+263,7ece32932f211a3e5163f65e3b41435b,18,Flu 18,Female,Caucasian
+264,fb4962585bfca331f7fd941d07aea69a,18,Flu 18,Female,Caucasian
+265,fe98d92bdc81772e4077924495ded776,18,Flu 18,Female,Caucasian
+266,711ab05c35714e9df0b39dd6b0917ea1,18,Flu 18,Male,Caucasian
+267,e5c8da50336b4a58344a361e33ffff4c,18,Flu 18,Male,Caucasian
+268,bfd4e880ac9b281bbf2b92956b24e33e,18,Flu 18,Female,Caucasian
+269,0a7add651c66363678d6dc1c405a9d06,18,Flu 18,Female,Caucasian
+270,c1c651f94995a7ae1e4cec25b3c0e068,18,Flu 18,Female,Caucasian
+271,fcc62c08a1a8bec13eb34f47c90e6e9b,18,Flu 18,Female,Caucasian
+272,5e766840660d625eed60ae96cbc9688d,18,Flu 18,Male,Other
+273,33c6d69cea11b510087d3701a1de22a2,18,Flu 18,Female,Other
+274,48b77cda0122e32785ee068f9535cfc4,18,Flu 18,Female,Other
+275,0529e65e9a4ca6d26fcb8f730f2167ee,18,Flu 18,Male,Other
+276,b1d34166d9e34c73ea486b66850adc8a,18,Flu 18,Male,Other
+277,9949c71079f870729d49c75b94791bfe,18,18,Female,Caucasian
+278,67d89a1564cbf18da1cb08dd5ecbe4aa,18,18,Male,Caucasian
+279,26e2559ae6b591df8ffca81360df06ff,18,18,Female,Caucasian
+280,8e64a7e4c60e61423aae33558536b0a2,18,18,Female,Asian
+281,96ed64a758454829d6806596616d64e8,18,18,Male,Caucasian
+282,f52b563fdefd3758e2944023e321643d,18,18,Female,Caucasian
+283,57e66b5caaf3a9f006a52b97372187a2,18,18,Female,Caucasian
+284,de4b0a2f47b7103bd093de4c9bdf210b,18,18,Female,Caucasian
+285,0ae4286c42aefc2c334bbad7589d156c,18,18,Male,Caucasian
+286,f2db600063afb8acf4b2ac941d3776ed,18,18,Male,Caucasian
+287,eef5f5ec6920c454a9b4ccccdbd1ef8b,18,18,Female,Caucasian
+288,940ec5b17c34ce7262e849a772c140c5,18,18,Male,Caucasian
+289,b1c88e7a7964b316a623fdcf0043d9c0,18,18,Female,Caucasian
+290,3105a0c5fc32a503928ea6992932b480,18,18,Male,Caucasian
+291,40fc1fde65256705b42f77124bbe2f9e,18,18,Female,Caucasian
+292,798815615ba62fdab47196f8e5222379,18,18,Female,Caucasian
+293,d213a0357aa57bf4373ac4e6a9ab2092,18,18,Female,Caucasian
+294,e09190cdc589c18396b8df425736b40b,18,18,Male,Caucasian
+295,979f2199658fa004157868fd407cf65c,18,18,Male,Caucasian
+296,0cd689b9e4953c99ff1f6e0ca61ba19d,18,18,Male,Caucasian
+297,4d00fc0af06de3a6edd8e13db538fe28,18,18,Male,Caucasian
+298,8e06cf2e9efe238e9266073c548df011,18,18,Male,Caucasian
+299,9cd150df00a01df31d81e9cf043c75e3,18,18,Female,Caucasian
+300,31edd7e2e710a9a7696e3e8d8e281976,18,18,Male,Caucasian
+301,1a557b52f423b36dbf062780f80dfeae,18,18,Female,Caucasian
+302,2e7473e0fcbb25eb7ec5551e4017754d,18,18,Female,Caucasian
+303,9dff28603a651a2b454f93045b72f2be,18,18,Male,Caucasian
+304,976625895759f43e8bece365a5e6b16b,18,18,Male,Caucasian
+305,e0d6ca5e6e6f21d4a3aaaa380a292064,18,18,Male,Black or African American
+306,c0a8d26d1d6991cfd611d3b5212cd453,18,18,Female,Black or African American
+307,866ffd451e4194cd83671a5379a53853,18,18,Male,Caucasian
+308,17b7eafe880c3dadac4d9f29e2ecf7b5,18,18,Male,Caucasian
+309,bad92cc15544e0fc8c37558e2305ea49,18,18,Male,Caucasian
+310,78942e1b43f326988eee5e6e2ed297f3,18,18,Female,Caucasian
+311,979c8a7561c7baddd6c3919ee6044406,18,18,Female,Caucasian
+312,6165480a8297e1c4389ef272f9603504,18,18,Male,Caucasian
+313,97f1097ae092f7655bfc3da5bbd951f1,18,18,Male,Caucasian
+314,12f9c3edfbcfbcdca1b7ae07b89f02c4,18,18,Male,Caucasian
+315,ba24d78abf68b967b9a84d5ae20e6f64,18,18,Male,Caucasian
+316,0d99b922d8c6561f1f7c7b0c4b54fb21,18,18,Female,Caucasian
+317,44fb10ef5b5e2490404b07c103bcf2fa,18,18,Female,Caucasian
+318,c9591929ebbe37619d1c1c5dcc067a45,18,18,Male,Caucasian
+319,7fdc09aeb2578be7afa1f1cc7803de70,18,18,Male,Caucasian
+320,b0b11cc2ceef87bf030331d7619087f3,18,18,Female,Caucasian
+321,14f566415d6ff9d696b785e04958cd95,18,18,Female,Caucasian
+322,f7118b1db3bca15fc223f7513c61ad5d,18,18,Female,Caucasian
+323,257888f88cf86c29f661601efb609342,18,18,Female,Caucasian
+324,8fed09e9e2add1b6137a576b5a838093,18,18,Female,Caucasian
+325,59f27dfcdc32c0e7c7616032a394d97c,18,18,Female,Caucasian
+326,f454c98fdc1fccb1686d7a7e8ca08344,18,18,Male,Caucasian
+327,246728d0267fa78309d5a2795230a95c,18,18,Male,Other
+328,997b0ef9dd5f4df096dce47cff274fe2,18,18,Female,Caucasian
+329,bf197b5d15120bfee15162504d974779,18,18,Female,Caucasian
+330,b021c2d920136873b66c7465b09449d9,18,18,Female,Caucasian
+331,2cea7d0ad390af57fcbebf5a4f3c8ffc,18,18,Female,Caucasian
+332,f827e9ed535a4b6f8e753b0a564c5713,18,18,Female,Caucasian
+333,27ab7fa405239aa77dc1cfa08b179b3c,18,18,Female,Caucasian
+334,fbfdd78bba7d53d81374266548ae2c4d,18,18,Female,Caucasian
+335,03db14f6cbb2feea56ae4f031dea3b0f,18,18,Female,Caucasian
+336,ea384455aa5c3a9a89dd3a30362478f2,18,18,Male,Caucasian
+337,47c2c21b249c00d1073f6c3057bf355e,18,18,Male,Caucasian
+338,2625c86bc919117cbf46dc80aa3259be,18,18,Female,Other
+339,d4efafc106e0e14ae6906c003ebc32b6,18,18,Female,Caucasian
+340,f739fccafccd797bd3247bde5887c979,18,18,Female,Other
+341,95938371cb5dfacaa41a320614bfc4fd,18,18,Female,Other
+342,1534f339ea4bb3a12048f3a413a2c1a1,18,18,Female,Caucasian
+343,37a11b1f54b6aa2c0dd93376713bc7bc,18,18,Female,Caucasian
+344,eed11b10be30f8f7c52412a626c97b8c,18,18,Female,Other
+345,6c1103dad2875beab4404b6a4269e392,18,18,Female,Other
+346,d5423f21884d8f6a3aba70ce4b3ed274,18,18,Male,Caucasian
+347,bc951bf17fe4ba28a5c54b3882e32066,18,18,Male,Caucasian
+348,51c35245558c19baa299ca3660c6aca7,18,18,Female,Caucasian
+349,62a7f95e228cebfa1ce9c46f77b1f8bd,18,18,Male,Caucasian
+350,bbc3ff7d52bc240dfd66a8ea9dce76dd,18,18,Male,Caucasian
+351,43880efe590c73ecc9225eb9b56bb7ce,18,18,Male,Other
+352,d202b7e25a82276ed033110ab9f96609,18,18,Male,Other
+353,cf1695c052432ef8c3d1451547fb7191,18,18,Male,Caucasian
+354,479b489f35f4ffdd5f22345df4fd64f7,18,18,Female,Caucasian
+355,b91e6045e7ca8fe2eb39bc209ebd703c,18,18,Male,Caucasian
+356,161d5b6ff297475b33f84021194ec199,18,18,Male,Caucasian
+357,506db039521962301bc3e1e691d0199e,18,18,Female,Asian
+358,91930dd11c6084e118b12737f1e15eec,18,18,Female,Other
+359,18bd3bb0d25df769e92c256b5c6933f8,18,18,Male,Caucasian
+360,dcc84789e5fbcfbc57ebc0e7a0c655c9,18,18,Male,Caucasian
+361,b71977f182977817705aa26b172560f6,18,18,Female,Caucasian
+362,4a25f2956020394f82d70958aedce0b4,18,18,Female,Caucasian
+363,d7206f0c2a26ce99b566cbc03152f12b,18,18,Female,Caucasian
+364,680d9416f156f18486008064d53c507b,18,18,Female,Caucasian
+365,02d1f78e06163a6cdc30e226c4dc15a9,18,18,Female,Caucasian
+366,91750463ffa7db68b60781558b119dbf,18,18,Female,Caucasian
+367,f74d2719149a8ffc455d7dc1c5bfbb02,18,18,Male,Caucasian
+368,7537318db4cfdadc137e4923a7aeb6d5,18,18,Male,Caucasian
+369,da9efab00b9eb1d96d4397d97a1643d1,18,18,Female,Caucasian
+370,2ba58eacdccfdcd2733fbd1ca2ddce95,18,18,Female,American Indian or Alaska Native
+371,4d2a7d01f5a10e7ea3b88f2ba402ad3c,18,18,Female,Caucasian
+372,71c19a12dfb1ed64b1ff4339a1efedf6,18,18,Male,Caucasian
+373,816f3e30a929bac5b24fcc3508b33314,18,18,Male,Other
+374,facccbf563c35cc17e3f45962104d1a1,18,18,Male,Other
+375,d87bf1d126cd5e6938775c9bf54bc36f,18,18,Male,Caucasian
+376,3f1945f5a7ddc25a6616ab6b44065255,18,18,Male,Caucasian
+377,acc2bcd5c94a7afbf575ab1a0c1c5fa4,18,18,Female,Asian
+378,6550c1f697f3fbbd8f0d40b8ee2db784,18,18,Female,Asian
+379,ba9e5e36d7e2111db3bd964dfe011197,18,18,Female,Asian
+380,9fa7438936c042d448a5d0c9cfd5f081,18,18,Female,Asian
+381,1a23ac0066fdb820e3b8bce666beef6e,18,18,Female,Black or African American
+382,64a5a7033ecfebcc5bbb9509f5f889ba,18,18,Female,Black or African American
+383,713fadbe50085514a949a5bcc9ac5cfd,18,18,Female,Caucasian
+384,ae323e118fb5ffc425e6d66848c11ba6,18,18,Female,Caucasian
+385,fc9d7e604efa99242da0ba32c9dd2ea3,18,18,Male,Caucasian
+386,c1af672e9660d9de604f50b9fce3d741,18,18,Male,Caucasian
+387,0b36b79c65c9c78467cfa1957ebdedd3,18,18,Female,Caucasian
+388,89be65b3849565379d8f14150ab2e0d7,18,18,Female,Caucasian
+389,c1dfe5a4ea58face905f0f9130430c59,18,18,Female,Other
+390,bfc464b92569323a733aab0ad99d76fc,18,18,Female,Other
+391,cfd95c25e72b23f71b1a8d96bcdb7fcb,18,18,Female,Caucasian
+392,418f9511c1a0bdfcef150b9960b4fb94,18,18,Female,Caucasian
+393,8e857af0bbb8574989037540cd6d1a99,18,18,Female,Caucasian
+394,71ca6543f73c686359d8120b08b848ba,18,18,Female,Caucasian
+395,65c546de00b2fedd5047460d154f36cc,18,18,Female,Caucasian
+396,1e1968b84cb8a6c9e908a9695f5594b6,18,18,Female,Caucasian
+397,265bc4614f1d822d4255f36eb87bd865,18,18,Female,Caucasian
+398,9adec55794d0cfb8478efc8825e923c8,18,18,Female,Caucasian
+399,3132545d3ed91fb0a05d768e29e6b0fb,18,18,Male,Caucasian
+400,e537121fdf72a5713be3e2ca4b02435b,18,18,Male,Caucasian
+401,2d56e414c21b56c73912162c807fb561,18,18,Female,Caucasian
+402,b6aadfd84de9cbf8bf02b930cdf78d25,18,18,Female,Caucasian
+403,ef29b60b27a84a27c309d202826f39cc,18,18,Female,Black or African American
+404,274b2fee7cb9bf8daaa67a44dc031caf,18,18,Female,Black or African American
+405,1ed199d4e44bf6c83c2c6e9e59b33e18,18,18,Female,Caucasian
+406,a11c9616bbdfffec101d79d23f3ccdd2,18,18,Female,NULL
+407,ac88e801f4354c7db5743d376556645b,18,18,Female,Caucasian
+408,a089de10806cae69bea992391f3f07fc,18,18,Male,Caucasian
+409,4a8493c02bc415f872604df0e7d5b5ec,18,18,Male,Caucasian
+410,3bc115dd64b0c0ca9774bd16074e4271,18,18,Male,Caucasian
+411,be44e1f0f1adf3bcc02cec6c7be5bcaa,18,18,Male,Caucasian
+412,e607be354732f84fd68e56240f6276f5,18,18,Male,Caucasian
+413,763ecc553c0b9d505127f845e4127042,18,18,Male,Caucasian
+414,c41bb0e611bee9c64e4e416ec7416969,18,18,Male,Caucasian
+415,355c296354d2313cb6c971f08c184088,18,18,Male,Caucasian
+416,a30db65780952d2af3169fe90068f0e2,18,18,Male,Caucasian
+417,ccb4f318bca1b99a0f2450eb70aa01b1,18,18,Male,Caucasian
+418,47d5b0b6c4c4994cd5c23cde44b22769,18,18,Male,Caucasian
+419,cb8078502533d5c7d63575c32ea727be,18,18,Female,Caucasian
+420,1097dbfce85e912a7e13aa97fd3015d9,18,18,Female,Caucasian
+421,361d0caa404cb4e62f40bf2341e25c6e,18,18,Male,Caucasian
+422,80fc875ed8ecb64214c93ca4baff867f,18,18,Male,Caucasian
+423,4ab2124a9039c985d54a156f63422e34,18,18,Female,Caucasian
+424,414cdfedcc0bdaed62417d4e344fea9f,18,18,Female,Caucasian
+425,59784b13f499e35325e3aeb3794e6ede,18,18,Female,Caucasian
+426,c0fc85913317c470f7cb0ae67fbdd18f,18,18,Female,Caucasian
+427,b61f1074a73bdd08adce032743bd6e91,18,18,Male,Other
+428,d4112f9efbaa4d83fbc2c1be4ac9f618,18,18,Male,Asian
+429,de7698a039f8b7dbe2ac0209af23adbb,18,18,Male,Other
+430,c1caa31c2a3c30444e15562a499a8f38,18,18,Male,Other
+431,173442e4ab5137b15f1833628b3e77f4,18,Flu 18,Female,Other
+432,b1cfce08f54c4d981f435e45297bedcd,18,Flu 18,Male,Hispanic/Latino
+433,7cb034d622d4d68cc0ede0fc41357950,18,Flu 18,Male,Other
+434,c03627293888f7fac6d2e6aa2f62b025,18,Flu 18,Male,Other
+435,4e2537fd32e00790445430888e9b125b,18,Flu 18,Male,Other
+436,2e381a3dda9e7e0e3c601a1713aba4a8,18,Flu 18,Male,Other
+437,c2011b45828d58efa51afbdc8e6203dd,18,Flu 18,Male,Hispanic/Latino
+438,635a72afa1854400c4ebb2f78c0c3152,18,Flu 18,Male,Other
+439,85b5c1093b53e12b9c6378ca9b5ca58e,18,Flu 18,Male,Other
+440,6e9c1486162ffd3c9df1b91ae9d629c4,18,Flu 18,Male,Other
+441,0f695e596939aabc6cd23949ace433e3,18,Flu 18,Female,Other
+442,f59fbdddd32070b6fb8f2449026555dd,18,Flu 18,Female,Other
+443,508fcfab96b7d932f792530a774be30c,18,18,Female,Caucasian
+444,e7508125c3720b04e226b4c107df31e7,18,18,Female,Caucasian
+445,0ce1652cb8752ed8820b4570668bd4ca,18,18,Female,Caucasian
+446,b02e3d5e1f7b660a8edd31d4b2dcd30a,18,18,Female,Caucasian
+447,140d0eb3f4383ce6f08f21634dd90328,18,18,Female,Caucasian
+448,cba34f3dd3bca9529ded9fc330f2463c,18,18,Female,Caucasian
+449,2223631f41a3de52d2446b6dbaeb3dbf,18,18,Male,Asian
+450,c68199b30ed4548da93f410f76f75e71,18,18,Male,Caucasian
+451,ff530f80191114ea8883bd17bc52491d,18,18,Male,Caucasian
+452,b3c82d1860850cc48821a3c8ba3c777d,18,18,Female,Other
+453,c687ffd7307c3cea3fd633f3d728d8d3,18,18,Male,Asian
+454,cbd9a2f804012b96691e6434498e03e4,18,18,Female,Asian
+455,6836cc773f7d9e80994931d84bfafc13,18,18,Female,Caucasian
+456,17645c49f99196232b388d336c5be814,18,18,Female,Caucasian
+457,197842d4917b651d0051c5406bbd9961,18,18,Female,Caucasian
+458,4e149433503d003120b438dd80655392,18,18,Female,Caucasian
+459,ad0a5427d1f2cf8d66abd82bd4deaca9,18,18,Male,Caucasian
+460,3dafeafffe264315b9faca780027b7a3,18,18,Male,Caucasian
+461,654576e62c4335d00186f7e151de1a18,18,18,Female,Caucasian
+462,9b3df7da11741497e4ec6eb7fe2d51b9,18,18,Female,Caucasian
+463,e4b2568555d7f2632d30aaf5b3cbf7f3,18,18,Female,Caucasian
+464,6d8bec8baf6275fc989d15b850d6e062,18,18,Female,Caucasian
+465,ca84a620dfc9aeec4443c638848c0528,18,18,Female,Other
+466,07742dedc45f013055e8da2780900ab4,18,18,Female,Other
+467,d94ad28bdd5c0fd0f4bda22b2d780217,18,18,Female,Other
+468,33a8eb29b35bb7dc131638bfdaba01be,18,Flu 18,Female,Caucasian
+469,7b77282aae330fdf9029bc1ad8e051e2,18,Flu 18,Female,Caucasian
+470,6c3c9c333919c237e3a7e4d94ffbe98b,18,Flu 18,Female,Other
+471,3ae71d69090bb735f385d0c7a06fd9c5,18,Flu 18,Female,Asian
+472,0c5468b79f5c9605c69de5b970b0988d,18,Flu 18,Male,Caucasian
+473,6e6173a4a7b2e2166c6ec7821ed7bfe0,18,Flu 18,Male,Caucasian
+474,aba27cca8eab99f3002a90453ba0ae12,18,Flu 18,Female,Caucasian
+475,4d6e06693fba251bbf6ab47d4c38c801,18,Flu 18,Male,Caucasian
+476,e116dd7aab37d09026f50056b84ecd62,18,Flu 18,Male,Caucasian
+477,3669e1b70289ad6819fd77c8fc8299e2,18,Flu 18,Female,Caucasian
+478,7c1a99d799ed519bc5fa56c266384738,18,Flu 18,Female,Caucasian
+479,9daab295689935e936f2666f66239f01,18,Flu 18,Female,Other
+480,32955a22d61377d885a090ec03f91dd2,18,Flu 18,Female,Other
+481,49192d20e046fc54b543293f558da1ef,18,Flu 18,Female,Caucasian
+482,921119a480e420bbdd2fe17240102874,18,Flu 18,Female,Caucasian
+483,2bde24225c1727bd73812f190f38a5d6,18,Flu 18,Male,Caucasian
+484,e247efb533cc91625581fc73167199ed,18,Flu 18,Male,Caucasian
+485,32b66f3eaab6e12d00b405e9f6dc06ea,18,Flu 18,Male,Caucasian
+486,0543ba3d75368d2bc179b95526c68c3b,18,Flu 18,Male,Caucasian
+487,e72741fb33e99a859601a5f6882b5a75,18,Flu 18,Female,Asian
+488,bde8c81699ebb15cdd1e979a99604bf3,18,Flu 18,Female,Asian
+489,ddb63908fb8b21048bcf654966a52496,18,Flu 18,Female,Caucasian
+490,dda51a0ccd492b2019b93970f00e1fdf,18,Flu 18,Female,Caucasian
+491,da476d295c58553c8f13a63029c908e3,18,Flu 18,Female,Caucasian
+492,fc39004c86681257160c057c2d7937ee,18,Flu 18,Female,Other
+493,5868e9545acc17e64cc395c7d3c6423a,18,Flu 18,Female,Caucasian
+494,42fd4eb1d8def251e8c07ee5bffa5796,18,Flu 18,Female,Caucasian
+495,a9dfac9a2694707844ab9b264d9c111b,18,Flu 18,Male,Caucasian
+496,3ade665a6be99e584bf751fcee7446bb,18,Flu 18,Male,Caucasian
+497,737f892fb3c87e9a14ef589d5192cf8e,18,Flu 18,Female,NULL
+498,7606b5f3e82f6264ba35279ab40ee360,18,Flu 18,Female,Caucasian
+499,7ef39ee4d2a16757c19dc4d467cedd55,18,Flu 18,Male,Caucasian
+500,e517d0d6adb055659e627ab50c870aba,18,Flu 18,Male,Caucasian
+501,6a8b3813202d84abd6258fec9e3fc7c1,18,Flu 18,Male,Caucasian
+502,44ddacee602c21676eabf5aeacfd1264,18,Flu 18,Male,Caucasian
+503,561c07610c05146eaebe40754b7bae5e,18,Flu 18,Female,Caucasian
+504,9f247e8c0dd0b99855ade6f996e944b2,18,Flu 18,Female,Caucasian
+505,4c9ded8b12a3420befd2f475623ae765,18,Flu 18,Male,Caucasian
+506,8551d078e85c2c6c7ce9249e3a1f43e0,18,Flu 18,Female,Caucasian
+507,5e1cf82555e27f8a74c77dd3d5419f82,18,Flu 18,Female,Caucasian
+508,5af5600043398a46c18afcc88cfe8d84,18,Flu 18,Male,Caucasian
+509,7483c8a2bc6eb843b2652d368a247eed,18,Flu 18,Female,Caucasian
+531,ec8efb27c3176de967841c9cfa7f732e,17,17,Male,Caucasian
+532,e7428766044e2c024f822ae90c94dca0,17,17,Male,Caucasian
+533,f8492f5615dddf2e107ddc9456aaf990,17,17,Male,Caucasian
+534,d73d9ace1ef996258f26772a6fec4c71,17,17,Male,Caucasian
+535,15291025b14e672f8593a98ef906ee61,17,17,Female,Caucasian
+536,7e2ce0bf178b0bdd31b9c6bef91d516d,17,17,Male,Caucasian
+537,2644dc1d9c7ec075ac13106629ea2d6f,17,17,Female,Caucasian
+538,ddcff7760f9f7db6f2d4fddb1b392dc5,17,17,Female,Caucasian
+539,7241973e6b713b71d160e2a57aabe078,17,17,Male,Caucasian
+540,3bd12c180e6ab42f3804349071f495da,17,17,Female,Caucasian
+541,0278f34070b1ad9850b763ada8833a10,17,17,Female,Caucasian
+542,0e1f8cfcf83cc04ef8262c3899810bce,17,17,Female,Caucasian
+543,d0da0a1b52cc771fbe3447bc5969be74,17,17,Female,Caucasian
+544,512d8bb062d0431b60bb122311c75ab8,17,17,Female,Caucasian
+545,582522bd12edd8a1531b047e0ae72298,17,17,Male,Caucasian
+546,50401716f4f92bb1559e0878d87516db,17,17,Female,Caucasian
+547,9a45288bcf2e026aad2d6ba57208b8b4,17,17,Female,Caucasian
+548,4b97b92fc10d6e324e39f24eb19a53b6,17,17,Female,Caucasian
+549,9121b887d3ad71486f949ff2a257b803,17,17,Female,Caucasian
+550,5b63f63136c21f0971446de8c9ed5f57,17,17,Female,Caucasian
+551,30ac7e6fc5530655acb5a31ba23c645e,17,17,Female,Caucasian
+552,afaf03190197e0a0f1f6980701fbedf8,17,17,Female,Caucasian
+553,17cfc0666fc3fbf44dadccaba05dde16,17,17,Male,Caucasian
+554,b2b6fcb17e0c356b4df39ff5fdb072e6,17,17,Male,Caucasian
+555,ed9ee9bbc99ebd005d8de9b07fdc433f,17,17,Female,Caucasian
+556,cdd385ed00ba28a7d44e1650e89c7ada,17,17,Female,Asian
+557,d76335c996b57422718dbe86c2a332ef,17,17,Male,Asian
+558,e3bb13fb91ca748dec4dbd2aa80d91fd,17,17,Female,Caucasian
+559,bfc9630a4ba125e242eeba55a81a0352,17,17,Male,Caucasian
+560,05072df2f29ae23832b093c88720716e,17,17,Female,Caucasian
+561,33f5e7069d5cd81ab2e6df03c321d978,17,17,Female,Other
+562,62e9aae56c8c04098a0d9438a7a41f96,17,17,Male,Caucasian
+563,d193c6aadad78607b2bdb78f5d2f0f30,17,17,Female,Caucasian
+564,6f46592ce97377c22c3d3d827c909a46,17,17,Female,Caucasian
+565,d4bdd371ef11ad532306bbb1369877de,17,17,Female,Caucasian
+566,d16e6c3555e703161c345f9057df3417,17,17,Female,Caucasian
+567,a248f962eb570d6777cb314e1db4e982,17,17,Male,Caucasian
+568,f82032480922e1ee2062f9ea9e15d2e1,17,17,Male,Caucasian
+569,0e30bca4513e5444d2b76db5602dbb98,17,17,Male,Caucasian
+570,04beba0fde5908f6c6e6b0bacbb52e15,17,17,Male,Caucasian
+571,70b2fa9d238e0763beabc5eff9f2c3f3,17,17,Male,Caucasian
+572,cd2d2fa9563e3887cc98eada38683963,17,17,Female,Caucasian
+573,8bf3f5a66b60d069f24b0ebe5d702b99,17,17,Female,Caucasian
+574,add2cfd57c482561ba0601afb468a88a,17,17,Male,Other
+575,28c27ba078b0b2b12e3347e892b6c663,17,17,Male,Caucasian
+576,ded3b1fd49e8941b21b2965d86b869bf,17,17,Female,Caucasian
+577,ef7c7db1863ee4bb36a94efb2498ea8a,17,17,Female,Asian
+578,88acbdf8dd996b07172e39ac9f9201ae,17,17,Male,Caucasian
+579,f05c83c708d6ad01d2e8b0f8b4095d2e,17,17,Male,Caucasian
+580,96c29b038ef97fe556b2e4700e78257c,17,17,Female,Caucasian
+581,d0b21fa7598a184746a7b85a10b95ecf,17,17,Male,Caucasian
+582,0147ce9a1362058c16cf356239187b33,17,17,Female,Caucasian
+583,cc6a09d5ed17be422f50a2a0b8ec3861,17,17,Male,Caucasian
+584,3bca94876ce9e661e9f43b95a3a1fc1a,17,17,Female,Black or African American
+585,6d0d7ce92d9194c3b352ea2842eefe49,17,17,Male,Caucasian
+586,840763308503c024d6893d023a7fff77,17,17,Male,Asian
+587,bd568658b02feb1426d971614d332e07,17,17,Male,Caucasian
+588,184477b5a7be06adde95eb54e4c3a204,17,17,Male,Asian
+589,8de57c5d60f55a18809f4555ef8af9c7,17,17,Female,Asian
+590,b7a064b6a9a275ee9f5de80d41645cda,17,17,Female,Asian
+591,04d0403fbec09b220e8804f8455056f8,17,17,Female,Caucasian
+592,1fb1a9c573764a0c4e9346b127f3efb9,17,17,Female,Caucasian
+593,cb9443535d75e5e70fbc29f1c6405f71,17,17,Female,Black or African American
+594,ca605ee683b1670def499a2e9c8ff7be,17,17,Female,Caucasian
+595,889f7593c40a92d867ccc7b3f7f3bc81,17,17,Female,Other
+596,b3f89dae8b6912eed3949998e80a6aa9,17,17,Female,Asian
+597,e12e7b3e97e1e4721198b227c8105a24,17,17,Male,Caucasian
+599,fb25833cdb4743d9f715a66f51e9ac21,17,17,Male,Asian
+600,be94e7348eefb3b3d39495766036a786,17,17,Female,Other
+601,812f062d801e857d07091aeee279dc9e,17,17,Male,Asian
+602,5dd99f05e0b6da802013ef46ad2f3a4e,17,17,Female,Asian
+603,a54bbd6da9a3625bc2127fead3af0d20,17,17,Male,Asian
+604,1921570f19ad28ae0870c8d3ba8794d4,17,17,Female,Other
+605,8711480b1abe6fb37745efddbf9eec04,17,17,Female,Caucasian
+606,d6bc40202615536c1778998e0abb3e17,17,17,Female,Caucasian
+607,ad15996cf6830d8d9447c0e7934bf710,17,17,Female,Asian
+608,7fdec2902e1618d6fb7857d14555e88f,17,17,Female,Caucasian
+610,ad9c914fcb5f540b67503b940346a431,17,17,Female,Caucasian
+611,10ca2dbcab1a9c5db65ac5e148db721b,17,17,Male,Asian
+612,706877e604b785c9b36bb5358c4de720,17,17,Female,Asian
+613,18fb7b82f1db51ccc876844fa22044fe,17,17,Male,Caucasian
+614,0f18a3f162edaa7a3f7dacd233089ac7,17,17,Female,Caucasian
+615,14412a14d38b809590e83eb5fccb6c33,17,17,Male,Caucasian
+616,33a48dc2ab1723042cec0336cda647e5,17,17,Male,Caucasian
+617,d703a19613dfb74a5acd61a93ff7b8e9,17,17,Female,Caucasian
+618,2df93511b56c631d1802cbe4aa822e20,17,17,Female,Caucasian
+619,f7e0370d09d9ecb320e5b144c69ea2ed,17,17,Female,Caucasian
+620,c04d01402bdb4e02089e77541d3d6ce4,17,17,Female,Black or African American
+621,ae8b667fd455b23959fa52f628f316f3,17,17,Female,Caucasian
+622,2d9e3fe1a2bb58c007d97e9bbaf78e92,17,17,Male,Caucasian
+623,612a41ef0ab0f5ca300ce0657845f99a,17,17,Female,Caucasian
+624,bb8882be495e89225a4b4d122182bf61,17,17,Female,Caucasian
+625,90784f463b13f94682080410f476f697,17,17,Female,Caucasian
+626,b46e283b051e354a92bdf7b2997fe7c7,17,17,Male,Caucasian
+627,db50074ee00af7c6a7b6e880a71c4d19,17,17,Male,Caucasian
+628,798703ec0ae72bf00619d3047b231c55,17,17,Male,Caucasian
+629,6c63f1ba31afdd557c9bd7e9a4708066,17,17,Male,Caucasian
+630,fc8bef90141daadd500b03c17ec79959,17,17,Female,Caucasian
+631,7181641cf1f23482af4d945570b974ee,17,17,Male,Caucasian
+632,af202a1d756b66877b3479afa6c9be89,17,17,Male,Other
+633,338e4bb793c238ca612ffd09cc8bbad6,17,17,Female,Caucasian
+634,91f467a3ce2a0caa2783dec046f29819,17,17,Male,Caucasian
+635,cbe52087b6a8bd1d1bc82fc23ef53af1,17,17,Female,Caucasian
+636,6afcf45db175aac669017d4930b9113c,17,17,Female,Caucasian
+637,b53d88555bbbf39fad45e85ae65855dc,17,17,Female,Caucasian
+638,5a27811494220293ba1af23e51cafb53,17,17,Female,Asian
+639,9de13d2afb2c0eb8723f202f199a10f2,17,17,Male,Asian
+640,2d0e7715f87b036107f3e9fec2126493,17,17,Female,Caucasian
+641,f84f08b27a500d92b6e598b8a142a07d,17,17,Female,Caucasian
+642,92fecf1cb8fc3618af9fd6690e476de6,17,17,Female,Caucasian
+643,0d457e0330c98a245b0cc81dbe4e81e7,17,17,Female,Caucasian
+644,466c68dda0c11b387d815abeb7f9434a,17,17,Female,Caucasian
+645,6a927911a49a801442aa78f12093bea2,17,17,Female,Caucasian
+646,d4687785ddcc0f9edb1f22b555d24f76,17,17,Male,Caucasian
+647,0787adc8f0c9279d601903fbee36226f,17,17,Female,Other
+648,1bf18830609089653be3f9cf84c4c30a,17,17,Male,Caucasian
+649,d10b30cf7846060ae69a8181d59b877e,17,17,Female,Caucasian
+650,c0d2466d3de4149f971f9bc05c2981aa,17,17,Female,Asian
+651,bedcab00a498223c8714aa46b10ca8e2,17,17,Male,Asian
+652,6fbb17026f3f8d1ccd4f4a0c419a2ee1,17,17,Male,Asian
+653,3e060c50c361a35efa2cda88c7d3080b,17,17,Female,Asian
+654,b01f3e0e74f4669b68a962075e12d7e7,17,17,Male,Other
+655,fb835949d8bc96184b08b24341972309,17,17,Female,Other
+656,f8b151c1b9589307edc4f7ae270a3f74,17,17,Female,Other
+657,25023db6bcafed2d1bea682c5e2e7a18,17,17,Female,Caucasian
+658,bed668641717f0289b7ab7b23c36b9a3,17,17,Female,Caucasian
+659,5aae154a68bd34bdd4f4128d9f9c92e8,17,17,Male,Caucasian
+660,a0d58d38bb5bd7b3b1630ada6ea71589,17,17,Female,Caucasian
+661,e9bce984a9ab7b5cee9c9a698358962e,17,17,Female,Caucasian
+662,0c88a1ab8b8de7902e23fdc9edc9d1c6,17,17,Male,Caucasian
+663,641832f07e03b8243cb3550cf6ea2eef,17,17,Female,Caucasian
+664,879164bdedf76f97858dd67fa3b6da28,17,17,Female,Caucasian
+665,cd32e4298a064d7ba4183de86ccffefe,17,17,Female,Caucasian
+666,8a60bee61346e33b53c673b06a2d74a1,17,17,Male,Caucasian
+667,90af2ebd25996dff7b10bb951761d201,17,17,Female,Caucasian
+668,448edba90fdc714c31c45b0ae8ca45e9,17,17,Male,Caucasian
+669,8ae608c8eadce7af624e9ab68eb3ca12,17,17,Female,Caucasian
+670,d48d7b0f3aa475da1df8c4589172b38e,17,17,Female,Caucasian
+671,17e6e4630a77e5890f793c61651aa814,17,17,Female,Other
+672,a9d9df43fa0d67ac6a6f5c80184a44f4,17,17,Female,Asian
+673,336285c79161a5bf6d602fd664834932,17,17,Female,Caucasian
+674,c62c0621f8561460e505cd8ae7625688,17,17,Female,Caucasian
+675,5d19eac600ee87517331f3f7ed42c63a,17,17,Female,Caucasian
+676,29052abedef5891cac6fe14de86adc09,17,17,Female,Caucasian
+677,aaa07801bb70488bd0fd5bfb66aacaec,17,17,Female,Caucasian
+678,7aeae46b70426d268577ede7a13a52b4,17,17,Male,Caucasian
+679,a5ea56fa9e8275618001cc2dd64b9535,15,Flu 15,Female,Caucasian
+680,9f37c520b4a2d8eefeb0c5fd0761e771,15,Flu 15,Male,Asian
+681,68f245738e6417fc7c93d8257fb44b28,15,Flu 15,Male,Caucasian
+682,6781df79ec838769392461214b6dab2f,15,Flu 15,Female,NULL
+683,b0759454b7c4091ef8e8e24945388d0d,15,Flu 15,Male,Caucasian
+684,85bce4c471362608e3f900954e2c2c61,15,Flu 15,Female,Other
+685,c0b2baa82337d06ca8e1cc8e67740789,15,Flu 15,Female,Other
+686,498fb860e9c34f05e7634e7586fc7906,15,Flu 15,Female,Caucasian
+687,9bf4ba804d40487d7422c008be032128,15,Flu 15,Male,Asian
+688,44dcd0364e9cb7dee59b6fa87d02013f,15,Flu 15,Female,Asian
+689,9573621f6585449c23872e145ddbd775,15,Flu 15,Male,Caucasian
+690,7b9e701d6018a8302a53922fbd3478bf,15,Flu 15,Female,Caucasian
+691,d6b01376860911a630756e9e8ca363d4,15,Flu 15,Male,Asian
+692,2a7470a5097e23ba9c9161e4d01dfe7f,15,Flu 15,Female,Caucasian
+693,7a32f54d020ac2b4820b9390fa72f72e,15,Flu 15,Male,Caucasian
+694,22023d9ab8a9382461fa4be3d3900d61,15,Flu 15,Female,Asian
+695,bd114a6f420cf8c3d25270c525cd4ee4,15,Flu 15,Female,Other
+696,4b88a6bde99781e8ba3b146e878b7beb,15,Flu 15,Male,Caucasian
+697,3e90e4e43acb7107ea40f902c106aacb,15,Flu 15,Female,Caucasian
+698,a6f406cd9c6bf1cbbd27cb7e59bd7485,15,Flu 15,Female,Asian
+699,ef45ff7f998e978f6885699aa04b0491,15,Flu 15,Male,Caucasian
+700,10f0fd254ddf8d10d3a61ef55691d987,15,Flu 15,Male,Asian
+701,75c29a218c70380757b73137b1c828a1,15,Flu 15,Male,Asian
+702,ac6848a8988eda6c65bbb1d946b30566,15,Flu 15,Female,Asian
+703,7273e907e0c7310fa806a9f01a10bd79,15,Flu 15,Female,Other
+704,da88a8d76fe9f96dc55b5effc0e2d199,15,Flu 15,Female,Other
+705,d6073fa4284c067dfea735f6981a860d,15,Flu 15,Male,Caucasian
+706,84839574aec1733684c2a9c17fb182ae,15,Flu 15,Female,Caucasian
+707,9051147e2c16e3b69eb4556f982db381,15,Flu 15,Male,Caucasian
+708,c2f90271ff3159ccb8cb370cf00f17f9,15,Flu 15,Female,Asian
+709,e453f14dbae173650c0d6416e5fe579d,15,Flu 15,Male,Other
+710,3667414d4e297feb578707e6cf903fb6,15,Flu 15,Female,Caucasian
+711,1d25b36543cb85a8bd262e57ed102744,15,Flu 15,Male,Caucasian
+712,7f2176d19d0629c7e1bdd1f66385d329,15,Flu 15,Female,Asian
+713,f96ef0bbafc41cb8249fda09c5e3b7b6,15,Flu 15,Male,Caucasian
+714,1fa8bba7fcb1b76cc3e91bfa76af939c,15,Flu 15,Male,Caucasian
+715,290e5a5c0d3451098b65f13d3d36c3eb,15,Flu 15,Male,Caucasian
+716,83a2d636d42302385f31023067429370,15,Flu 15,Male,Caucasian
+717,101b77b905f11969a63d5b9027f0321e,15,Flu 15,Female,Other
+718,f4ef45be2b24d8a9fc3eb6794dc1871a,15,Flu 15,Male,Caucasian
+719,dc3cf9873378a2656baad7824ea01b4b,15,Flu 15,Female,Caucasian
+720,65559a0798754b13a54e893f75e18e86,15,Flu 15,Female,Caucasian
+721,e5b809b191ddea42d961e1750aaca098,15,Flu 15,Female,Caucasian
+722,10c75037aeaba3cb37e462829dd9c0c7,15,Flu 15,Female,Caucasian
+723,465a897ce1c9f71d87a2f5da139b99a1,15,Flu 15,Male,Caucasian
+724,e139dfe9db0ac09cc7bc29148519803c,15,Flu 15,Female,Caucasian
+725,634685ddc087316078edc0c4e79c6447,15,Flu 15,Male,Caucasian
+726,4e671695c268ed47cad2ca9259d5d038,15,Flu 15,Female,Caucasian
+727,e8192781564cc21aa887b1cd505708e1,15,Flu 15,Female,Caucasian
+728,8ecc9e51548226f26b40e47f169a0443,15,Flu 15,Male,Other
+729,9da7119c0d8dbe09f368ecbba06e968c,15,Flu 15,Female,Caucasian
+730,65531ab7c8e87cce5576984083b7bbb0,15,Flu 15,Female,Other
+731,894d3cce065857feea7553d9128c7f2b,15,Flu 15,Female,Asian
+732,8ca8955d56f95852e56fcd707eae2bac,15,Flu 15,Male,Caucasian
+733,c536ba04e2bd073ed62a213b5c96a4a1,15,Flu 15,Male,Caucasian
+734,6e2deb5fd068bfaf884e514575bc2b1b,15,Flu 15,Male,Caucasian
+735,3581e3f46156862cba78f4423dc7dd7f,15,Flu 15,Female,Caucasian
+736,d4f41f24b70b634f0574cbaded6eb60c,15,15,Female,Caucasian
+737,9f7bbfbb74a691715ce1da436b9a8553,15,15,Male,American Indian or Alaska Native
+738,625387178fdba7877c75c3d461a16cd4,15,15,Female,Caucasian
+739,7f3447aa67efcd7cf5393fff48feeb7d,15,15,Female,Caucasian
+740,8a1c16d768d4cffa07ad0573a770fc86,15,15,Female,Caucasian
+741,7e8e712dcd758cbd48551b088356614b,15,15,Male,Caucasian
+742,9ee6b41a6b2e975a50da28acefa6775a,15,15,Male,Caucasian
+743,bb27e61c13b10e7a6aa099aa3ae1196f,15,15,Female,Caucasian
+744,fa0ea23d02e2de766ef469058387bc6d,15,15,Female,Caucasian
+745,94763e7eb6a56bf186bf49bfd508c612,15,15,Male,Caucasian
+746,7618a3380ef229a584bc97235ca8be22,15,15,Female,Caucasian
+747,1515dc5f1f43eb9946540dd1e0d30301,15,15,Male,Caucasian
+748,8243502c11896fa32a1dfcfe0fd5a6f2,15,15,Female,Caucasian
+749,8fac9a5ad66d01ff0e847357a764d13a,15,15,Female,Caucasian
+750,54f5e388160254660c93048883f82575,15,15,Female,Caucasian
+751,48ef4199ceaf534e2daa935b549adade,15,15,Male,Asian
+752,0837803c27298a04fe5abc470c7d86d0,15,15,Female,Caucasian
+753,166714369c2d4c2d5b06a81eb1b56cc2,15,15,Female,Caucasian
+754,647dccc3070978712708520bd7bf7d64,15,15,Female,Caucasian
+755,287f0c5aaef1a0f9b9833cabab711815,15,15,Female,Caucasian
+756,92011c4a4b1c572ce204109c30955b71,15,15,Female,Caucasian
+757,e73536fdf3dd2947e5584bc14ceee5dc,15,15,Female,Caucasian
+758,8b2afae51f0d856b345dfd410a74a933,15,15,Male,Caucasian
+759,81fe18dc595777bffd3a9aaa601a3baa,15,15,Female,Caucasian
+760,019e8cb50a5ae56a40be4604865f8d15,15,15,Female,Caucasian
+761,2b23c6f7760c24021b42af546098d097,15,15,Female,Caucasian
+762,81e36c0d3a2f03f7a4714d1dca6410de,15,15,Male,Caucasian
+763,da1cdbee25c5292972e5b8838f7a2895,15,15,Male,Caucasian
+764,55c9f0b9d2eac1150d766fb14c69cb89,15,15,Female,Caucasian
+765,494862438d0df085b339573137a20f3a,15,15,Female,Caucasian
+766,3ee81e3a5fd4cc6cb4ffb326ef916db2,15,15,Female,Caucasian
+767,a74341cb98d8bf152ef75cd296703609,15,15,Male,Caucasian
+768,32542cce9417262b92ed413ced361eb5,15,15,Male,Caucasian
+769,1569ce8cdfff93dc1267bd94f8e4cc41,15,15,Female,Caucasian
+770,f970c412ad7d8c28c0570cf5645c9211,15,15,Male,Caucasian
+771,e92b76b86a7107e1759957a811a0e19e,15,15,Male,Caucasian
+772,74e7b1728d286455103ce366d6d13cba,15,15,Male,Caucasian
+773,31a2baf872a8cdd0470f3f2a75edb529,15,15,Female,Caucasian
+774,a04df746ac265ee3d3d236c51bb4cbc3,15,15,Female,Caucasian
+775,a7e747a87ebe7ee3d9c61769694c6c8d,15,15,Female,Caucasian
+776,162e92d81de5ce58f491c59066a23dad,15,15,Female,Other
+777,30c93f46e6dfb8e90b34b9a9f5c17b6a,15,15,Female,Asian
+778,9eb7b33cfdc3d912e43c0141882f355f,15,15,Female,Caucasian
+779,f8d2fb649a8472f3a910033032c5a757,15,15,Female,Caucasian
+780,1ed938551dd7d6a8a2782fb308c8f8ed,15,15,Male,Caucasian
+781,eb3984aca126cb9bde5b661a3f53f1fb,15,15,Male,Caucasian
+782,548edf394826f8dcce97bccf5f7626e8,15,15,Male,Asian
+783,4475e6bf1016f1e127fd27d04fae6485,15,15,Female,Caucasian
+784,49af2975256d1eaffe0fdfb130294cc9,15,15,Female,Caucasian
+785,e8e060ee5c8a45c651b78be8e7a4d655,15,15,Female,Caucasian
+786,2fe75c27ae51622701721e16a88561b7,15,15,Female,Caucasian
+787,5b1dd541dfa13fec15adb1623a01a7a1,15,15,Female,Caucasian
+788,36a1cd00d3f4e5e3e8a681c5cb0ce74b,15,15,Female,Caucasian
+789,411701a142b56294556b9bce9ef28fb5,15,15,Female,Caucasian
+790,6adbb4343b3f78adec8dd07611ab05a3,15,15,Male,Caucasian
+791,9455007f1bfe101dfb20a1ada536cc20,15,15,Male,Caucasian
+792,de637e0553e1c0a146510ede915a3928,15,15,Male,Caucasian
+793,89d552acb1161d3989a7a3c65c47795a,15,15,Male,Caucasian
+794,b43755e7f0e6f4bc74f0cd1909d4c605,15,15,Male,Caucasian
+795,b90c78b86a041ea9cd196911d54d23e2,15,15,Female,Caucasian
+796,20fcf193d6bef4d5d5db68cd483cbd14,15,15,Female,Caucasian
+797,f6df833d86010635cb8a4ddfd6841729,15,15,Male,Caucasian
+798,fa24828aa2aaf7d737fee6516d783e82,15,15,Female,Caucasian
+799,778362c25c1fb63976407ae58b66d567,15,15,Female,Caucasian
+800,86e0bdd23f9d020f19b82e0a6493efb2,15,15,Female,Caucasian
+801,b8cb1ee19f12708e37687c2c2ab0f4b0,15,15,Male,Caucasian
+802,691adef9bff5f2efcb5e014d8d0c3f3c,15,15,Male,Caucasian
+803,b6e8bc07ab4fc15fdf137086c39987f0,15,15,Female,Caucasian
+804,1297902eb150f20e380c93b36aae3dc5,15,15,Male,Other
+805,b994c22edfe6a07a1ee93b1aac12e5f6,15,15,Female,Caucasian
+806,f0a53ec98a33d8d730596a63116d7fad,15,15,Female,Caucasian
+807,450aa08b97e92b670246b9a410a7d786,15,15,Female,Caucasian
+808,7c593f5eb406ae4b71d714dbe06ae4bd,15,15,Female,NULL
+809,9039887423361ae94cfa0d5c039bdf71,15,15,Male,Caucasian
+810,330772b0546e444ed4f4f15d238502ce,15,15,Female,Caucasian
+811,73a80badf863095312081e29af0a3eb8,15,15,Male,Caucasian
+812,450477120f279d9e05be739350936ec6,15,15,Male,Caucasian
+813,f35f8eafba175116975a262320422556,15,Flu 15,Male,Caucasian

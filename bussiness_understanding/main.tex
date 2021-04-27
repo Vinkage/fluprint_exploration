@@ -56,16 +56,17 @@ annually \citep{zhouHospitalizationsAssociatedInfluenza2012}.
 
 Specifically, within the US based work of
 \cite{zhouHospitalizationsAssociatedInfluenza2012}, the highest hospitalization
-rates for influenza were among persons aged $>=$65 years and those aged $<$1 year.
-And, age-standardized annual rates per 100000 person-years varied substantially
-for influenza. A similar pattern is in
+rates for influenza were among persons aged $>=$65 years and those aged $<$1
+year.  And, age-standardized annual rates per 100000 person-years varied
+substantially for influenza. A similar pattern is in
 \cite{greenMortalityAttributableInfluenza2013}, where an age shift in Wales and
 England seasonal influenza burden was observed following the 2009 swine flue
-pandemic. These patterns can confound decision making on national and
-international public health policies. The necessity of informed decision making
-is apperant from estimates of influenza attributed mortality, it is
-estimated that globally 291.243–645.832 influenza associated seasonal deaths
-occur annually \citep{iulianoEstimatesGlobalSeasonal2018}.
+pandemic. It is also estimated that globally 291.243–645.832 influenza associated
+seasonal deaths occur annually \citep{iulianoEstimatesGlobalSeasonal2018} These
+varying demographic statistics and the volume of influenza patients can confound
+decision making on national and international public health policies.
+Knowledge on vaccine efficacy and implementation can be a valuable asset for
+fighting future seasonal influenza outbreaks.
 
 \subsection{Vaccine success criteria}
 
@@ -116,20 +117,17 @@ patterns between vaccine response and immune correlates furthers the
 understanding of the underlying immunological mechanism of influenza
 protection.
 
-This work uses the FluPrint database, which aims to solve some of the data
-quality issues of prior studies using clinical datasets comprised of blood and
-serum sample assays. It does so by incorporating eigth clinical studies
-conducted between 2007 to 2015 using in total 740 patients, including different
-types of assays and normalizing their values, and by providing a binary
-classification of high- and low-responder to a vaccine.
+This work uses the FluPrint database, which aims to solve data quality issues
+and low dimensionality of prior studies using clinical datasets comprised of
+viurs, cell and serum sample assays. It does so by incorporating eigth clinical
+studies conducted between 2007 to 2015 using in total 740 patients, including
+different types of assays and normalizing their values, and by providing a
+binary classification of high- and low-responder to a vaccine.
 
 The objectives of this work are to answer:
 \begin{itemize}
-        \item Which datasets in the FluPrint database are most interesting?
-        \item How do different clinical studies compare?
-        \item What are the differences in efficacy between vaccination types?
-        \item What is the effect of repeat vaccination on vaccine response?
-        \item What immunological factors correlate to a high vaccine response?
+        \item What kind of studies can be done using the FluPRINT database?
+        \item What immunological factors correlate to a vaccine responses?
 \end{itemize}
 
 Since this work is an independent study performed for an assignment, the
@@ -271,21 +269,15 @@ models on the most interesting dataset.
 
 The bussiness objectives can be translated in data mining terminology like so:
 \begin{itemize}
-        \item Explore and describe SQL queries and corresponding csv tables.
-        \item Model and visualise the different clinical study populations.
-        \item Model and visualise the difference between vaccination types.
-        \item Model and visualise repeat vaccination effects.
-        \item Apply standard feature selection methods to the most interesting dataset.
-        \item Fit classification models to the most interesting dataset.
+        \item Explore and describe the database and corresponding tables.
+        \item Apply standard feature selection methods to the most interesting datasets.
+        \item Fit classification models to the most interesting datasets.
 \end{itemize}
 
 In data mining terms, the problem type is a combination of exploratory data
-analysis and classification. Since this work is for a 3EC assignment for the
-Applied Data Science profile and most of the goals are exploratory analyses,
-success criteria for all goals are subjective. For exploratory and visual type
-goals the quality is expected to be of the same level as the publications of
-the authors \cite{tomicFluPRINTDatasetMultidimensional2019,
-tomicSIMONAutomatedMachine2019}.  For the classification type goals we follow
+analysis and classification. Since this work is for a 2-weeks/3EC assignment
+for the Applied Data Science profile, success criteria for all goals are
+subjective. For the classification type goals we follow
 the model evaluation procedure used by the authors
 \cite{tomicSIMONAutomatedMachine2019}, models were evaluated by the AUROC
 metric, and accuracy, specificity and sensitivity were also reported. Insights
@@ -294,7 +286,7 @@ authors.
 
 \section{Project plan}
 
-\f{sql_querying_plan}
+\f{v2_desc_exploration}
 {Project plan for the SQL related data mining goal.}
 {plan:sql}
 
@@ -307,30 +299,30 @@ provided in the original publication of the database
 in this work. The tools that will be used are SQL for querying and R for
 statistical descriptions.
 
-The second phase of this plan was an iterative process of finding suitable data
-to answer the modelling and visualisation data mining goals. This is a more
-involved process since it requires exploration of the database to answer the
-questions, and therefore was estimated to take time.
+% The second phase of this plan was an iterative process of finding suitable data
+% to answer the modelling and visualisation data mining goals. This is a more
+% involved process since it requires exploration of the database to answer the
+% questions, and therefore was estimated to take time.
 
-\f{model_and_vis_plan}
-{Project plan for the modelling and visualisation data mining goals.}
-{plan:vis}
-
-Relations between attributes in the generated datasets are visualised and
-modelled to see if there exist a pattern in the data that is relevant for the
-business objectives \autoref{plan:vis}. A critical point in this plan is
-deciding whether an objective cannot be answered with the available data. In
-that case the goal was revised and the second phase of the SQL query plan was
-reiterated. When deciding if the exploratory analysis was of sufficient
-quality, the work by the authors of the database used in this work was used as
-a subjective benchmark \cite{tomicSIMONAutomatedMachine2019,
-tomicFluPRINTDatasetMultidimensional2019}.
+% \f{model_and_vis_plan}
+% {Project plan for the modelling and visualisation data mining goals.}
+% {plan:vis}
+%
+% Relations between attributes in the generated datasets are visualised and
+% modelled to see if there exist a pattern in the data that is relevant for the
+% business objectives \autoref{plan:vis}. A critical point in this plan is
+% deciding whether an objective cannot be answered with the available data. In
+% that case the goal was revised and the second phase of the SQL query plan was
+% reiterated. When deciding if the exploratory analysis was of sufficient
+% quality, the work by the authors of the database used in this work was used as
+% a subjective benchmark \cite{tomicSIMONAutomatedMachine2019,
+% tomicFluPRINTDatasetMultidimensional2019}.
 
 \f{feature_selection_classification}
 {Project plan for the classification and feature selection data mining goal.}
 {plan:cls}
 
-For the final two data mining goals the plan was to find the immune correlates
+For the modeling data mining goals the plan was to find the immune correlates
 of high immune responders using a wrapper based feature selection strategy
 \autoref{plan:cls}
 

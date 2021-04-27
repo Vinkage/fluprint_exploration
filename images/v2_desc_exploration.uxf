@@ -1,0 +1,21 @@
+<diagram program="umletino" version="14.3.0"><zoom_level>10</zoom_level><element><id>UMLState</id><coordinates><x>150</x><y>230</y><w>220</w><h>90</h></coordinates><panel_attributes>Install/download prerequisites
+(PHP, MySQL, raw data tables)
+
+using FluPrint github.</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>90</x><y>120</y><w>470</w><h>60</h></coordinates><panel_attributes>halign=left
+Data mining goal: 
+
+Explore and describe SQL queries and corresponding csv tables.</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLState</id><coordinates><x>400</x><y>250</y><w>220</w><h>50</h></coordinates><panel_attributes>Set up server and 
+SQL development environment</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLState</id><coordinates><x>640</x><y>250</y><w>190</w><h>50</h></coordinates><panel_attributes>Generate database tables
+with simple queries</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLState</id><coordinates><x>850</x><y>180</y><w>220</w><h>190</h></coordinates><panel_attributes>REPORT
+basic information of 
+database tables 
+ON 
+key relations and attributes 
+USING 
+descriptive analysis in R/SQL 
+AND 
+provided information 
+by authors</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLSpecialState</id><coordinates><x>1130</x><y>240</y><w>200</w><h>80</h></coordinates><panel_attributes>type=decision
+Database 
+clearly described?</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1060</x><y>270</y><w>90</w><h>30</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>70;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>720</x><y>130</y><w>530</w><h>140</h></coordinates><panel_attributes>lt=&lt;-
+[NO]</panel_attributes><additional_attributes>10;120;10;20;510;20;510;110</additional_attributes></element><element><id>Relation</id><coordinates><x>820</x><y>270</y><w>50</w><h>30</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>30;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>610</x><y>270</y><w>50</w><h>30</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>30;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>360</x><y>270</y><w>60</w><h>30</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>40;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>1320</x><y>270</y><w>80</w><h>30</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>60;10;10;10</additional_attributes></element><element><id>UMLSpecialState</id><coordinates><x>1380</x><y>270</y><w>20</w><h>20</h></coordinates><panel_attributes>type=final</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLSpecialState</id><coordinates><x>90</x><y>260</y><w>20</w><h>20</h></coordinates><panel_attributes>type=initial</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>100</x><y>260</y><w>70</w><h>30</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>50;10;10;10</additional_attributes></element></diagram>

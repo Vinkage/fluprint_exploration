@@ -1,0 +1,8 @@
+id,donor_id,visit_id,visit_internal_id,visit_year,visit_day,visit_type_hai,age,age_round,cmv_status,ebv_status,bmi,vaccine,geo_mean,d_geo_mean,delta_single,vaccine_resp,total_data,donor_id,id,study_donor_id,study_id,study_internal_id,gender,race
+135,166,1,1,2011,0,pre,20.47,20,1,1,30.31,4,25.2,6,8,0,343,166,166,c18c76a27a6e55e44708ad5ead4e8e40,21,FLU STUDY 21,Male,Asian
+138,166,2,2,2011,7,other,20.47,20,1,1,NULL,4,0,6,NULL,0,51,166,166,c18c76a27a6e55e44708ad5ead4e8e40,21,FLU STUDY 21,Male,Asian
+137,166,3,3,2011,28,post,20.47,20,1,1,NULL,4,160,6,8,0,51,166,166,c18c76a27a6e55e44708ad5ead4e8e40,21,FLU STUDY 21,Male,Asian
+136,166,4,1,2012,0,pre,21.43,21,1,1,30.31,4,9.28,4,20,0,292,166,166,c18c76a27a6e55e44708ad5ead4e8e40,21,FLU STUDY 21,Male,Asian
+133,166,6,1,2013,0,pre,22.49,22,1,1,30.31,4,15.91,2,2,0,2877,166,166,c18c76a27a6e55e44708ad5ead4e8e40,21,FLU STUDY 21,Male,Asian
+139,166,7,2,2013,7,other,22.49,22,1,1,NULL,4,0,2,NULL,0,63,166,166,c18c76a27a6e55e44708ad5ead4e8e40,21,FLU STUDY 21,Male,Asian
+134,166,8,3,2013,28,post,22.49,22,1,1,NULL,4,26.75,2,2,0,82,166,166,c18c76a27a6e55e44708ad5ead4e8e40,21,FLU STUDY 21,Male,Asian
