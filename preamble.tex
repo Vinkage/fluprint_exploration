@@ -49,8 +49,18 @@
 
 \let\oldautoref\autoref
 \renewcommand{\autoref}[1]{(\oldautoref{#1})}
+\newcommand{\autorefsub}[2]{(\oldautoref{#1}, #2)}
+\newcommand{\gmt}{\acrshort{gmt}}
+\newcommand{\firstvis}{first-visit data }
+\newcommand{\secondvis}{second-visit data }
 
 \newcommand{\uu}{Utrecht University}
+\newcommand{\flup}{\gls{d:flup} }
+\newcommand{\simon}{\gls{d:simon} }
+\newcommand{\dpaper}{the \flup paper }
+\newcommand{\Dpaper}{The \flup paper }
+\newcommand{\spaper}{the \simon paper }
+
 \newcommand{\MyTitle}[1]{
     \title{
     {#1}\\
@@ -61,7 +71,7 @@
     \maketitle
 }
 \newcommand{\f}[3]{%
-\begin{figure}
+\begin{figure}[htpb]
     \includegraphics[width=\textwidth]{#1}
     \caption{#2}
     \label{#3}
@@ -97,7 +107,7 @@
     \centering
     \includegraphics[scale=.7]{#1}
     \captionsetup{width=0.8\linewidth}
-    \captionof{table}{\textbf{#3} #4}
+    \captionof{figure}{\textbf{#3} #4}
     \par
     \label{#5}
 }
