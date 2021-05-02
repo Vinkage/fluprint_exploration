@@ -1,0 +1,5 @@
+SELECT *
+from `donor_visits`
+left join donors on
+    donors.id = donor_visits.donor_id
+where study_id = 15

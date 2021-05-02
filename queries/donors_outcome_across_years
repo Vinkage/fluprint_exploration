@@ -1,0 +1,18 @@
+SELECT donors.id                        AS donor_id,
+       donor_visits.age                 AS age,
+       donor_visits.vaccine_resp        AS outcome,
+       donor_visits.visit_id            AS visit,
+       donor_visits.visit_day           AS day,
+       donor_visits.visit_year          AS year
+       # experimental_data.name_formatted AS data_name,
+       # experimental_data.data           AS data,
+FROM   donors
+       LEFT JOIN donor_visits
+              ON donors.id = donor_visits.donor_id
+                 # AND donor_visits.visit_id = 1
+       # INNER JOIN experimental_data
+       #         ON donor_visits.id = experimental_data.donor_visits_id
+       #            AND experimental_data.donor_id = donor_visits.donor_id
+WHERE  donors.gender IS NOT NULL
+       AND donor_visits.vaccine = 4
+ORDER  BY donors.id DESC

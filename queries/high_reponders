@@ -1,0 +1,4 @@
+SELECT * from donor_visits
+where vaccine_resp is not null
+and donor_id = 166
+order by visit_year ASC

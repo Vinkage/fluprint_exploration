@@ -1,0 +1,11 @@
+SELECT * from `donor_visits`
+join(
+select donor_visits.donor_id
+from donor_visits
+group by donor_visits.donor_id
+having count(*) > 1) s on donor_visits.donor_id = s.donor_id
+join donors
+on donors.id = donor_visits.donor_id
+where study_id = 21
+and donor_visits.donor_id = 166
+order by donor_visits.donor_id, visit_id

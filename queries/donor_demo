@@ -1,0 +1,11 @@
+SELECT  donors.id as Donor,
+        donors.gender as Gender,
+        donor_visits.age_round as Age,
+        donors.race as Ethnicity,
+        donor_visits.cmv_status as 'CMV status',
+        donor_visits.vaccine_resp as Response
+from donors
+       LEFT JOIN donor_visits
+              ON donors.id = donor_visits.donor_id
+                 AND donor_visits.visit_id = 1
+where donor_visits.vaccine_resp is not null

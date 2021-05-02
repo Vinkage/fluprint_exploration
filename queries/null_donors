@@ -1,0 +1,7 @@
+SELECT * from donors
+where donors.id is NULL or
+donors.study_donor_id is NULL or
+donors.study_id is NULL or
+donors.study_internal_id is NULL or
+donors.gender is NULL or
+donors.race is NULL

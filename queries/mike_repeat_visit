@@ -1,0 +1,23 @@
+SELECT donors.id                        AS donor_id,
+       donors.study_id                  AS study,
+       donor_visits.age                 AS age,
+       donor_visits.vaccine_resp        AS outcome,
+       donor_visits.visit_year          AS year,
+       donor_visits.visit_type_hai      as type,
+       donor_visits.d_geo_mean          as hai_response,
+       experimental_data.name           AS name,
+       experimental_data.name_formatted AS name_formatted,
+       experimental_data.assay          AS assay,
+       experimental_data.data           AS data
+FROM   donors
+       LEFT JOIN donor_visits
+              ON donors.id = donor_visits.donor_id
+       INNER JOIN experimental_data
+               ON donor_visits.id = experimental_data.donor_visits_id
+                  AND experimental_data.donor_id = donor_visits.donor_id
+WHERE  donors.gender IS NOT NULL
+       AND donor_visits.vaccine_resp IS NOT NULL
+       AND donor_visits.vaccine = 4
+       AND donor_visits.visit_type_hai = "pre"
+       AND donor_visits.visit_id != 1
+ORDER  BY donors.study_donor_id DESC
