@@ -13,7 +13,7 @@
     name=antigen,
     description={In immunology, an antigen is a molecule or molecular
     structure, such as \acrshort{ha} and \acrshort{na}, that can be bound by an
-    antigen-specific antibody or immune cell receptor.  The presence of
+    antigen-specific \gls{bu:antibody} or immune cell receptor.  The presence of
     antigens in the body normally triggers an immune response
     }
 }
@@ -38,9 +38,154 @@
 \newglossaryentry{bu:tiv}
 {
     type=bus,
-    name=inactivated trivalent vaccines,
-    description={An inactivated vaccine is a vaccine consisting of
-    \gls{bu:antigen}ic virus particles from viruses that have been grown in
-    culture and then killed to destroy disease producing capacity. In practice
-    vaccines of three main types of influenza were used, hence trivalent}
+    name=TIV,
+    description={
+        An inactivated trivalent vaccine is a vaccine consisting of \gls{bu:antigen}ic virus particles from viruses that have been grown in culture and then killed to destroy disease producing capacity.
+        In practice vaccines of three main types of influenza were used, hence trivalent
+    },
+    first={inactivated trivalent vaccines (TIV)}
 }
+\newglossaryentry{bu:antibody}
+{
+    type=bus,
+    name=antibody,
+    description={ Protein used by the immune system to identify and neutralize foreign objects such as pathogenic bacteria     and viruses.
+    The antibody recognizes a unique molecule of the pathogen, called an \gls{bu:antigen}}
+}
+\newglossaryentry{bu:titer}
+{
+    type=bus,
+    name=titer,
+    description={
+    Titer is a way of expressing concentration.
+    Titer testing employs serial dilution to obtain approximate quantitative information from an analytical procedure that inherently only evaluates as positive or negative.
+    The titer corresponds to the highest dilution factor that still yields a positive reading
+    }
+}
+\newglossaryentry{bu:tcell}
+{
+    type=bus,
+    name=T-cell,
+    description={
+        A T cell is a type of \gls{bu:lymphocyte}.
+        T cells are one of the important white blood cells of the immune system and play a central role in the adaptive immune response, for example generating antibodies against influenza.
+        Groups of specific, T cell subtypes have a variety of important functions in controlling and shaping the adaptive immune response
+    }
+}
+\newglossaryentry{bu:lymphocyte}
+{
+    type=bus,
+    name=lymphocyte,
+    description={
+        A lymphocyte is a type of white blood cell in the immune system of jawed vertebrates.
+        Lymphocytes include \gls{bu:tcell}, and \gls{bu:bcell}.
+        These cells work together in the adaptive immune response to generate antibodies against influenza
+    }
+}
+\newglossaryentry{bu:cd8pos}
+{
+    type=bus,
+    name=CD8+ T-cell,
+    description={
+        A cytotoxic T cell (also known as CD8+ T-cell) is a \gls{bu:tcell} that kills cancer cells, cells that are infected (particularly with viruses), or cells that are damaged in other ways.
+        It does so by recognizing specific part of \gls{bu:antigen} and then starting a process that kills the targetted cell
+    }
+}
+\newglossaryentry{bu:cd4pos}
+{
+    type=bus,
+    name=CD4+ T-cell,
+    description={
+        The T helper cells, also known as CD4+ cells, "help" the activity of other immune cells by releasing \gls{bu:cytokine}s.
+        These cells help to polarize the immune response into the appropriate kind depending on the nature of the immunological insult (e.g. virus vs. bacterium)
+    }
+}
+\newglossaryentry{bu:cytokine}
+{
+    type=bus,
+    name=cytokine,
+    description={
+        Cytokines are a broad and loose category of small proteins important in cell signaling that bind to receptor protein on the outside of (immune) cells to fulfill their signal function
+    }
+}
+\newglossaryentry{bu:pbmc}
+{
+    type=bus,
+    name=PBMC,
+    description={
+        A peripheral blood mononuclear cell is any peripheral blood cell having a round nucleus.
+        These cells consist of \gls{bu:lymphocyte} and \gls{bu:monocyte}s
+    },
+    first={peripheral blood mononuclear cell (PBMC)}
+}
+\newglossaryentry{bu:bcell}
+{
+    type=bus,
+    name=B-cell,
+    description={
+        B-cells produce antibody molecules; however, these antibodies are not secreted.
+        Rather, they are presented on the outside of the cell where they serve as a part of B-cell receptors.
+        When a B-cell is activated by an antigen, it proliferates and differentiates into an antibody-secreting effector cell, known as a plasmablast or plasma cell
+    }
+}
+\newglossaryentry{bu:monocyte}
+{
+    type=bus,
+    name=monocyte,
+    description={
+        Monocytes are a type of white blood cell.
+        Monocytes and their macrophage and dendritic cell progeny serve three main functions in the immune system.
+        These are phagocytosis, antigen presentation, and cytokine production.
+        Phagocytosis is the process of uptake of microbes and particles followed by digestion and destruction of this material
+    }
+}
+\newglossaryentry{bu:hai}
+{
+    type=bus,
+    name=HAI,
+    description={
+        The \acrlong{ha} inhibition assay is used to measure the \gls{bu:titer} of \gls{bu:antibody} against a strain of influenza virus present in the serum.
+        Antibody levels are measured before vaccination and 28 days after.
+        The antibody levels are used to compute the seroprotection and seroconversion criteria
+    },
+    first={\acrlong{ha} inhibition assay (HAI)}
+}
+\newglossaryentry{bu:cmv}
+{
+    type=bus,
+    name=CMV,
+    description={
+        Cytomegalovirus (CMV) is a common herpesvirus found in humans.
+        Like other herpesviruses, it is a life-long infection that remains in a latent state inside the human body, until it is 'reactivated' by appropriate conditions.
+        Thought to accelerate aging of the immune system and thereby impairing influenza vaccine response  \citep{van_den_Berg_2019}
+    },
+    first={cytomegalovirus (CMV)}
+}
+\newglossaryentry{bu:ebv}
+{
+    type=bus,
+    name=EBV,
+    description={
+        The Epstein–Barr virus (EBV), is one of the nine known human herpesvirus types in the herpes family, and is one of the most common viruses in humans.
+    },
+    first={Epstein-Barr virus (EBV)}
+}
+\newglossaryentry{bu:seropc}
+{
+    type=bus,
+    name=seroconversion and seroprotection,
+    description={
+        A vaccine is considered succesful if the recipient seroconverted (4-fold or greater rise in antibody against virus after vaccination) and were seroprotected (\acrshort{gmt} \(\ge\) 40) after vaccination.
+    }
+}
+\newglossaryentry{bu:stat}
+{
+    type=bus,
+    name=STAT,
+    description={
+        A vaccine is considered succesful if the recipient seroconverted (4-fold or greater rise in antibody against virus after vaccination) and were seroprotected (\acrshort{gmt} \(\ge\) 40) after vaccination.
+    },
+    first={signal transducers and activators of transcription (STAT)}
+}
+
+

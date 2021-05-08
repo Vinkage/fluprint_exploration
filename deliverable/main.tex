@@ -9,158 +9,103 @@
 \begin{document}
 \MyTitle{Change in immune cell signaling upon repeat vaccination: a data exploration using the FluPrint database}
 \tableofcontents
+\newpage
 \printglossary[type=bus]
+\newpage
 \printglossary[type=dm]
+\newpage
 \printglossary[type=\acronymtype]
+\newpage
 
 
-\section{background}
+\section{Background}
 
-Influenza viruses are enveloped \gls{bu:rnaVirus} (\acrshort{rna} virus(es)) and
-are divided into three types on the basis of \gls{bu:antigen}ic differences of internal
-structural proteins \citep{fdaGuidanceIndustryClinical2007}.
+Influenza viruses are enveloped \gls{bu:rnaVirus} (\acrshort{rna} virus(es)) and are divided into three types on the basis of \gls{bu:antigen}ic differences of internal structural proteins \citep{fdaGuidanceIndustryClinical2007}.
+Two influenza virus types, Type A and B, cause yearly epidemic outbreaks in humans and are further classified based on the structure of two major external \gls{bu:glycoprotein}s, hemagglutinin (\acrshort{ha}) and neuraminidase (\acrshort{na}) \citep{fdaGuidanceIndustryClinical2007}.
+Type B viruses, which are largely restricted to the human host, have a single \acrshort{ha} and \acrshort{na} subtype.
+In contrast, numerous \acrshort{ha} and \acrshort{na} Type A influenza subtypes have been identified to date.
+Type A and B influenza variant strains emerge as a result of frequent \gls{bu:antigen}ic change, principally from \gls{bu:mutation}s in the \acrshort{ha} and \acrshort{na} \gls{bu:glycoprotein}s \citep{fdaGuidanceIndustryClinical2007}.
 
-Two influenza virus types, Type A and B, cause yearly epidemic outbreaks in humans
-and are further classified based on the structure of two major external
-\gls{bu:glycoprotein}s, hemagglutinin (\acrshort{ha}) and neuraminidase (\acrshort{na})
-\citep{fdaGuidanceIndustryClinical2007}.
+Since 1977, influenza A virus subtypes H1N1 and H3N2, and influenza B viruses have been in global circulation in humans.
+The current U.S. licensed \gls{bu:tiv} are formulated to prevent influenza illness caused by these influenza viruses.
+Because of the frequent emergence of new influenza variant strains, the \gls{bu:antigen}ic composition of influenza vaccines needs to be evaluated yearly, and the \gls{bu:tiv} are reformulated almost every year.
+Currently, even with full production, manufacturing capacity would not produce enough seasonal influenza vaccine to vaccinate all those for whom the vaccine is now recommended \citep{fdaGuidanceIndustryClinical2007}.
 
-Type B viruses, which are largely restricted to the human host, have a single
-\acrshort{ha} and \acrshort{na} subtype.  In contrast, numerous \acrshort{ha}
-and \acrshort{na} Type A influenza subtypes have been identified to date.  Type
-A and B influenza variant strains emerge as a result of frequent
-\gls{bu:antigen}ic change, principally from \gls{bu:mutation}s in the \acrshort{ha}
-and \acrshort{na} \gls{bu:glycoprotein}s \citep{fdaGuidanceIndustryClinical2007}.
+\subsection{Influenza mortality estimation}
 
-Since 1977, influenza A virus subtypes H1N1 and H3N2, and influenza B viruses
-have been in global circulation in humans. The current U.S. licensed
-\gls{bu:tiv} are formulated to prevent influenza illness
-caused by these influenza viruses.  Because of the frequent emergence of new
-influenza variant strains, the \gls{bu:antigen}ic composition of influenza vaccines
-needs to be evaluated yearly, and the \gls{bu:tiv} are reformulated almost every
-year.
+Previous works have applied models to estimate seasonal population influenza mortality \citep{zhouHospitalizationsAssociatedInfluenza2012, greenMortalityAttributableInfluenza2013, iulianoEstimatesGlobalSeasonal2018}.
+Reported were age-specific influenza burdens that varied from one seasonal epidemic to another, that also varied per different region.
+However, consistently young children an elderly are found to be more susceptible to influenza and are advised to vaccinated annually \citep{zhouHospitalizationsAssociatedInfluenza2012}.  Specifically, within the US based work of \cite{zhouHospitalizationsAssociatedInfluenza2012}, the highest hospitalization rates for influenza were among persons aged $\geq$65 years and those aged $<$1 year.
 
-Currently, even with full production, manufacturing capacity would not produce
-enough seasonal influenza vaccine to vaccinate all those for whom the vaccine
-is now recommended \citep{fdaGuidanceIndustryClinical2007}.
-
-\subsection{Influenza mortality estimation models}
-
-Numerous works apply regression models to describe seasonal population
-influenza mortality \citep{zhouHospitalizationsAssociatedInfluenza2012,
-greenMortalityAttributableInfluenza2013, iulianoEstimatesGlobalSeasonal2018}.
-Reported are varying age-specific influenza burdens during different seasonal
-epidemics for different regions, but in general young children an elderly are
-found to be more susceptible to influenza and are adviced to vaccinated
-annually \citep{zhouHospitalizationsAssociatedInfluenza2012}.
-
-Specifically, within the US based work of
-\cite{zhouHospitalizationsAssociatedInfluenza2012}, the highest hospitalization
-rates for influenza were among persons aged $>=$65 years and those aged $<$1
-year.  And, age-standardized annual rates per 100000 person-years varied
-substantially for influenza. A similar pattern is in
-\cite{greenMortalityAttributableInfluenza2013}, where an age shift in Wales and
-England seasonal influenza burden was observed following the 2009 swine flue
-pandemic. It is also estimated that globally 291.243–645.832 influenza associated
-seasonal deaths occur annually \citep{iulianoEstimatesGlobalSeasonal2018} These
-varying demographic statistics and the volume of influenza patients can confound
-decision making on national and international public health policies.
-Knowledge on vaccine efficacy and implementation can be a valuable asset for
-fighting future seasonal influenza outbreaks.
+Nevertheless, overall per age influenza burdens varied per season.
+Seasonal age variability was shown in \cite{greenMortalityAttributableInfluenza2013}, where an age shift in Wales and England seasonal influenza burden was observed following the 2009 swine flue pandemic.
+It is also estimated that globally 291.243–645.832 influenza associated seasonal deaths occur annually \citep{iulianoEstimatesGlobalSeasonal2018}.
+These varying demographic statistics and the volume of influenza patients can confound decision making on national and international public health policies.
+Rapid knowledge extraction of vaccine efficacy data from clinical datasets and implementation of that knowledge can be a valuable asset for fighting future seasonal influenza outbreaks.
 
 \subsection{Vaccine success criteria}
 
-Due to the volume and vulnerability of population groups most at risk for
-influenze, the young and the elderly, a placebo controlled vaccine efficacy
-study is extremely costly \citep{zhouHospitalizationsAssociatedInfluenza2012}.
-Instead the haemagglutination-inhibiting (HAI) antibody test for influenza
-virus antibody is used to assess vaccine protection
-\citep{dejongHaemagglutinationinhibitingAntibodyInfluenza2003}. The policy for
-a succesful vaccine is an 4-fold increase in HAI antibody titre after
-vaccination and a geometric mean HAI titer of $\geq$ 40. The last is predicted
-to reduce influenza risk by 50\%
-\cite{dejongHaemagglutinationinhibitingAntibodyInfluenza2003}.
+To implement a vaccine clinical efficacy needs to be assessed.
+However, due to the volume and vulnerability of population groups most at risk for influenza, the young and the elderly, a standard placebo controlled vaccine efficacy study is extremely costly \citep{zhouHospitalizationsAssociatedInfluenza2012}.
+Instead, the \gls{bu:hai} is used to estimate vaccine efficacy without requiring a placebo controlled study \citep{dejongHaemagglutinationinhibitingAntibodyInfluenza2003}.
+The criteria for a successful vaccine is an 4-fold increase in \gls{bu:titer} of the \gls{bu:antibody} against a strain of influenza virus and a geometric mean \gls{bu:titer} (\acrshort{gmt}) of $\geq$ 40 28 days after vaccination, these are called \gls{bu:seropc}.
+The last is estimated to reduce influenza risk by 50\% \citep{dejongHaemagglutinationinhibitingAntibodyInfluenza2003}.
 
 \subsection{Finding immunological factors predicting high vaccine response using machine learning}
 
-It is known that pre-existing T cell populations are correlated with a HAI
-antibody response after vaccination. But, the role of T cells in mediating that
-response is uncertain. In one work it was found that under certain
-circumstances CD8+ T cells specific to conserved viral epitopes correlated with
-protection against symptomatic influenza
-\citep{sridharCellularImmuneCorrelates2013}.In other work, populations of CD4+
-T cells that associated with protective antibody responses after seasonal
-influenza vaccinations were found \citep{bentebibelInductionICOSCXCR3}.
-\cite{trieuLongtermMaintenanceInfluenzaSpecific2017} reports a stable CD8+ T
-cell populations and an increased CD4+ T cell populatin after vaccination. It was
-also reported that repeat vaccinations are an important factor in maintaining
-CD4+ T cell population \citep{trieuLongtermMaintenanceInfluenzaSpecific2017}.
-How exactly these T cell populations factor into protective influenza immunity
-and vaccination reponse is not well understood.
+It is known that pre-existing \gls{bu:tcell} populations are correlated with an \gls{bu:antibody} response after vaccination.
+But, the role of different \gls{bu:tcell} populations in mediating that response is uncertain.
+In one work it was found that under certain circumstances \gls{bu:cd8pos}s specific to a conserved part of viral \gls{bu:antigen}s correlated with protection against symptomatic influenza \citep{sridharCellularImmuneCorrelates2013}.
+In other work, different populations of \gls{bu:cd4pos}s that associated with protective antibody responses after seasonal influenza vaccinations were found \citep{bentebibelInductionICOSCXCR3}.
+Others, report non-increased \gls{bu:cd8pos} populations and an increased \gls{bu:cd4pos} population after vaccination \citep{trieuLongtermMaintenanceInfluenzaSpecific2017}.
+It was also reported that repeat vaccinations are an important factor in maintaining \gls{bu:cd4pos} population \citep{trieuLongtermMaintenanceInfluenzaSpecific2017}.
+How exactly these \gls{bu:tcell} populations work together to form a protective influenza immunity and vaccination response is not well understood.
 
-Machine learning has been applied to clinical datasets to find influenza
-protection markers, such as the described T cell populations and titers of
-related molecules \citep{furmanApoptosisOtherImmune2013,
-sobolevAdjuvantedInfluenzaH1N1Vaccination2016, tsangGlobalAnalysesHuman2014}.
-These type of studies suffer from data quality issues, such as: inconsistencies
-between findings depending on the epidemic season, only focussing on one type
-of biological assay to get data, and a low amount of patients/samples. A
-succesful vaccination is also often not well defined.
+Another known factor is that influenza virus infection stimulates various intracellular signaling pathways \citep{Zhang_2019}.
+These pathways are important for viral entry, replication, and propagation, and are involved in host antiviral response, but how these pathways lead to a fully realised vaccine response is not well understood \citep{Zhang_2018}.
+The activation of these pathways is commonly meditated by the phosphorylation and dephosphorylation of several proteins, including \gls{bu:stat}.
+One example is the JAK-STAT signaling pathway in \gls{bu:bcell}s, where a large set of \gls{bu:bcell} receptors is known to bind \gls{bu:cytokine}s produced by \gls{bu:cd4pos}s and this results in downstream biological processes that make the immune response to a vaccination \citep{Papin_2004}.
+Further, these pathways are found in all \gls{bu:pbmc} and control a great amount of biological programs  \citep{Cantrell_2015}.
+In general, the phosphorylation pattern of these pathways in \gls{bu:pbmc}s are used in clinical studies as a measure of cell activation in response to \gls{bu:cytokine} stimulation  \citep{Toapanta_2012,tomicFluPRINTDatasetMultidimensional2019}.
+
+Machine learning has been applied to clinical datasets to find influenza protection markers, such as the described \gls{bu:tcell} populations, \gls{bu:titer}s of \gls{bu:pbmc}s and related molecules, or \gls{bu:cytokine} signalling related activity \citep{furmanApoptosisOtherImmune2013, sobolevAdjuvantedInfluenzaH1N1Vaccination2016, tsangGlobalAnalysesHuman2014}.
+However, these studies suffer from multiple issues, such as: inconsistencies between findings depending on the epidemic season, only focussing on one type of biological assay to get data, and a low amount of donors/samples.
+Furthermore, a successful vaccination is  often not well defined within one study and the definition might differ between studies.
+To reduce these issues and to facilitate data mining of clinical studies the \flup database was created.
+The \flup database consists of preprocessed data from multiple clinical studies that span different years and data types, and in \flup enrolled donors are classified as high or low responders according to \gls{bu:hai} outcomes \citep{tomicFluPRINTDatasetMultidimensional2019}.
 
 \subsection{Bussiness objectives}
 
-Due to the high volume population that needs vaccines, it is important to study
-immune correlates to vaccine response. For example, repeat vaccination might
-not be necessary if the response is low, or a different vaccine is desired on a
-person to person basis depending on immune correlates. Moreover, identifying
-patterns between vaccine response and immune correlates furthers the
-understanding of the underlying immunological mechanism of influenza
-protection.
+As described, due to the high volume population that needs vaccines and the rapidly changing nature of the influenza virus, rapid vaccine efficacy knowledge extraction is important.
+Moreover, identifying patterns between vaccine response and immune correlates furthers the understanding of the underlying immunological mechanism of influenza protection.
 
-This work uses the \flup database, which aims to solve data quality issues
-and low dimensionality of prior studies using clinical datasets comprised of
-viurs, cell and serum sample assays. It does so by incorporating eigth clinical
-studies conducted between 2007 to 2015 using in total 740 patients, including
-different types of assays and normalizing their values, and by providing a
-binary classification of high- and low-responder to a vaccine.
+This work uses the \flup database, which aims to solve data quality issues and low dimensionality of prior studies using clinical datasets comprising different virus, cell and serum sample data types.
+Specifically, it does so by incorporating eight clinical studies conducted between 2007 to 2015 using in total 740 patients, spanning different types of assays.
+Further, it preprocesses the data, and provides a binary classification of enrolled donors into high- or low-responder to a vaccine if \gls{bu:hai} data is available.
+This facilitates data mining studies that can identify patterns based on donor vaccine response in the multi-dimensional data collected from multiple clinical studies.
 
-The objectives of this work are to answer:
+The work done here is structured around providing insight into these questions using the \flup database:
 \begin{itemize}
         \item What kind of studies can be done using the \flup database?
         \item What immunological factors correlate to a vaccine responses?
         \item What is the effect of repeat vaccination?
 \end{itemize}
 
-Since this work is an independent study performed for an assignment, the
-success criteria for these objective will be loosely defined as providing a
-statistical description or to provide insigth in the questions posed in the
-objectives.
+Since this work is an independent study performed for an assignment, the success criteria for these objective will be loosely defined as providing a statistical description or to provide insight in the questions posed in the objectives.
 
-The rationale for these questions and succes criteria  are based on the scope
-of the 3EC project as part of the Applied data science profile and the data
-available. The paper of \cite{tomicFluPRINTDatasetMultidimensional2019} on
-which this work is mostly based on provides these questions as interesting
-directions for further analysis, but does not directly provide the data
-necessary to answer them, only the MySQL database containing a great volume of
-data.
+The rationale behind these questions and success criteria is the limited scope of this project, it is a short 3EC project as part of the Applied data science profile meant to show the ability to use data mining tools.
+\Dpaper on which this work is based provided the directions of these research questions, and a part of this work was to replicate and extend the work done by the authors of \flup and their follow-up work in \spaper.
 
 \section{Assess situation}
 
-\subsection{data and knowledge sources}
+\subsection{Data and knowledge sources}
 
-The sole source of data used in the project is provided by
-\cite{tomicFluPRINTDatasetMultidimensional2019} (this work is reffered to
-using: "the \flup paper" from now on). \Dpaper describes the MySQL database for
-which the installation is described in the
-\href{https://github.com/LogIN-/fluprint}{FluPrint Github Repository}. A
-template query is provided on the
-\href{https://github.com/LogIN-/simon-manuscript}{github page} belonging to an
-unpublished follow-up study by the same authors of \dpaper
-\autoref{lst:QueryTemplate}.  According to the authors, this data is the most
-interesting for the bussiness objective of finding repeat vaccination effects
-and will be used in this work too (this
-unpublished follow-up study is referred to using: "\spaper"). The authors give this brief
-description of the data:
+The sole source of data used in the project was provided by \cite{tomicFluPRINTDatasetMultidimensional2019} (this work is referred to using: "the \flup paper" from now on).
+\Dpaper described the MySQL database for which the installation was described in the \href{https://github.com/LogIN-/fluprint}{FluPrint Github Repository}.
+A template query is provided on the \href{https://github.com/LogIN-/simon-manuscript}{github page} belonging to an unpublished follow-up study by the same authors of \dpaper
+\autoref{lst:QueryTemplate}.
+According to the authors, the data belonging to this data is the most interesting for the business objective of finding repeat vaccination effects and will be used in this work too (this unpublished follow-up study is referred to using: "\spaper").
+The authors give this brief description of the data:
 
 \begin{displayquote}
     \textit{"The influenza datasets were obtained from the Stanford Data Miner maintained by
@@ -175,190 +120,119 @@ description of the data:
 
 \subsection{Tools and techniques}
 
-Installation of the \flup database will require an installation on a
-unix operating system of \href{https://www.mysql.com/}{MySQL},
-\href{https://www.php.net/manual/en/install.php}{PHP}. More details are at the
-\href{https://github.com/LogIN-/fluprint}{FluPrint Github Repository}.
+Installation of the \flup database requires an installation on a unix operating system of \href{https://www.mysql.com/}{MySQL}, \href{https://www.php.net/manual/en/install.php}{PHP}. More details are at the \href{https://github.com/LogIN-/fluprint}{FluPrint Github Repository}.
 
-Database querying was done using a \href{https://neovim.io/}{neovim} based toolset,
-personal configuration can be found
+Database querying was done using a \href{https://neovim.io/}{neovim} based toolset, personal configuration can be found
 \href{https://github.com/Vinkage/mike_neovim/tree/feature}{here}.
 
-Since in \dpaper R is used, it is also used here.  Especially crucial is the
-\href{https://cran.r-project.org/web/packages/mulset/index.html}{R package
-mulset}, which was made by the authors of \spaper. This package is used to deal
-with missing data between different clinical studies and years, and thus will
-be used to generate complete data tables in this paper too. All scripts in this
-work were written using \href{https://www.tidyverse.org/}{tidyverse} packages
-and make heavy use of the \href{https://dplyr.tidyverse.org/}{dplyr} package
-for data wrangling. Additionally the following packages were used:
-\href{https://cran.r-project.org/web/packages/ggpubr/index.html}{ggpubr} for
-making publication quality figures, the kable function from
-\href{knitr}{https://www.r-project.org/nosvn/pandoc/knitr.html} to generate
-latex tables, \href{https://topepo.github.io/caret/}{caret} and
-\href{https://cran.r-project.org/web/packages/MLeval/index.html}{MLeval} to
-streamline model training and evaluation,
-\href{https://cran.r-project.org/web/packages/corrplot/vignettes/corrplot-intro.html}{corrplot}
-to visualise correlation between features, and other packages that were used
-only once.
+Since in \dpaper and \spaper R is used, it was also used in this work.
+Especially crucial was the \href{https://cran.r-project.org/web/packages/mulset/index.html}{R package mulset}, which was made by the authors of \spaper.
+This package was used to deal with missing data between different clinical studies and years, and thus was used to generate complete data tables in this paper too.
+All scripts in this work were written using \href{https://www.tidyverse.org/}{tidyverse} packages and make heavy use of the \href{https://dplyr.tidyverse.org/}{dplyr} package for data wrangling.
+Additionally the following packages were used:
+\begin{itemize}
+    \item \href{https://cran.r-project.org/web/packages/ggpubr/index.html}{ggpubr} for making publication quality figures,
+    \item the kable function from \href{https://www.r-project.org/nosvn/pandoc/knitr.html}{knitr} to generate latex tables,
+    \item \href{https://topepo.github.io/caret/}{caret} and \href{https://cran.r-project.org/web/packages/MLeval/index.html}{MLeval} to streamline model training and evaluation,
+    \item \href{https://cran.r-project.org/web/packages/corrplot/vignettes/corrplot-intro.html}{corrplot} to visualise correlation between features, and other packages that were used only once.
+\end{itemize}
 
 \subsection{Requirements of the project}
 
 Requirements of this work are to show ability in using data science methods.
-As such, most of the insights will inevitably be a replication of the work done
-by the authors of the FluPrint database \cite{tomicSIMONAutomatedMachine2019},
-but all the scripts and analysis done are original work and are supplied
-together with the final deliverable.
+And, due to the scope of the project most of the insights gained include replication of the work of \dpaper and \spaper.
+Rather, all the scripts generated and analysis performed done are original work and are supplied together with the final deliverable \autoref{sec:github}.
 
-Since the data type used here is a database this makes it more complicated for
-an examinator to reproduce all code, especially since installing the database
-requires a unix operating system. This is not considered problematic
-since the queried tables from the database will be included in the final
-deliverable.
+Since the data used here was stored in a MySQL database this makes it more complicated for an examinator to reproduce all code, especially since installing the database
+requires a unix operating system.
+This is not considered problematic since the flat data files from the database used in R scripts are included.
 
-Reporting of the project follows the CRISP-DM methodology, where at each
-stage of the project a separate report is written during the analysis work. In
-the end the most important information is kept and incorporated in a final
-report that is assumed to be graded in conjunction with the code.
+Reporting of the project aimed to follow the CRISP-DM methodology, where at each stage of the project a separate report was written during the analysis work.
+In the end the most important information was kept and incorporated in a final report that was assumed to be the graded work.
 
 \subsection{Assumptions of the project}
 
-This work assumes that the focus point of the evaluation lies on the
-methodology used, and the ability to apply the basic data science methods
-learned in the Applied Data Science profile. The answer to business objectives
-is assumed to be subjective, and it is assumed that the methods used and
-clarity of insights into the data gained are more important.
+This work assumed that the focus point of the evaluation lies on the methodology used, and the ability to apply the basic data science methods learned in the Applied Data Science profile.
+The answer to business objectives is assumed to be subjective, and it is assumed that the methods used and clarity of insights into the data gained are more important.
 
-It is also assumed that the FluPrint database and other methods used by the
-authors \cite{tomicFluPRINTDatasetMultidimensional2019,
-tomicSIMONAutomatedMachine2019} are of high quality, and that this is
-appropriate for this work. Out of the scope of this work is investigating
-whether the preprocessing done for the data in the database is valid, since we
-are not domain experts. A method for querying, cleaning, and generating
-complete data tables has been provided by the authors and will also be used in
-this work. It is assumed that the SQL and R methods (in particular the mulset R
-package) in question are allowed to be used as a starting point in this
-assignment.
+It is also assumed that the \flup database and other methods used in \dpaper and \spaper are of high quality, and that this is appropriate for this work.
+Out of the scope of this work was investigating whether the preprocessing done for the data in the database is valid, since we are not domain experts.
+A method for querying, and generating complete data tables was provided by the authors of \dpaper and this was also be used in this work.
+It was assumed that provided SQL and R methods (in particular the mulset R package) in question are allowed to be used as a starting point in this assignment.
 
 \subsection{Constraints of the project}
 
-This work is an unsupervised assignment, and only personal hardware were
-available. This put constraints on dataset size and computational requirements
-of analyses. The work was done on a Macbook air (2017) with the OSX big-sur
-operating system. This means that unix tools were available and there were no
-technical constraints. The filetypes are only csv files generated by the SQL
-server.
+This work is an unsupervised assignment, and only personal hardware were available.
+This put constraints on dataset size and computational requirements of analyses. The work was done on a Macbook air (2017) with the OSX big-sur operating system.
+This means that unix tools were available and there were no technical constraints.
+The relevant filetypes to reproduce this work were csv files generated by the SQL server, and R scripts.
 
 \section{Data mining goals}
 
 \subsection{Translating the problem in data mining terms}
-All bussiness objectives described involve querying data from the FluPrint
-database. The goal of the authors of the FluPrint database was to provide a
-unqiue opportunity to study immune correlates of high vaccine responders across
-different years and clinical studies. The authors also provide a binary
-classification for donors. In this work we first and foremost explore the
-database, and lastly we apply feature selection methods and classification
-models on the most interesting dataset.
 
-The bussiness objectives can be translated in data mining terminology like so:
+All business objectives described involve querying data from the \flup database.
+In this work we first and foremost explore the database, and lastly we apply classification models and feature selection methods on the most interesting dataset.
+
+The business objectives can be translated in data mining terminology like so:
 \begin{itemize}
         \item Explore and describe the database and corresponding tables.
         \item Apply wrapper feature selection to the most interesting datasets.
         \item Explore features identified by the models trained in the wrapper feature selection.
 \end{itemize}
 
-In data mining terms, the problem type is a combination of exploratory data
-analysis and classification. Since this work is for a 2-weeks/3EC assignment
-for the Applied Data Science profile, success criteria for all goals are
-subjective. For the classification type goals we follow
-the model evaluation procedure used by the authors
-\cite{tomicSIMONAutomatedMachine2019}, models were evaluated by the AUROC
-metric, and accuracy, specificity and sensitivity were also reported. Insights
-produced by this work were benchmarked against the work of the original
-authors.
+In data mining terms, the problem type was a combination of exploratory data analysis and classification.
+Since this work was for a 2 to 3-weeks/3EC assignment for the Applied Data Science profile, success criteria for all goals are subjective.
+For the classification type goals we followed the model evaluation procedure used \spaper, models were evaluated using the AUROC metric, other confusion matrix metrics were also reported.
 
 \subsection{Project plan}
 
 \f{v2_desc_exploration}
-{Project plan for the SQL related data mining goal.}
+{Project plan for the SQL related data description goal.}
 {plan:sql}
 
-The first part of the project involved querying the database, and collecting
-and describing the available data \autoref{plan:sql}. The first goal is to
-understand the tables in the SQL database, their key relations, and to describe
-the attributes within the tables. Valuable info on this part is already
-provided in the original publication of the database
-\cite{tomicFluPRINTDatasetMultidimensional2019}, but it was also investigated
-in this work. The tools that will be used are SQL for querying and R for
-statistical descriptions.
-
-% The second phase of this plan was an iterative process of finding suitable data
-% to answer the modeling and visualisation data mining goals. This is a more
-% involved process since it requires exploration of the database to answer the
-% questions, and therefore was estimated to take time.
-
-% \f{model_and_vis_plan}
-% {Project plan for the modeling and visualisation data mining goals.}
-% {plan:vis}
-%
-% Relations between attributes in the generated datasets are visualised and
-% modelled to see if there exist a pattern in the data that is relevant for the
-% business objectives \autoref{plan:vis}. A critical point in this plan is
-% deciding whether an objective cannot be answered with the available data. In
-% that case the goal was revised and the second phase of the SQL query plan was
-% reiterated. When deciding if the exploratory analysis was of sufficient
-% quality, the work by the authors of the database used in this work was used as
-% a subjective benchmark \cite{tomicSIMONAutomatedMachine2019,
-% tomicFluPRINTDatasetMultidimensional2019}.
+The first part of the project involved querying the database, and collecting and describing the available data \autoref{plan:sql}.
+The first goal was to understand the tables in the SQL database, their key relations, and to describe the attributes within the tables.
+Valuable info on this part was already provided in the \dpaper, but it was also investigated in this work.
+The tools that will be used are SQL for querying and R for statistical descriptions.
 
 \f{feature_selection_classification}
-{Project plan for the classification and feature selection data mining goal.}
+{Project plan for the classification and feature selection data mining goals.}
 {plan:cls}
 
-For the modeling data mining goals the plan was to find the immune correlates
-of high immune responders using a wrapper based feature selection strategy
-\autoref{plan:cls}
+For the modeling and feature selection data mining goals the plan was to implement a simplified version of the automatic feature selection pipeline described in \spaper.
+In \spaper a large set of classifier models was automatically trained and evaluated on a set of small datasets generated from the \flup database, the trained models were then used for feature selection.
+Rather, in this work we manually trained a small selection of models on the same datasets as in \spaper towards providing insight in a specific research question \autoref{plan:cls}.
+Further, not all generated datasets were included in the final analysis since we were interested in repeat vaccination data which was not always available.
+
 
 
 \section{Data description}
 
 \subsection{Volumetric analysis}
 
-In the work of \cite{tomicFluPRINTDatasetMultidimensional2019} data on
-indiviuals enrolled in influenza vaccine studies at the Stanford-LPCH Vaccine
-Program was collected, the data was archived at the Stanford Data Miner. This
-archive was filtered by assays used in influenza studies, resulting in data
-from 740 healthy donors, enrolled in influenza vaccine studies conducted by the
-Stanford-LPCH Vaccine Program from 2007 to 2015. These studies are described in
-the table accompanying the online publication of the fluprint dataset
-\autoref{tbl:studiesDesc}.  From those 740 donors a vaccine response
-classification was only given for 372 donors \autoref{fig:demoGraph}, by a
-method that will be described in the section describing the data table
-containing this attribute. Overall there was no major difference in demographic
-statistics when stratisfying the data in high or low responder classification
-\autoref{fig:demoGraph}.
+Data in the \flup database on individuals enrolled in influenza vaccine studies was collected from the Stanford-LPCH Vaccine Program, the data was archived at the Stanford Data Miner archive.
+The archived data was filtered for a selection of interesting assays used in influenza studies, resulting in data from 740 healthy donors, enrolled in influenza vaccine studies conducted by the Stanford-LPCH Vaccine Program from 2007 to 2015.
+These studies were described in the table accompanying the online publication of the \flup dataset, and relevant parts are in the appendix \autoref{tbl:studiesDesc}.
 
-Importantly, it is reported that in all studies the donors are only vaccinated
-once, except in the study SLVP015 \autoref{tbl:studiesDesc}
-\citep{tomicFluPRINTDatasetMultidimensional2019}. However, in later work of the
-same authors it is claimed that vaccines are administered as specified by the study
-\citep{tomicSIMONAutomatedMachine2019}.
+From those 740 donors a vaccine response classification was only given for 372 donors \autoref{fig:demoGraph}, these classifications are discussed more in depth later.
+Further, there was no major difference in demographic statistics when stratifying the data in high or low responder classification \autoref{fig:demoGraph}.
 
-The donors for which a vaccine respone classification was available from all
-clinical studies together span a wide age range \autoref{fig:demoGraph}A from 1
-- 50 \autoref{tbl:demoStats}, in the original work the demographic statistics
-include the donors for which no vaccine response classification is given,
-therefore they report a greater range of 1-90. Stratisfying the donors on
-vaccine response does not affect the demographic attribute distribution, but
-the maximum age is lowered in the high responders group
-\autoref{fig:demoGraph}B.
+In \dpaper it was reported that in all studies the donors are only vaccinated once, except in the study SLVP015 \autoref{tbl:studiesDesc}.
+However, in the other work of the same authors, \spaper, it was claimed that vaccines were administered in multiple influenza seasons for multiple studies.
+Rather, while true that the majority of data on donors that received repeat vaccinations spanning influenza seasons comes from one study there are two more studies containing repeat vaccination data \autoref{fig:repeatVisits} (SLVP015, SLVP021, and SLVP029 in \autoref{tbl:studiesDesc}).
+
+The aggregated donors for which a vaccine respone classification waas available from all clinical studies span a wide age range \autorefsub{fig:demoGraph}{B} from 1 - 50 \autoref{tbl:demoStats}, in the original work the demographic statistics include the donors for which no vaccine response classification is given, therefore they report a greater range of 1-90.
+Considering that data on donors with missing classifications are not included for analyses they are left out of the demographic description.
+
+Demographic attributes that were available include gender, ethnicity, and \gls{bu:cmv} status, database specific representation of the values of demographic attributes are described \dpaper.
+Further, like in \dpaper stratifying the donors on vaccine response did not affect the overall distributions of demographic attributes \autorefsub{fig:demoGraph}{A}.
+However, including only the donors for which a vaccine response classification was available made the maximum age lower in the high responders group \autorefsub{fig:demoGraph}{B}.
 
 \begin{figure}[htpb]
     \includegraphics[width=\textwidth]{demographic}
-    \caption{\textbf{A.} percentage of donors with factor property within high
-    and low responder groups. Included are sex, race, and CMV status
-    information. \textbf{B.} Age distribution of donors with a known response
-    classification.}\label{fig:demoGraph}
+    \caption{\textbf{A.} percentage of donors/rows having some Gender, Ethnicity, or \gls{bu:cmv} status within high and low responder groups.
+    \textbf{B.} Age distribution of donors with available response classification.}\label{fig:demoGraph}
 \end{figure}
 
 
@@ -390,31 +264,21 @@ Unknown (\%) & 2  ( 0.5 )\\
 \caption{\textbf{Demographic statistics of donors with known vaccine response classification.}}\label{tbl:demoStats}
 \end{table}
 
-The data from the clinical studies consisted of 121 CSV files that were
-imported into the FluPrint database. The data was used to build four tables
-which will be described in the next sections, but we will not discuss technical
-validation of the database construction, refer to the original work for that
-\citep{tomicFluPRINTDatasetMultidimensional2019}.  The relation between the
-tables is best visualised in the original work of
-\citep{tomicFluPRINTDatasetMultidimensional2019}, it describes the MySql
-attribute types and columns in the tables \autoref{fig:tablesFluprint}
-(copied). The volume of the data is also given in the original work, per table
-the number of rows and columns is reported \autoref{tbl:volumeTables}.
+The data from the clinical studies consisted of 121 CSV files that were imported into the \flup database.
+The data was used to build four tables, three of which were described but we omitted the discussion of technical validation details of the database construction.
+The relation between the tables is best visualised using the schema given in \dpaper, it describes the MySql attribute types and columns in the tables \autoref{fig:tablesFluprint} (copied).
+The volume of the data is also given in \dpaper, per table the number of rows and columns was reported \autoref{tbl:volumeTables}.
 
 \begin{figure}[htpb]
     \includegraphics[width=\textwidth]{tablesFluprint}
     \caption{
-        \textbf{(taken from original paper)} The FluPRINT database model. The diagram shows a schema of the FluPRINT
-    database. Core tables, donors (red), donor\_visits (yellow),
-    experimental\_data (blue) and medical\_history (green) are interconnected.
-    Tables experimental\_data and medical\_history are connected to the core
-    table donor\_visits. The data fields for each table are listed, including
-    the name and the type of the data. CHAR and VARCHAR, string data as
-    characters; INT, numeric data as integers; FLOAT, approximate numeric data
-    values; DECIMAL, exact numeric data values; DATETIME, temporal data values;
-    TINYINT, numeric data as integers (range 0–255); BOOLEAN, numeric data with
-    Boolean values (zero/one). Maximal number of characters allowed in the data
-    fields is denoted as number in parenthesis.
+        \textbf{(taken from original paper)} The \flup database model.
+        The diagram shows a schema of the \flup database.
+        Core tables, donors (red), donor\_visits (yellow), experimental\_data (blue) and medical\_history (green) are interconnected.
+        Tables experimental\_data and medical\_history are connected to the core table donor\_visits.
+        The data fields for each table are listed, including the name and the type of the data.
+        CHAR and VARCHAR, string data as characters; INT, numeric data as integers; FLOAT, approximate numeric data values; DECIMAL, exact numeric data values; DATETIME, temporal data values; TINYINT, numeric data as integers (range 0–255); BOOLEAN, numeric data with Boolean values (zero/one).
+        Maximal number of characters allowed in the data fields is denoted as number in parenthesis.
     }\label{fig:tablesFluprint}
 \end{figure}
 
@@ -435,23 +299,15 @@ the number of rows and columns is reported \autoref{tbl:volumeTables}.
 
 \subsection{Attribute types and values}
 
-Because of the great number of attributes in the database, we discuss them by
-table starting with the donors \autoref{fig:tablesFluprint}.
+Because of the great number of attributes in the database, we discuss them by table starting with the donors table \autoref{fig:tablesFluprint}.
 
 \subsubsection{donors table}
 
-The \textit{donors.id} attribute is simply an enumeration of unique donors,
-importantly, it is used as a key to get attributes from other tables. The
-column \textit{study\_donor\_id} is an encrypted identification number. Each
-donor belongs to the study identified by the \textit{study\_id}, these are the
-last two digist of the name code (those starting with SLVP0 \(\cdot\cdot\)) in
-the reference table \autoref{tbl:studiesDesc}, the \textit{study\_internal\_id}
-is either the digit or a string containing the digit in \textit{study\_id}. The
-\textit{gender} and \textit{race} attribute contain the values used in
-\autoref{fig:demoGraph}, a minor note is that in the original paper "American
-Indian or Alaska Native" is listed as one of the \textit{race} values but is
-not used in the database. There are 5 donors whose race is "NULL", which are
-mapped to unkown \autoref{fig:demoGraph}.
+The \textit{id} attribute is simply an enumeration of unique donors, additionally it is used as a key to get attributes from other tables.
+The \textit{study\_donor\_id} attribute is an encrypted identification number.
+Each donor belongs to the study identified by the \textit{study\_id}, these are the last two digit of the name code (those starting with SLVP0 \(\cdot\cdot\)) in the reference table \autoref{tbl:studiesDesc}, the \textit{study\_internal\_id} is either the digit or a string containing the digit in \textit{study\_id}.
+The \textit{gender} and \textit{race} attribute contain the values used in \autoref{fig:demoGraph}, a minor note is that in the original paper "American Indian or Alaska Native" is listed as one of the \textit{race} values but is not used in the database, race attribtue processing is described more in \dpaper.
+There are 5 donors whose race is "NULL", which are mapped to unknown \autoref{fig:demoGraph}.
 
 \begin{table}[htpb]
     \begin{tabular}{rlrlll}
@@ -472,23 +328,14 @@ id & study\_donor\_id & study\_id & study\_internal\_id & gender & race\\
 
 \subsubsection{donor\_visits table}
 
-The donor visits table is the core table of the database, it contains donor
-attributes at visit times during enrolment in clinical studies in rows that are
-uniquely identified by an \textit{id} integer. Each
-row also includes the \textit{donor\_id} identify the donor that visitted.
+The donor visits table is the core table of the database, it contains donor attributes at visit times during enrolment in clinical studies in rows that are uniquely identified by an \textit{id} integer.
+Each row also includes the \textit{donor\_id} identify the donor that visited by the \textit{id} in the donors table.
 
-The database combines different clinical studies accross years and the data
-from these studies is incomplete leading to an incomplete and hetergenous
-database \autoref{tbl:visitsDesc}. For example some donors might miss their
-second visit to determine their antibody levels, or the number of parameters
-measured by an assay changed in the timespan of a clinical study. Unifying
-these clinical studies in one database resulted in normalised but incomplete
-data and heterogenous data. More specifically, every attribute in the core
-table has missing value, which complicates dataset selection. One examples of
-visit data of a donor is discussed to highlight important attributes and
-problems in the data: that the number of visits is variable, that all columns
-are incomplete, and that classification is sometimes based on single visits or
-inconsistent \autoref{tbl:visit166} \autoref{tbl:visitsDesc}.
+The database combines datasets from multiple clinical studies spanning multiple years.
+Within clinical studies the data is often incomplete due to factors that change between influenza seasons, such as changes in the number of features measured in an assay data collected.
+As a result, the \flup database is incomplete and contains heterogeneous data quality \autoref{tbl:visitsDesc}.
+More, every attribute in the core table has missing values, which complicates selection of data for further analysis.
+In summary, the number of visits is inconsistent per season per donor, all columns are incomplete, and classification is sometimes based on single visits or inconsistent with available data \autoref{tbl:visit166} \autoref{tbl:visitsDesc}.
 
 \begin{table}[htpb]
 \addtolength{\leftskip} {-2cm} % increase (absolute) value if needed
@@ -508,48 +355,28 @@ skewness & 0.2 & 0.3 & -1.4 & 1.0 & -1.7 & 3.6 & 9.9 & 1.1 & 7.1\\
 kurtosis & -1.5 & -1.9 & -0.1 & 2.1 & 3.0 & 26.6 & 114.9 & -0.9 & 49.7\\
 \bottomrule{}
 \end{tabular}
-\caption{Descriptive stats of relevant numeric or binary factor columns in the
-    donor visits table. For geo\_mean 0 is considered as missing data.}\label{tbl:visitsDesc}
+\caption{
+    Descriptive stats of relevant numeric or binary factor columns in the donor visits table.
+    For geo\_mean 0 is considered as missing data.}\label{tbl:visitsDesc}
 \end{table}
 
-Per donor all visits are enumerated in chronological order by
-\textit{visit\_id} \autoref{tbl:visit166}. Further visit info includes:
-\textit{visit\_internal\_id} which is a number that indicates the visit order
-within an influenza season but this differs per clinical study (e.g. some use
-1-2-3, orther use 0-7-28), the \textit{vist\_year} is the influenza season of
-the visit, the \textit{visit\_day} is the number of days relative to the date
-of vaccination,  \textit{age} and \textit{age\_round} indicate the donor's age
-at time of the visit, and \textit{bmi} gives the donor bmi at visit time, and
-lastly \textit{visit\_type\_hai} is the intent of the visit which is either
-"pre", "post", or "other",
+Per donor all visits are enumerated in chronological order by \textit{visit\_id} \autoref{tbl:visit166}.
+Further visit info includes: \textit{visit\_internal\_id} which is a number that indicates the visit order within an influenza season but this differs per clinical study (e.g. some use 1-2-3, orther use 0-7-28), the \textit{vist\_year} is the influenza season of the visit, the \textit{visit\_day} is the number of days relative to the date of vaccination,  \textit{age} and \textit{age\_round} indicate the donor's age at time of the visit, and \textit{bmi} gives the donor bmi at visit time, and lastly \textit{visit\_type\_hai} is the intent of the visit which is either "pre", "post", "other", or "single".
 
-During the "pre" visit a virological assay is performed to determine the CMV
-and Epstein-Barr virus (EBV) status of the donor, which are indicated by the
-binary variables \textit{cmv\_status} and \textit{ebv\_status}.
+Depending on clinical study, during the "pre" visit a virological assay is performed to determine the \gls{bu:cmv} and \gls{bu:ebv} status of the donor, which are indicated by the binary variables \textit{cmv\_status} and \textit{ebv\_status}.
 
-To measure vaccine response to a vaccine which is indicated by an id
-\autoref{tbl:remapVaccine} in \textit{vaccine}, the hemagglutination inhibition
-assay (HAI assay) is used. The procedure measures the influenza antibody titers
-before vaccination during the \textit{visit\_type\_hai} "pre" visit of a
-participant, and 28 days after vaccination during a "post" visit. The geometric
-mean titer (GMT) at each visit is calculated, and a fold change in GMT is
-calculated as the ratio of the GMT at day 28 (post) and during the first visit
-(pre). These values are \textit{geo\_mean} and \textit{d\_geo\_mean},
-\textit{d\_single} is the antibody titer fold-change per strain of virus used
-in the vaccine, it is unclear how this value is aggregated over different
-strains and is left out of further analysis.  This data was used to classify
-donors in high or low responders according to FDA guidelines \cite{},
-individuals are high-responders if they seroconverted (4-fold or greater rise
-in HAI titer) and were seroprotected (GMT HAI \(\ge\) 40) after vaccination.
-The seasonal vaccine response classifications are given by the binary variable
-\textit{vaccine\_resp}.
+In most clinical studies, vaccine response was measured using the \gls{bu:hai} assay.
+The procedure measures the influenza antibody titers before vaccination during the \textit{visit\_type\_hai} "pre" visit of a participant, and 28 days after vaccination during a "post" visit.
+The \acrshort{gmt} at each visit is calculated, and a fold change in \acrshort{gmt} is calculated as the ratio of the \acrshort{gmt} at day 28 (post) and during the first visit (pre).
+These values are called \textit{geo\_mean} and \textit{d\_geo\_mean}, respectively.
+Lastly, there is one more \gls{bu:hai} related data attribute which is the \textit{d\_single}, this is reported as the antibody \gls{bu:titer} fold-change per strain of virus used in the vaccine.
+It is unclear how this value is aggregated over different influenza strains in a \gls{bu:tiv} and is left out of further analysis.
+Based on these \gls{bu:hai} related attributes a donor is classified as high or low responder, the seasonal vaccine response classifications are given by the \textit{vaccine\_resp} attribute.
 
-The assays performed to get a serological/immunlogical profile of the donor
-before vaccination are described later in the section of the experimental data
-table, all assays are listed in the original work
-\cite{tomicFluPRINTDatasetMultidimensional2019} and are summarised here
-\autoref{tbl:assays}, the total rows of assay data is given by
-\textit{total\_data}.
+The type of vaccine used in a study is indicated by the \textit{vaccine} attribute, the meaning of the vaccine id is reported in the appendix \autoref{tbl:remapVaccine}.
+The type of experimental assays performed to measure the immunological profile of the donor during the "pre" visit are described later in the section of the experimental data table.
+All assays are listed in \dpaper and are summarised here \autoref{tbl:assays}.
+This information is relevant to \textit{total\_data} attribute of the donor visits table which indicates the number of measurements made during a visit.
 
 \begin{table}[htpb]
 \addtolength{\leftskip} {-2cm} % increase (absolute) value if needed
@@ -561,47 +388,41 @@ visit\_id & year & day & type & age & cmv & ebv & bmi & vaccine & geo\_mean & d\
 1 & 2011 & 0 & pre & 20 & 1 & 1 & 30.31 & 4 & 25.20 & 6 & 0 & 343\\
 2 & 2011 & 7 & other & 20 & 1 & 1 & NULL & 4 & 0.00 & 6 & 0 & 51\\
 3 & 2011 & 28 & post & 20 & 1 & 1 & NULL & 4 & 160.00 & 6 & 0 & 51\\
-4 & 2012 & 0 & pre & 21 & 1 & 1 & 30.31 & 4 & 9.28 & 4 & 0 & 292\\
-6 & 2013 & 0 & pre & 22 & 1 & 1 & 30.31 & 4 & 15.91 & 2 & 0 & 2877\\
 \addlinespace
+4 & 2012 & 0 & pre & 21 & 1 & 1 & 30.31 & 4 & 9.28 & 4 & 0 & 292\\
+\addlinespace
+6 & 2013 & 0 & pre & 22 & 1 & 1 & 30.31 & 4 & 15.91 & 2 & 0 & 2877\\
 7 & 2013 & 7 & other & 22 & 1 & 1 & NULL & 4 & 0.00 & 2 & 0 & 63\\
 8 & 2013 & 28 & post & 22 & 1 & 1 & NULL & 4 & 26.75 & 2 & 0 & 82\\
 \bottomrule{}
 \end{tabular}
-\caption{Visit data of donor 166 from study SLVP021 \autoref{tbl:studiesDesc},
-where participants are only vaccinated once.
-Number of visits and data collected at visit varies, classification is
-inconsistent with \( \geq 40\) and 4-fold increase
-rule in 2011.}\label{tbl:visit166}
+\caption{
+    Visit data of donor 166 from study SLVP021 \autoref{tbl:studiesDesc}.
+    Note that the number of visits and volume of data collected at visit varies per season.
+    Further, the classification is inconsistent with \gls{bu:seropc} criteria in 2011.}\label{tbl:visit166}
 \end{table}
 
-The most important data related to the visits of donor 166 is shown in Table
-\ref{tbl:visit166}.  The vaccine response classification is calculated based on
-the GMT in the "pre" and "post" visits.  This classification is done per
-influenza season, but the HAI assay requires a "pre" visit and a "post" visit
-28 days later to measure the difference in GMT.  However, sometimes a
-classification is given when there is only one visit record in a season, like
-in 2012 for donor 166 \autoref{tbl:visit166}.
+The most important data related to the visits of donor 166 is shown in Table \ref{tbl:visit166}.
+As described above, the vaccine response classification is determined per season based on the \acrshort{gmt} in the "pre" and "post" visits.
+However, since the \gls{bu:hai} assay requires a "pre" visit and a "post" visit 28 days later to measure the difference in GMT, a classification is inconsistent when there is only one visit record in a season \autoref{tbl:visit166}.
 
 \begin{figure}[htpb]
     \includegraphics[width=\textwidth]{season_classification}
-    \caption{}\label{fig:classInconsistent}
+    \caption{
+        \textbf{Classifications inconsistent with \gls{bu:seropc} criteria using given data.}
+        The classifications given in influenza seasons with only a visit with \textit{visit\_type\_hai} value of "single" or "other", or did not have "pre" and "post" visits were considered inconsistent with the \gls{bu:hai} procedure.
+        Additionally, those that did not meet the \gls{bu:seropc} criteria given the \acrshort{gmt} data were considered inconsistent.
+    }\label{fig:classInconsistent}
 \end{figure}
 
-The example of donor 166 contains an inconsistency in the classification, in
-2011 the GMT \textit{geo\_mean} increases from 25.20 to 160.00, and the
-\textit{d\_geo\_mean} is 6, but in this season the donor is wrongly classified
-as a low responder \autoref{tbl:visit166}. Because of this the seasonal
-classification of donors was investigated using the seroprotection and
-seroconversion criteria \ref{fig:seasonalClasses}, records of incorrectly
-labelled donors are also saved as a spreadsheet. This data is inconsistent in
-the database, but the most likely explanation is that antibody titer for one
-strain of virus did not meet the high response classification criteria. In this
-work it is considered as inconsistent because individual strain titer data is
-not in the database, but classification is therefore not necessarily incorrect.
-Hence the classification will be used in this work without further selection.
+Furthermore, the example of donor 166 contains another type of inconsistency in the classification, in 2011 the GMT \textit{geo\_mean} increases from 25.20 to 160.00, and the \textit{d\_geo\_mean} is 6, but in this season the donor is classified as a low responder, even though \gls{bu:seropc} criteria are met \autoref{tbl:visit166}.
+Because of these apparent inconsistencies the seasonal classification of donors was evaluated using available \acrshort{gmt} data and the \gls{bu:seropc} criteria \ref{fig:classInconsistent}, records of incorrectly labelled donors are also saved as a spreadsheet.
+Given the information in the database classification is inconsistent in a large number of cases.
+However, the most likely explanation is that antibody \gls{bu:titer} for one specific strain of virus in the vaccine did not meet the \gls{bu:seropc} criteria.
+Therefore, in this work it was considered as inconsistent because classification required data not given in the database.
+Nevertheless, the classification is not necessarily incorrect and the classification data was used in this work without any modifications.
 
-\subsubsection{Experimental data table}
+\subsubsection{experimental\_data table}
 
 \begin{table}[htpb]
     \begin{tabularx}{\textwidth}{Xp{0.5\textwidth}X}
@@ -630,56 +451,51 @@ Hence the classification will be used in this work without further selection.
         antibody. Units are arbitrary intensity & 2, 12, 14 \\
 \bottomrule{}
 \end{tabularx}
-    \caption{assays table}\label{tbl:assays}
+    \caption{
+        Table containing the types of data collected at donor visits.
+        It describes the assay type in the name and description columns.
+        The id column refers to the different specific assays belonging to a data type with the id used in the database.
+        The mapping from id to assay can be found in the appendix \autoref{tbl:remapAssays}.
+    }\label{tbl:assays}
 \end{table}
 
 
-Assays performed in visits are remapped, but the values in the
-database do not correspond to the reported table \autoref{tbl:remapVaccine}.
-Actual assay type, data units, and id in the database are reported here
-\autoref{tbl:assays}.
-
 \fpfig{exp_data_numbers}{.7}
-{Feature count per individual assay id, assay type, stratisfied in either response status or study}
-{caption}
+{
+    Description of data volume collected in different years and studies, by data type or experiment id and stratified by classification.
+}
+{
+    \textbf{A.} the aggregated number of data points/features measured per season and by classification.
+    Data is shown per experiment id used in the \flup database, indicated with color.
+    \textbf{B.} Same as (\textbf{A}), but grouping experiments per data type instead of experiment id, the same as in (\textbf{C}).
+    \textbf{C.} Seasonal data points per data type by study instead of classification.
+}
 {fig:featureNumbers}
 
-In total there are data from 14 different assays, not counting the virological
-and HAI antibody assays \autoref{tbl:assays}. The virological assays include
-the cmv virus status and ebv status, and is not used in this work because it is
-done in a smaller subset of studies. Those 14 assays have been aggregated in
-this work to 5 different types of experiments: the multiplex assays measure
-serum molecules such as cytokines and other signaling molecules, flow and mass
-cell cytometry measure the phenotype of specific immune related cells,
-phosphorylation flow and mass cytometry measures the phosphorylation signaling
-pathway activation after an immune stimulation, the blood count measures the
-count of cells in the blood, and meso scale discovery (MSD) measures hormones
-or cytokines from the blood.
+As reported in \dpaper different assays performed in clinical studies are remapped to and \textit{id} number, but the values in the database do not correspond to the reported remaps \autoref{tbl:remapVaccine}.
+The actual data type, units, and assay id contained in the database were described in this work \autoref{tbl:assays}.
+
+In total there are 14 different experimental assays used across clinical studies, not counting the virological and \gls{bu:hai} assays \autoref{tbl:assays}.
+Further, the virological assays determining the \gls{bu:cmv} and \gls{bu:ebv} status are not used in this work, since it is available only in a small subset of the collected data.
+Those 14 assays have been aggregated in this work to 5 different data types/experiment types \autoref{tbl:assays}, in short:
+
+\begin{itemize}
+    \item the multiplex cytokine assays measure levels of molecules such as \gls{bu:cytokine}s and other signaling molecules in human serum/blood,
+    \item flow and mass cell cytometry measure the phenotype of specific immune related cells,
+    \item phosphorylation flow and mass cytometry measures signaling pathway activation after an induced \gls{bu:cytokine} stimulation or the absence thereof,
+    \item the complete blood count (CBCD) measures the concentration of cells in the serum/blood,
+    \item and meso scale discovery (MSD) measures hormones or cytokines from human serum/blood.
+\end{itemize}
 
 \begin{figure}[htpb]
     \includegraphics[width=\textwidth]{assay_value_distributions}
     \caption{noise in 90th \%tile}\label{fig:assayDistr}
 \end{figure}
 
-The experimental data table contains all features recorded for a donor visit.
-The number of features collected for each visit is large and varies greatly
-(mean at 126 , \(\pm \)368 SD) \autoref{tbl:visitsDesc}, and in total there are
-3285 different features measured across all clinical studies. However, not
-every assay is done in every clinical study \autoref{fig:featureNumbers} and
-over the years the data generated by assays has changed, so a table with all
-features as columns and all donors as rows would be extremely sparse (and
-crashes R due to RAM limitations).  Describing the 3285 different features in
-this sparse table would be impossible, but assay value distributions across
-studies are shown to follow normal or power distributions
-\autoref{fig:assayDistr}. The features included 102 blood-derived immune cell
-subsets analyzed by mass cytometry. It also included the signaling capacity of
-over 30 immune cells subsets stimulated with seven conditions, which were
-evaluated by measuring the phosphorylation of nine proteins. Additionally, up
-to 50 serum analytes were evaluated using Luminex bead arrays
-\citep{tomicSIMONAutomatedMachine2019}.
-
-No correlation analysis was done, since this is complicated by the great number
-of features and sparseness in the data.
+The experimental data table contains all features recorded per donor visit.
+The number of features collected for each visit is large and varies greatly (mean at 126 , \(\pm \)368 SD) \autoref{tbl:visitsDesc}, and in total there are 3285 different features measured across all clinical studies.
+However, not every assay is done in every clinical study  and over the years the data generated by assays has changed, so a table with all features as columns and all donors as rows would be extremely sparse \autoref{fig:featureNumbers}.
+Describing the 3285 different features in this sparse table would be impossible, but assay value distributions across studies are shown to follow normal or power distributions \autoref{fig:assayDistr}.
 
 \begin{figure}[htpb]
     \includegraphics[width=\textwidth]{repeat_visits_per_study}
@@ -689,79 +505,44 @@ of features and sparseness in the data.
     visited the same amount of times.}\label{fig:repeatVisits}
 \end{figure}
 
-What further complicates selecting data is repeat visits of donors, and missing
-visits. The problem of repeat visits over a span of multiple influenza seasons
-is that not the same assay types are done, and that repeat visits are only a
-small portion of the database. The data is also not suitable right away for
-studying the effect of repeat vaccination on high versus low vaccine reponse,
-since the classification in the longitudal study (SLVP015) is mostly not
-available \autoref{fig:repeatVisits}.
-
-For example exploring the effect repeat vaccination has an response rate would
-first require manual labelling of high and low responses, at least for the
-cases where it is possible based on the GMT data. Those cases are when
-classification is set to a null value even though GMT data is available.  The
-reason for this null value assignment is reported, but the pattern seems to set
-the vaccine response to null if there is not enough assay data measured.
+In addition to the sparseness of data, what further complicated selecting relevant data is repeat visits of donors, and missing visits.
+The problem of repeat visits over a span of multiple influenza seasons is the change in the data type collected per season, and that repeat visits are only a small portion of the database.
+Furthermore, the potential for studying the effect of repeat vaccination on high versus low vaccine response classification is limited, since the classification in the longitudal study (SLVP015) containing repeat visit data is not available in a majority of data points \autoref{fig:repeatVisits}.
+As a result, exploring what effect repeat vaccination has on vaccine response was done in this work using the small subset of donors where a classification was available in two influenza seasons.
 
 \subsection{Data quality}
 
-The database has issues that are inherent to combining multiple studies and the
-classification is inconsistent in some cases \autoref{fig:classInconsistent},
-or often missing completely because no HAI antibody assay data was available or
-the classification was set to a null value by the database authors because
-possibly the antibody titer for a single strain of virus in the vaccine was too
-low (this data is not in the database) \autoref{fig:repeatVisits}.  The main value of
-the database is the assay data that is fully represented in all studies and
-across all years, but this information is hard to access since all studies do
-not use overlapping assays \autoref{fig:featureNumbers}, resulting in high
-sparsity data. Further, the sample size that can be used for further studies is
-limitted, since the high versus low vaccine response is only available for a
-small subset of the data.
+The database has issues that are inherent to combining multiple studies.
+Firstly, the vaccine response classification was inconsistent with the given data in some cases \autoref{fig:classInconsistent}.
+Secondly, the classification was often missing completely because no \gls{bu:hai} assay data was available.
+Thirdly, the classification was set to a null value by the database authors because possibly the antibody titer for a single strain of virus in the vaccine was too low (this data is not in the database) \autoref{fig:repeatVisits}.
+Lastly, the data is highly sparse when considering data collected on donors in different studies or in different influenza seasons.
 
-Specific attributes that have great amounts of missing values are the
-virological and HAI assay data, the last is used for the vaccine response
-classifcation. Potential for Studying the correlation of these values with
-vaccine response is thus limitted. Nevertheless assay data is often available
-and could be used to identify immunological factors that correlate with other
-data, such as repeat vaccination, the exploration of this effect is outside the
-scope of this work due to the data sparsity issues.
+The value of the database in terms of knowledge is the great amount of assay data that was collected in different studies across years and was preprocessed.
+But this information is hard to access since all studies do not use different assays \autoref{fig:featureNumbers}, resulting in high sparsity data.
+Further, the sample size that can be used for further classification studies is limited, since the high versus low vaccine response is only available for a minority of the data points.
 
 \section{Data preparation}
 
 \subsection{Data selection}
 
-The data selection used in this work is based the query used in \spaper
-\autoref{lst:QueryTemplate}. Using this query generates a subset of \flup
-comprised data from 5 clinical studies, most importantly the longitudal study
-SLVP015 \autoref{tbl:studiesDesc}. Presumably, the authors of \spaper included
-only the first visit of donors because the classification is the most complete
-in this dataset \autoref{fig:dataRepeatvisits}. In this work we use this query
-to generate initial first visit datasets. However, to explore repeat vaccination,
-we select a subset of this data that includes donors with a repeat visit in a
-second influenza season.
+The data used in this work was based on the data used in \spaper \autoref{lst:QueryTemplate}.
+Using this query template generates a subset of \flup comprised data from 5 clinical studies using the same vaccine type \autorefsub{tbl:remapVaccine}{Vaccine id 4}, most importantly the longitudinal study SLVP015 \autoref{tbl:studiesDesc}.
+Presumably the authors of \spaper included only the first visit of donors because the classification is the most complete in this dataset \autoref{fig:dataRepeatvisits}.
+In this work we firstly use this query to generate initial first visit datasets.
+Secondly, to explore repeat vaccination, we select a subset of this data that includes only donors with a repeat visit in a second influenza season.
 
 \begin{figure}[htpb]
     \includegraphics[width=\textwidth]{data_selection}
     \caption{caption}\label{fig:dataRepeatvisits}
 \end{figure}
 
-The initial query used in \spaper generated a long table for in total 3285
-different features recorded at the first visit of 195 donors in different
-studies and years (referred to as \firstvis). The observable pattern in this
-data is that low responding donors are overrepresented and that the
-classification is consistent with the log2 \gmt change
-\autorefsub{fig:repeatVisits}{A}. Unfortunately, the number of donors in the
-\firstvis that returned in other influenza seasons  decreases quickly, limiting
-possibilities of comparing models built on \firstvis and subsequent visit data
-\autorefsub{fig:repeatVisits}{B}. Nevertheless, we selected the \secondvis to
-explore repeat vaccinations. The \secondvis has an exacerbated class imbalance
-that precludes training any models, therefore we use the \secondvis to explore the
-knowledge gained by models trained on the \firstvis
-\autorefsub{fig:repeatVisits}{C}.
+The initial query generated a long table for in total 3285 different features recorded at the first visit of 195 donors in different studies and years (referred to as \firstvis).
+An observable pattern in this data is that low responding donors are overrepresented and that the classification is mostly consistent with the \gls{bu:seropc} criteria as seen by the log2 \acrshort{gmt} change feature \autorefsub{fig:repeatVisits}{A}.
+Unfortunately, the number of donors in the \firstvis that returned in other influenza seasons decreases quickly, limiting possibilities of comparing models built on \firstvis and subsequent visit data \autorefsub{fig:repeatVisits}{B}.
+The selected \secondvis lacks the high response class (except for 6 donors) precluding training any models, therefore we only used the \secondvis to explore the knowledge gained by models trained on the \firstvis \autorefsub{fig:repeatVisits}{C}.
 
 \begin{minipage}{\linewidth}
-
 \begin{lstlisting}[caption=Applying the mulset algorithm and preparing the data, label={lst:mulsetStep}]
 generate intersection datasets suitable for analysis
 for {each donor in data} do:
@@ -781,24 +562,16 @@ end for;
 \end{lstlisting}
 \end{minipage}
 
-The \firstvis had a total of 640575 cells of which 596736 values were
-missing (sparsity of 93\%) because of the heterogeneity in clinical studies and
-years where data was collected. In \spaper missing data is not imputed because
-there is not enough prior knowledge. And, since every donor had a missing
-feature, dropping all rows/donors was not an option either. A solution used in
-\spaper was generating complete tables comprising subsets of donors that had
-all features in common using the mulset algorithm \autoref{lst:mulsetStep}
-\autoref{fig:mulsetAlg}.
+The \firstvis used for modeling and feature selection had a total of 640575 cells of which 596736 values were missing (sparsity of 93\%).
+In \spaper missing values in this data is not imputed because there is not enough prior knowledge.
+And, since every donor had a missing feature, dropping all rows/donors was not an option either.
+A solution used in \spaper was generating complete tables comprising small subsets of donors that had all features in common using the mulset algorithm \autoref{lst:mulsetStep} \autoref{fig:mulsetAlg}.
 
-In this work the procedure in \spaper was replicated and extended to generate
-usable datasets \autoref{lst:mulsetStep}. Firstly, there were duplicate
-measurements of features in the \firstvis, these were aggregated to unique
-feature records using the mean.  Second, the mulset R package was used to
-generate 47 complete datasets. These datasets were then reduced to 36 by
-selecting those that had at least 5 features and 15 donors. Finally, the
-datasets were split into train (75\%) and test (25\%) sets, and datasets with
-less than 10 donors in the test set were discarded reducing the number of
-datasets to 20 \autoref{tbl:mulsetDatasets}.
+In this work the procedure in \spaper was replicated and extended to generate usable datasets for feature selection \autoref{lst:mulsetStep}.
+First, there were duplicate measurements of features in the \firstvis, these were aggregated to unique feature records using the mean.
+Second, the mulset R package was used to generate 47 complete datasets.
+These datasets were then reduced to 36 by selecting those that had at least 5 features and 15 donors.
+Finally, the datasets were split into train (75\%) and test (25\%) sets, and datasets with less than 10 donors in the test set were discarded reducing the number of datasets to 20 \autoref{tbl:mulsetDatasets}.
 
 \begin{table}[htpb]
     \begin{tabularx}{\textwidth}{XXXXX}
@@ -834,75 +607,43 @@ datasets to 20 \autoref{tbl:mulsetDatasets}.
     \firstvis, and the balanced train test split that was performed.}\label{tbl:mulsetDatasets}
 \end{table}
 
-A significant number of datasets contained more predictors than samples
-\autoref{tbl:mulsetDatasets}. However, we consider this as inevitible and not an
-absolute obstacle since the purpose of the models is not to discriminate
-vaccine responders with the highest accuracy, but to identify features that
-correlate with a vaccine response from the great number of features.
+A significant number of datasets contained more predictors than samples \autoref{tbl:mulsetDatasets}.
+However, we consider this as inevitable and not an absolute obstacle since the purpose of the models is not to discriminate vaccine responders with the highest accuracy, but to identify features that correlate with a vaccine response from the great number of features.
 
-In this work we select the datasets that best fit to the business objectives of
-exploring repeat vaccination effects, as well as finding features that
-correlate with vaccine responses. Accordingly, we calculated the number of
-donors that visited a second influenza season per dataset and chose the top3
-datasets. The remaining datasets were 14, 16, and 19
-\autorefsub{tbl:mulsetDatasets}{\textbf{bold rows}}. These datasets had,
-respectively,  27 out of 91, 27 out of 92, and 21 out of 151 donors that
-returned for a second vaccination. Alarmingly, this was less than half of the
-dataset in all cases, and for other datasets this number was even smaller.
+In this work we selected only the top 3 datasets that best fit to the business objectives of exploring repeat vaccination, as well as finding features that correlate with vaccine responses.
+Accordingly, for each dataset we calculated the number of donors that visited a second influenza season, and chose the three with the highest number.
+The resulting selected datasets for further analysis were 14, 16, and 19 \autorefsub{tbl:mulsetDatasets}{\textbf{bold rows}}.
+These datasets had, respectively,  27 out of 91, 27 out of 92, and 21 out of 151 donors that returned for a second vaccination.
 
-Within all three datasets 82 of the donors are shared indicating that using
-both dataset 14 and 16 might add little additional information. Furthermore, 26
-of the measured features are shared between dataset 14 and 16, meaning all
-features of dataset 16 are in dataset 14. Further, all features are also
-phospho flow assay data \autoref{tbl:assays}. Nevertheless, in this work we
-include both datasets for modeling.
-
-The \secondvis corresonding to the selected \firstvis in the chosen datasets
-were retrieved during exploration of repeat vaccinations using the modeling
-results.
+Within all three datasets 82 of the donors are shared indicating that using both dataset 14 and 16 might add little additional information, and that all three datasets contain a lot of the same information.
+Furthermore, 26 of the measured features are shared between dataset 14 and 16, meaning that all features of dataset 16 are in dataset 14 and that dataset 16 is almost a subset of dataset 14.
+More, all features were from the same  phosphorylation flow cytometry data type \autoref{tbl:assays}.
+Nevertheless, in lack of a better alternative and despite these issues, these three datasets were chosen for further analysis of repeat vaccination.
 
 \subsection{Data cleaning}
 
-In this work features and rows were not changed for the chosen datasets, since
-this would result in a lower number of rows when already limitted data is
-suitable for modeling. Furthermore, the objective of this work is not
-obtaining optimal models but exploring repeat vaccination and vaccine responses.
-
-\subsection{Data formatting}
-
-The final format of the datasets were complete tibbles containing the outcome
-and features as columns, and donors as rows.
+In this work features and rows were not changed for the chosen datasets, since this would result in a lower number of rows/donors.
+As a result, noisy data points were included in the training and evaluation data of the models.
+Furthermore, since the objective of this work is not obtaining optimal models but exploring repeat vaccination and vaccine responses, this is not considered problematic.
 
 \section{Modelling}
 
 \subsection{Choice of modeling technique}
 
-In this work a form of wrapper feature selection is used, since we are training
-models on different subsets of features and chose those that discriminate the
-best between low and high vaccine responders
-\citep{hiraReviewFeatureSelection2015}. Altough, technically the aim is to
-train an at least fair discriminator on any suitable dataset to then use that
-model to identify new knowledge about vaccine response and repeat vaccination.
+In this work a form of wrapper feature selection is used, since we are training models on different subsets of features and chose those models that discriminate the best between low and high vaccine responders \citep{hiraReviewFeatureSelection2015}.
+Although, the aim is to train an at least fair discriminator on any dataset and to then use that model to identify any new knowledge about vaccine response and repeat vaccination.
 
-Four models were chosen for this task: the naive bayes classifier (nb), the
-random forest model (rf), the regularised logistic regression model (reglog),
-and regularised linear discriminant analysis (rrlda). In \spaper an automatic
-machine learning pipeline is used where 2400 models are trained on all 20
-datasets, and the best models are then used to explore important features that
-correlate with a high vaccine response. This approach is out of scope for this
-work, and instead we change the objective to specifically identifying repeat
-vaccination effects. Additionally, the datasets chosen in this work are not
-discussed in \spaper.
+Four models were chosen for this task: the naive bayes classifier (nb), the random forest model (rf), the regularised logistic regression model (reglog), and regularised linear discriminant analysis (rrlda).
+In \spaper an automatic machine learning pipeline is used where 2400 models are trained on all 20 datasets, and the best models are then used to explore important features that correlate with a high vaccine response.
+This approach is out of scope for this work, and instead we change the objective to specifically identifying repeat vaccination effects.
+Additionally, the datasets chosen for analysis in this work are not discussed in \spaper, so this is a novel analysis using a similar procedure.
 
 \subsection{Test design}
 
-The three selected datasets were already split in test and training sets. The
-training set was used for training models using 2 times repeated 10 fold
-cross-validation where the accuracy was computed on every fold. The models that
-had the best cross-validated accuracy were compared using the training and test
-area under the curve measure, since we are interested in general discriminative
-ability. Using these measures the best discriminator is chosen for further
-exploration of repeat vaccination and vaccine response features.
+First, the three selected datasets were split in test and training sets.
+Secondly, the training set was used for training models using 2 times repeated 10 fold cross-validation where the accuracy was computed on every fold.
+Thirdly, the models that had the best cross-validated accuracy were compared using the training and test area under the curve measure (AUC), since we are interested in general discriminative ability.
+Using these measures the best discriminator was chosen for further exploration repeat vaccination and vaccine response features.
 
 \subsection{Model parameters and assessment}
 
@@ -929,77 +670,80 @@ dataset &model & SENS & SPEC & MCC & PREC & NPV & FPR & F1 & TP & FP & TN & FN &
     & reglog & 0.267 & 0.754 & 0.023 & 0.414 & 0.612 & 0.246 & 0.324 & 12 & 17 & 52 & 33 & 0.51 & 0.32\\
 \bottomrule{}
 \end{tabular}
-\caption{Model evaluation measures on the three chosen datasets.
-    SENS=sensitivity: proportion of true positives, SPEC=specificity:
-    proportion of true negatives, MCC=mathews correlation coefficient:
-    correlation prediction with true labels, PREC=precision: true positive over
-    predicted positive ratio, NPV=negative predictive value: true negative over
-    predicted negative ratio, F1=f1-score: harmonic mean precision and
-    accuracy, TP: true positives, FP: false positives, TN: true negatives, FN:
-    false negatives, AUC: area under the receiver operator curve.}\label{tbl:modelEval}
+\caption{
+    Model evaluation measures on the three chosen datasets.
+    SENS=sensitivity: proportion of true positives,
+    SPEC=specificity: proportion of true negatives,
+    MCC=mathews correlation coefficient:
+    correlation prediction with true labels,
+    PREC=precision: true positive over predicted positive ratio,
+    NPV=negative predictive value: true negative over predicted negative ratio,
+    F1=f1-score: harmonic mean precision and accuracy,
+    TP: true positives,
+    FP: false positives,
+    TN: true negatives,
+    FN: false negatives,
+    AUC: area under the receiver operator curve.}\label{tbl:modelEval}
 \end{table}
 
-On all three datasets the model with the highest train and test AUC metric was
-the naive bayes classifier \autoref{tbl:modelEval}. On dataset 14 and 16 the
-naive bayes model reached a training AUC of 0.67-0.68, which could reflect the fact
-that these dataset share a large part of donors and features. An AUC value in
-this range is considered to be a (somewhat) fair discriminator. Although,
-ideally discriminators would have training and test AUC values in the range 0.7
-and up, anything below is considered a weak discriminator
-\citep{L_demann_2006}. On dataset 19 all models failed to produce good
-discriminators, hence we discard this dataset from further analysis.
+On all three datasets the model with the highest train and test AUC metric was the naive bayes classifier \autoref{tbl:modelEval}.
+On dataset 14 and 16 the naive bayes model reached a training AUC of 0.67-0.68, which could reflect the fact that these dataset share a large part of donors and features.
+An AUC value in this range is considered to be a (somewhat) fair discriminator.
+Although, ideally discriminators would have training and test AUC values in the range 0.7 and up, anything below is considered a weak discriminator \citep{L_demann_2006}.
+On dataset 19 all models failed to produce fair discriminators, hence we discard this dataset from further analysis.
 
-On dataset 14 and 16 the random forest model had similar performance compared
-with the naive bayes model, the training AUC score was only slightly lower and
-the model performed better on unseen test data. This could indicate that the
-random forest model is overfitting the training data less than the naive bayes
-model, and would therefore be the preferred choice when choosing a
-discriminator to be used for new data. Despite this, in this work we consider
-the naive bayes model the best on dataset 14 and 16.  Further, we continue the
-exploration of vaccine responses and repeat vaccination only using the naive
-bayes models on dataset 14 and 16. This is motivated by the fact that we are
-not interested in the best model and the random forest model tends to predict
-false negatives (sensitivity of 0.364) \autoref{tbl:modelEval}, this last fact
-is the most problematic since the negative class is overrepresented in our data.
+On dataset 14 and 16 the random forest model had similar performance compared with the naive bayes model, the training AUC score was only slightly lower and the model performed better on unseen test data.
+This could indicate that the random forest model is overfitting the training data less than the naive bayes model, and would therefore be the preferred choice when choosing a discriminator to be used for new data.
+Despite this, in this work we consider the naive bayes model the best on dataset 14 and 16.
+Further, we continue the exploration of vaccine responses and repeat vaccination only using the naive bayes models on dataset 14 and 16.
+This is motivated by the fact that we are not interested in the best model and the random forest model tends to predict false negatives (sensitivity of 0.364) \autoref{tbl:modelEval}, this last fact is the most problematic since the negative class is overrepresented in our data.
 
-The parameters for both naive bayes models were laplace = 0 and usekernel =
-TRUE and adjust = 1.
+The final parameters for both naive bayes models were laplace = 0 and usekernel = TRUE and adjust = 1.
 
 \section{Exploration of modeling results}
 
-Using the models built on dataset 14 and 16 our goal was to identify the
-features relevant to the generation of antibodies in response to vaccination.
-The procedure is the same as in \spaper, we calculate the feature importance
-for the classifier model and rank them based on their contribution to the model
-from 0 to 100. The top three features with the highest score are explored in
-more detail. Furthermore, for these features we look at the measurements of
-these features in the \secondvis to explore the effect of repeat vaccination.
-Lastly, we also calculated the correlation of all features in dataset 14 and 16
-to identify feature groups related to the top three most important features.
+Using the models built on dataset 14 and 16 our goal was to identify the features relevant to the generation of antibodies in response to vaccination.
+The procedure is the same as in \spaper, we calculate the feature importance for the classifier model and rank them based on their contribution to the model from 0 to 100.
+The top three features with the highest score are explored in more detail.
+Furthermore, for these features we looked at the values in the \secondvis to explore the effect of repeat vaccination \autoref{fig:second-visit-change1}.
+Lastly, we also calculated the correlation between all features in dataset 14 and 16 to identify feature groups related to the top three most important features \autoref{fig:cor-dataset1} \autoref{fig:cor-dataset2}.
 
-\subsection{Identifying phospho flow cytometry cell signaling features correlated with vaccine response}
+\subsection{Identifying phosphorylation flow cytometry cell signaling features correlated with vaccine response}
 
 \begin{figure}[htpb]
     \centering
     \includegraphics[width=\textwidth]{dataset1_nb_feature_exploration}
-    \caption{dataset1-nb-feature-exploration}
-    \label{fig:dataset1-nb-feature-exploration}
+    \caption{
+        dataset1-nb-feature-exploration
+    }\label{fig:dataset1-nb-feature-exploration}
 \end{figure}
 
-Firstly, the top ranked feature in dataset 14 was the phosphorylated STAT5 transcription factor in unstimulated B cells \autorefsub{fig:dataset1-nb-feature-exploration}{A}. However, the difference in the value of this feature between the high and low vaccine responders was not found to be significant at FDR $<$ 0.01 \autorefsub{fig:dataset2-nb-feature-exploration}{B}. In contrast, the other two features, IFNg stimulated B-cell phosphorylated STAT5 and CD4 T cell phosphorylated STAT5, were found to be significantly greater in the high responder group (FDR $<$ 0.01). A correlation analysis of all features showed that different STAT protein formed positively correlated clusters as expected \autoref{fig:cor-dataset1} (p < 0.0001). Further, the most important feature had slight negative correlations (pearson's r from -0.2 to -0.5) to a set of stimulated STAT1 cell responses (p < 0.0001 after BH adjustment). The second most important feature has similar correlations as the first, likely since they are both B-cell STAT5 features. Lastly, the unstimulated CD4 positive phenotype T-cells STAT5 phosphorylation also belonged in the same cluster as the previous B-cell features. These correlations might indicate an interaction between the STAT5 and STAT1 phosphorylation in response to a vaccine.
+Firstly, the top ranked feature in dataset 14 was the phosphorylated \gls{bu:stat} transcription factor in unstimulated \gls{bu:bcell}s \autorefsub{fig:dataset1-nb-feature-exploration}{A}.
+However, the difference in the value of this feature between the high and low vaccine responders was not found to be significant (at FDR $<$ 0.01) \autorefsub{fig:dataset2-nb-feature-exploration}{B}.
+In contrast, the other two features, IFNg stimulated \gls{bu:bcell} phosphorylated \gls{bu:stat} and \gls{bu:cd4pos} phosphorylated STAT5, were found to be significantly greater in the high responder group (FDR $<$ 0.01).
+A correlation analysis of all features showed that different \gls{bu:stat} protein formed positively correlated clusters as expected \autoref{fig:cor-dataset1} (p \(<\) 0.0001).
+Further, the most important feature had slight negative correlations (pearson's r from -0.2 to -0.5) to a set of stimulated \gls{bu:stat} cell responses (p \(<\) 0.0001 after BH adjustment).
+The second most important feature had similar correlations as the first, likely since they are both \gls{bu:bcell} \gls{bu:stat} features.
+Lastly, the unstimulated \gls{bu:cd4pos} \gls{bu:stat} phosphorylation also belonged in the same cluster as the previous \gls{bu:bcell} features.
+These correlations might indicate an interaction pattern between \gls{bu:stat} and STAT1 phosphorylation in different cell types in response to a vaccine.
 
 \begin{figure}[htpb]
     \centering
     \includegraphics[width=\textwidth]{dataset2_nb_feature_exploration}
-    \caption{dataset2-nb-feature-exploration}
-    \label{fig:dataset2-nb-feature-exploration}
+    \caption{
+        dataset2-nb-feature-exploration
+    }\label{fig:dataset2-nb-feature-exploration}
 \end{figure}
 
-Secondly, in dataset 16 there were only four features that had a variable importance score greater than 50 \autorefsub{fig:dataset2-nb-feature-exploration}{A}. The top two features were phospohorylated STAT1 in unstimulated B-cells and phosphorylated STAT1 in unstimulated CD8 T-cells. However, only the B-cell feature was found to be significantly greater in the positive class (FDR \(< 0.01\)) \autorefsub{fig:dataset2-nb-feature-exploration}{B}. The B-cell STAT1 feature correlated positively with both unstimulated CD8 and CD4 STAT1 phosphorylation (pearson's r= 0.7 and 0.4, p \(< 0.001\)), and there were mild negative correlations with interferon gamma stimulated monocyte STAT3 and STAT5 phosphorylation (pearson's r= 0.3 and 0.2, p \(< 0.001\)) \autoref{fig:cor-dataset2}.
+In dataset 16 there were only four features that had a variable importance score greater than 50 \autorefsub{fig:dataset2-nb-feature-exploration}{A}.
+The top two features were phospohorylated \gls{bu:stat} in unstimulated \gls{bu:bcell} and phosphorylated STAT1 in unstimulated \gls{bu:cd8pos}.
+However, only the \gls{bu:bcell} feature was found to be significantly greater in the positive class (FDR \(< 0.01\)) \autorefsub{fig:dataset2-nb-feature-exploration}{B}.
+The \gls{bu:bcell} \gls{bu:stat} feature correlated positively with both unstimulated \gls{bu:cd4pos} and \gls{bu:cd8pos} STAT1 phosphorylation (pearson's r= 0.7 and 0.4, p \(< 0.001\)), and there were mild negative correlations with interferon gamma stimulated \gls{bu:monocyte} STAT3 and STAT5 phosphorylation (pearson's r= 0.3 and 0.2, p \(< 0.001\)) \autoref{fig:cor-dataset2}.
 
 \subsection{Repeat vaccination effect on identified features}
 
-Firstly, in the \secondvis of both datasets there were outliers (donors had a value greater than 1000) and negative values. In this work these were left out, since outliers made the pattern unclear and the negative values were considered as nonsensical values.
+In the \secondvis of donors in datasets 14 and 16 there were outliers (donors had a value greater than 1000) and nonsensical negative values.
+These were left out of visualisations, since outliers made the pattern unclear and the negative values were considered as nonsensical values.
 
 \begin{figure}[htpb]
     \centering
@@ -1016,12 +760,12 @@ One possibility is that the donor was classified as low responder due to a lack 
 
 To explore the overall change in the features of dataset 14 between the first and subsequent in influenza seasons the distribution of changes for donors were visualised and ordered by mean of log2 change (negative values were removed) \autoref{fig:second-visit-change1}.
 The overall trend that appeared was that the unstimulated PBMCs had higher values upon a repeated visit.
-And, in general STAT5 features increased in value. The values that contributed the most to the model discriminating between high and low responders in the \firstvis also increased the most in a repeat visit.
+And, in general \gls{bu:stat} features increased in value. The values that contributed the most to the model discriminating between high and low responders in the \firstvis also increased the most in a repeat visit.
 Although, there are outliers that increased a lot in the subsequent influenza season \autoref{fig:second-visit-change1}.
 
 On dataset 16 two of the top three features had similar distributions to the \firstvis \autorefsub{fig:dataset2-nb-feature-exploration}{C}.
-In contrast, unstimulated monocyte cells had higher STAT5 phoshporylation in the subsequent influenza season \autorefsub{fig:dataset2-nb-feature-exploration}{C}.
-Further, the same three donors that were classified as high responders in the \firstvis and as low responders in the \secondvis as in dataset 14 \autorefsub{fig:dataset1-nb-feature-exploration}{C} had increased monocyte cell STAT5 phosphorylation \autorefsub{fig:dataset2-nb-feature-exploration}{C, enlarged diamonds}.
+In contrast, unstimulated monocyte cells had higher \gls{bu:stat} phoshporylation in the subsequent influenza season \autorefsub{fig:dataset2-nb-feature-exploration}{C}.
+Further, the same three donors that were classified as high responders in the \firstvis and as low responders in the \secondvis as in dataset 14 \autorefsub{fig:dataset1-nb-feature-exploration}{C} had increased monocyte cell \gls{bu:stat} phosphorylation \autorefsub{fig:dataset2-nb-feature-exploration}{C, enlarged diamonds}.
 Lastly, the top three features of the model trained on dataset 14 also belonged to those that increased the most between the \firstvis and \secondvis \autoref{fig:second-visit-change1}.
 
 \section{Discussion and conclusion}
@@ -1031,7 +775,7 @@ The \flup database made it possible to study vaccine responses by providing a cl
 Further, it combined and preprocessed data from multiple clinical studies in an accessible database format.
 This resulted in a wide variety of data on immune cell populations, serum signaling molecules, and cell signaling activity that is suitable for studying immune correlates to vaccine responses using data mining method.
 We applied a procedure as described by the authors of \flup in \spaper, wrapper feature selection using multiple models trained on interesting data subsets of \flup. Using this procedure we then explored selected features and how they changed in subsequent influenza seasons.
-It was found that STAT5 related signaling features correlated with a vaccine response and increased the greatest amount in subsequent influenza seasons.
+It was found that \gls{bu:stat} related signaling features correlated with a vaccine response and increased the greatest amount in subsequent influenza seasons.
 
 Initially, the idea was to focus on building accurate predictors of vaccine response by training models including constructed features based on repeat vaccination. However, during the data understanding phase of this project it became clear that \flup contains only complete classifications in the \firstvis.
 Instead, the objective was revised to explore the available data on repeat vaccination using models trained on \firstvis data from a selection of clinical studies that received the same vaccine, as done in \spaper.
@@ -1051,7 +795,7 @@ To deal with the sparse data the mulset algorithm was applied to generate twenty
 Four models were built all three datasets, but models with fair discriminative ability were built only on dataset 14 and 16.
 
 The features in dataset 14 and 16 were all from the phospho-flow cytometry phosphorylation assay, from them we used the models to identify features correlated with a high vaccine response.
-We found that STAT5 phosphorylation in immune cells from different lineages was associated with a high vaccine response and was increased in subsequent influenza seasons.
+We found that \gls{bu:stat} phosphorylation in immune cells from different lineages was associated with a high vaccine response and was increased in subsequent influenza seasons.
 However, further study of this result is considered out of the scope of this work where the focus lies on the application of data science tools.
 Instead, we show here that data mining methods described in \spaper can be replicated to answer research questions using complex clinical datasets.
 
@@ -1135,7 +879,7 @@ Correlation plots of the features from the selected datasets 14 and 16 were made
 To see if features identified by the best classifier trained on datasets 14 and 16 had different distribution in between the two classes the significance analysis of micro arrays (SAM) at a FDR \(<\) 0.01 was used in R.
 P values for all correlations shown in the correlation plots below were calculated using an R package, and only correlations with a p-value less than 0.001 were shown.
 
-\subsection{Code and data availability}
+\subsection{Code and data availability}\label{sec:github}
 
 The code and data belonging to this project can be found in the \href{https://github.com/Vinkage/fluprint_exploration}{github repository}.
 The repository contains the directories \lstinline{bussiness_understand}, \lstinline{data_understanding} and \lstinline{data_preparation_modeling} which contain all the \LaTeX source files for what was written during the project.
