@@ -508,10 +508,10 @@ Describing the 3285 different features in this sparse table would be impossible,
 
 \begin{figure}[htpb]
     \includegraphics[width=\textwidth]{repeat_visits_per_study}
-    \caption{the number of donors that visited per number of influenza seasons
-    they visited (years), per study. The color indicates the number of visits for which a
-    classification was available, counted within the groups of donors that
-    visited the same amount of times.}\label{fig:repeatVisits}
+    \caption{
+        The number of donors that visited per number of influenza seasons they visited (years), per study.
+        The color indicates the number of visits for which a classification was available, counted within the groups of donors that visited the same amount of times.
+    }\label{fig:repeatVisits}
 \end{figure}
 
 In addition to the sparseness of data, what further complicated selecting relevant data is repeat visits of donors, and missing visits.
@@ -543,7 +543,12 @@ Secondly, to explore repeat vaccination, we select a subset of this data that in
 
 \begin{figure}[htpb]
     \includegraphics[width=\textwidth]{data_selection}
-    \caption{caption}\label{fig:dataRepeatvisits}
+    \caption{
+        \textbf{Description of data used in this work.}
+        \textbf{A.} \gls{bu:hai} response distributions of high and low vaccine responders of the data used in this work and in \spaper. Referred to as the \firstvis.
+        \textbf{B.} Number of donors for which data was available in multiple influenza seasons.
+        \textbf{C.} \gls{bu:hai} response distributions of high and low vaccine responders of the donors that got a second vaccination. Referred to as the \secondvis.
+    }\label{fig:dataRepeatvisits}
 \end{figure}
 
 The initial query generated a long table for in total 3285 different features recorded at the first visit of 195 donors in different studies and years (referred to as \firstvis).
@@ -736,17 +741,18 @@ Lastly, we also calculated the correlation between all features in dataset 14 an
 Firstly, the top ranked feature in dataset 14 was the phosphorylated \gls{bu:stat} transcription factor in unstimulated \gls{bu:bcell}s \autorefsub{fig:dataset1-nb-feature-exploration}{A}.
 However, the difference in the value of this feature between the high and low vaccine responders was not found to be significant (at FDR $<$ 0.01) \autorefsub{fig:dataset2-nb-feature-exploration}{B}.
 In contrast, the other two features, IFNg stimulated \gls{bu:bcell} phosphorylated \gls{bu:stat} and \gls{bu:cd4pos} phosphorylated \gls{bu:stat}5, were found to be significantly greater in the high responder group (FDR $<$ 0.01).
-A correlation analysis of all features showed that different \gls{bu:stat} protein formed positively correlated clusters as expected \autoref{fig:cor-dataset1} (p \(<\) 0.0001).
-Further, the most important feature had slight negative correlations (pearson's r from -0.2 to -0.5) to a set of stimulated \gls{bu:stat} cell responses (p \(<\) 0.0001 after BH adjustment).
+
+A correlation analysis of all features showed that the three different \gls{bu:stat} protein formed positively correlated clusters \autoref{fig:cor-dataset1} (p \(<\) 0.0001 after BH adjustment).
+Further, the most important \gls{bu:bcell} \gls{bu:stat}5 had negative correlations (pearson's r from -0.2 to -0.5) to \gls{bu:stat}1 and \gls{bu:stat}3 features (p \(<\) 0.0001 after BH adjustment).
 The second most important feature had similar correlations as the first, likely since they are both \gls{bu:bcell} \gls{bu:stat} features.
-Lastly, the unstimulated \gls{bu:cd4pos} \gls{bu:stat} phosphorylation also belonged in the same cluster as the previous \gls{bu:bcell} features.
-These correlations might indicate an interaction pattern between \gls{bu:stat} and \gls{bu:stat}1 phosphorylation in different cell types in response to a vaccine.
+Lastly, the unstimulated \gls{bu:cd4pos} \gls{bu:stat} phosphorylation also belonged to the \gls{bu:stat}5 positively correlated cluster as the previous \gls{bu:bcell} features.
+These correlations might indicate an interaction pattern between \gls{bu:stat}5 and \gls{bu:stat}1/3 phosphorylation in different immune cell populations in response to a vaccine.
 
 \begin{figure}[htpb]
     \centering
     \includegraphics[width=\textwidth]{dataset2_nb_feature_exploration}
     \caption{
-        \textbf{Exploration of selected features on dataset 14.}
+        \textbf{Exploration of selected features on dataset 16.}
         \textbf{A.} Features with a variable importance contribution score greater than 50.
         \textbf{B.} Distributions of top 3 most important features grouped by vaccine response classification.
         Thin horizontal bars show the median value.
@@ -756,9 +762,9 @@ These correlations might indicate an interaction pattern between \gls{bu:stat} a
 \end{figure}
 
 In dataset 16 there were only four features that had a variable importance score greater than 50 \autorefsub{fig:dataset2-nb-feature-exploration}{A}.
-The top two features were phospohorylated \gls{bu:stat} in unstimulated \gls{bu:bcell} and phosphorylated \gls{bu:stat}1 in unstimulated \gls{bu:cd8pos}.
+The top two features were phospohorylated \gls{bu:stat}1 in unstimulated \gls{bu:bcell}s and phosphorylated \gls{bu:stat}1 in unstimulated \gls{bu:cd8pos}.
 However, only the \gls{bu:bcell} feature was found to be significantly greater in the positive class (FDR \(< 0.01\)) \autorefsub{fig:dataset2-nb-feature-exploration}{B}.
-The \gls{bu:bcell} \gls{bu:stat} feature correlated positively with both unstimulated \gls{bu:cd4pos} and \gls{bu:cd8pos} \gls{bu:stat}1 phosphorylation (pearson's r= 0.7 and 0.4, p \(< 0.001\)), and there were mild negative correlations with interferon gamma stimulated \gls{bu:monocyte} \gls{bu:stat}3 and \gls{bu:stat}5 phosphorylation (pearson's r= 0.3 and 0.2, p \(< 0.001\)) \autoref{fig:cor-dataset2}.
+The \gls{bu:bcell} \gls{bu:stat}1 feature correlated positively with both unstimulated \gls{bu:cd4pos} and \gls{bu:cd8pos} \gls{bu:stat}1 phosphorylation (pearson's r= 0.7 and 0.4, p \(< 0.001\)), and there were mild negative correlations with interferon gamma stimulated \gls{bu:monocyte} \gls{bu:stat}3 and \gls{bu:stat}5 phosphorylation (pearson's r= 0.3 and 0.2, p \(< 0.001\)) \autoref{fig:cor-dataset2}.
 
 \subsection{Repeat vaccination effect on identified features}
 
@@ -768,58 +774,65 @@ These were left out of visualisations, since outliers made the pattern unclear a
 \begin{figure}[htpb]
     \centering
     \includegraphics[width=\textwidth]{second_visit_change1}
-    \caption{second-visit-change1}
-    \label{fig:second-visit-change1}
+    \caption{
+        \textbf{Log2 change in features of dataset 14 and 16 between subsequent influenza seasons where a vaccine was administered.}
+    }\label{fig:second-visit-change1}
 \end{figure}
 
 To see how a repeat vaccination affects immune cell signaling, the distribution of the top three features of dataset 14 were compared to their distribution when measured in a subsequent influenza season \autorefsub{fig:dataset1-nb-feature-exploration}{C}.
-In the 21 donors that had a second measurement of the features in another influenza season that were not left out (outliers and nonsensical values) there was the consistent pattern that the high responders were classified as low responders in their second visit \autorefsub{fig:dataset1-nb-feature-exploration}{C}.
-Although, overall the feature values were consistently greater in the \secondvis \autorefsub{fig:dataset1-nb-feature-exploration}{C, enlarged diamonds}.
+In the 21 donors that had a second measurement of the features in another influenza season that were not left out (outliers and nonsensical values) there was a consistent pattern that the three high responders were classified as low responders in their second visit \autorefsub{fig:dataset1-nb-feature-exploration}{C}.
+Although, overall the values were consistently greater in the \secondvis \autorefsub{fig:dataset1-nb-feature-exploration}{C, enlarged diamonds}.
 Thus, vaccination might increase activity in general signaling pathways of \gls{bu:pbmc} in subsequent influenza seasons, but the classification does not reflect this as increasing influenza antibody response.
-One possibility is that the donor was classified as low responder due to a lack of response to one strain of virus in the vaccine administered in the repeat visit, not necessarily to all strains \autoref{fig:classInconsistent}.
+One possibility is that the donor was classified as low responder due to a lack of response to one specific strain of virus in the vaccine administered in the repeat visit, not necessarily to all strains \autoref{fig:classInconsistent}.
 
-To explore the overall change in the features of dataset 14 between the first and subsequent in influenza seasons the distribution of changes for donors were visualised and ordered by mean of log2 change (negative values were removed) \autoref{fig:second-visit-change1}.
-The overall trend that appeared was that the unstimulated \gls{bu:pbmc}s had higher values upon a repeated visit.
-And, in general \gls{bu:stat} features increased in value. The values that contributed the most to the model discriminating between high and low responders in the \firstvis also increased the most in a repeat visit.
+To explore the overall change in the features of dataset 14 between the first and subsequent influenza seasons the distribution of changes for donors were visualised (nonsensical negative readout values were removed) \autoref{fig:second-visit-change1}.
+The overall trend was that the unstimulated \gls{bu:pbmc}s had higher \gls{bu:stat}5 values upon a repeated visit.
+And, in general \gls{bu:stat}5 features increased in value the most in repeat vaccination visits.
+Furthermore, the values that contributed the most to the model discriminating between high and low responders in the \firstvis also increased the most in a repeat visit.
 Although, there are outliers that increased a lot in the subsequent influenza season \autoref{fig:second-visit-change1}.
 
-On dataset 16 two of the top three features had similar distributions to the \firstvis \autorefsub{fig:dataset2-nb-feature-exploration}{C}.
-In contrast, unstimulated monocyte cells had higher \gls{bu:stat} phoshporylation in the subsequent influenza season \autorefsub{fig:dataset2-nb-feature-exploration}{C}.
-Further, the same three donors that were classified as high responders in the \firstvis and as low responders in the \secondvis as in dataset 14 \autorefsub{fig:dataset1-nb-feature-exploration}{C} had increased monocyte cell \gls{bu:stat} phosphorylation \autorefsub{fig:dataset2-nb-feature-exploration}{C, enlarged diamonds}.
-Lastly, the top three features of the model trained on dataset 14 also belonged to those that increased the most between the \firstvis and \secondvis \autoref{fig:second-visit-change1}.
+On dataset 16 the two top \gls{bu:stat}1 features had similar distributions to the \firstvis \autorefsub{fig:dataset2-nb-feature-exploration}{C}.
+In contrast, unstimulated \gls{bu:monocyte} cells had higher \gls{bu:stat}5 phoshporylation in the subsequent influenza season \autorefsub{fig:dataset2-nb-feature-exploration}{C}.
+Further, the same three donors that were classified as high responders in the \firstvis and as low responders in the \secondvis as in dataset 14 \autorefsub{fig:dataset1-nb-feature-exploration}{C} had increased \gls{bu:monocyte} cell \gls{bu:stat}5 phosphorylation \autorefsub{fig:dataset2-nb-feature-exploration}{C, enlarged diamonds}.
+Lastly, the top three features of the model trained on dataset 16 also belonged to those that increased the most between the \firstvis and \secondvis \autoref{fig:second-visit-change1}.
 
 \section{Discussion and conclusion}
 
 In this work we gave a brief introduction into influenza vaccination and how vaccine responses are measured, described the \flup database, and applied a similar data mining method as in \spaper and additionally explored the available repeat vaccination data.
 The \flup database made it possible to study vaccine responses by providing a classification of donors into high or low responders based on measured antibody level before and after vaccination.
 Further, it combined and preprocessed data from multiple clinical studies in an accessible database format.
-This resulted in a wide variety of data on immune cell populations, serum signaling molecules, and cell signaling activity that is suitable for studying immune correlates to vaccine responses using data mining method.
-We applied a procedure as described by the authors of \flup in \spaper, wrapper feature selection using multiple models trained on interesting data subsets of \flup. Using this procedure we then explored selected features and how they changed in subsequent influenza seasons.
-It was found that \gls{bu:stat} related signaling features correlated with a vaccine response and increased the greatest amount in subsequent influenza seasons.
+This resulted in a wide variety of data on immune cell populations, serum signaling molecules, and cell signaling activity that is suitable for studying immune correlates to vaccine responses using data mining methods.
+We applied a procedure as described by the authors of the \flup database in \spaper, wrapper feature selection using multiple models trained on interesting data subsets of \flup.
+Using this procedure we then explored selected features and how they changed in subsequent influenza seasons.
+It was found that \gls{bu:stat}5 related signaling features correlated with a vaccine response and increased the greatest amount in subsequent influenza seasons.
+Furthermore, based on correlations between features potential interactions between different immune cell populations could be observed.
 
-Initially, the idea was to focus on building accurate predictors of vaccine response by training models including constructed features based on repeat vaccination. However, during the data understanding phase of this project it became clear that \flup contains only complete classifications in the \firstvis.
+Initially, the idea was to focus on building accurate predictors of vaccine response by training models including constructed features based on repeat vaccination.
+However, during the data understanding phase of this project it became clear that \flup contains only complete classifications in the \firstvis.
 Instead, the objective was revised to explore the available data on repeat vaccination using models trained on \firstvis data from a selection of clinical studies that received the same vaccine, as done in \spaper.
-Overall, during the data understanding phase it became clear that \flup is not suitable for predicting vaccine response with high accuracy, since data is combined from multiple studies and years.
-This means using donors/rows from different years and studies creates highly sparse predictors.
-Consequently, using \flup data requires selecting small datasets without missing values, this only slightly increases the available example measurements of features by combining data from different studies.
-Further, the available data on repeat vaccinations is limited to mostly one clinical study, and in repeat visits there is often no classification making it impossible to train models using repeat vaccination data.
 
-During the data understanding phase we also found that classification is missing in a lot of cases.
-Further, we identified an inconsistency in the classification data presented in \flup.
+Firstly, During the data understanding phase it became clear that \flup is not suitable for predicting vaccine response with high accuracy, due to data sparsity and small sample size of complete data.
+Consequently, usage of the \flup database requires selecting small datasets without missing values.
+Further, the available data on repeat vaccinations is limited to one clinical study, and in repeat visits there is often no classification making it impossible to train models using repeat vaccination data.
+
+Secondly, during the data understanding phase we also found that classification is missing in a lot of cases in general.
+Further, we identified an inconsistency in the classification based on data presented in \flup.
 However, this is likely due to the fact that the before and after antibody titer against individual influenza strains in the vaccine is not completely available in the database and not because the classification is incorrect.
-Thus to check the classification quality it is necessary to study the raw data and scripts used to generate the database, which is considered out of the scope of this work.
+Thus, to check the classification quality it is necessary to study the raw data and scripts used to generate the database, which is considered out of the scope of this work.
 
 The data preparation and modeling phases included selecting the data that was most suitable for training models and studying repeat vaccinations.
 We started with the initial data used in \spaper and also collected repeat vaccination data for the donors in this dataset.
 To deal with the sparse data the mulset algorithm was applied to generate twenty small but complete datasets, the three datasets that had the highest amount of donors that received a repeat vaccination were then chosen for modeling and further analysis.
 Four models were built all three datasets, but models with fair discriminative ability were built only on dataset 14 and 16.
 
-The features in dataset 14 and 16 were all from the phospho-flow cytometry phosphorylation assay, from them we used the models to identify features correlated with a high vaccine response.
-We found that \gls{bu:stat} phosphorylation in immune cells from different lineages was associated with a high vaccine response and was increased in subsequent influenza seasons.
+The features in dataset 14 and 16 were all from the phosphorylation flow cytometry assay.
+As a result, the analysis became one dimensional.
+Using the datasets we models were trained and used to identify features correlated with a high vaccine response.
+We found that \gls{bu:stat}5 phosphorylation in different immune cell populations were associated with a high vaccine response and were increased in subsequent influenza seasons.
 However, further study of this result is considered out of the scope of this work where the focus lies on the application of data science tools.
 Instead, we show here that data mining methods described in \spaper can be replicated to answer research questions using complex clinical datasets.
 
-The objectives defined before selecting the data and starting the data preparation and modeling phase of the project were:
+Before beginning this data mining project the following objectives were laid out:
 \begin{itemize}
         \item What kind of studies can be done using the \flup database?
         \item What immunological factors correlate to a vaccine responses?
@@ -827,9 +840,16 @@ The objectives defined before selecting the data and starting the data preparati
 \end{itemize}
 
 In summary, we provided insight into which studies can be done using the \flup database by describing the experimental data tables of \flup.
-It became clear that \flup is suitable for correlating immunological features with a vaccine response by selecting small complete datasets, but that the possibility of combining large data across years and different studies is limited in \flup.
+It became clear that \flup is suitable for correlating immunological features with a vaccine response by selecting small complete datasets, but that the possibility of combining large data across years and different studies is limited.
 Additionally, we found that classifications are not available in a great amount of data points limiting the sample size for classification studies.
-Further, we identified a group of immune cells from different lineages that had increased phosphorylation activity correlated to vaccine response and found that this increase was present in subsequent influenza seasons.
+
+We identified that immune cell populations with increased \gls{bu:stat}5 phosphorylation activity correlated to vaccine response.
+Correlation analysis showed that \gls{bu:stat} phosphorylation is not dependent on stimulation or immune cell population as seen by the three main positively correlated clusters.
+Further, \gls{bu:stat}5 features were anti-correlated with the other \gls{bu:stat} protein phosphorylation activity.
+
+We identified the features that increased and decreased upon repeat vaccination in a subsequent influenza season, in general \gls{bu:stat}1 features decreased the most and \gls{bu:stat}5 features increased.
+Further, this pattern was also seen within the features that contributed the most to models discriminating between high and low vaccine responders.
+
 
 \section{Materials and methods}
 
@@ -910,50 +930,47 @@ Other files and directories are data files used in the latex source files.
 
 \printbibliography
 
+\newpage
 \begin{appendices}
 
-    \section{Correlation plots}
+\section{Correlation plots}
 
 \begin{figure}[htpb]
     \centering
     \includegraphics[width=\textwidth]{cor_dataset1}
-    \caption{cor-dataset1}
-    \label{fig:cor-dataset1}
+    \caption{
+        \textbf{Correlation heatmap of the features in dataset 14.}
+        Shows the Pearson correlation between the features of dataset 14 (p \((0.0001\)).
+        Insignificant values were not plotted.
+    }\label{fig:cor-dataset1}
 \end{figure}
 
 \begin{figure}[htpb]
     \centering
     \includegraphics[width=\textwidth]{cor_dataset2}
-    \caption{cor-dataset2}
+    \caption{
+        \textbf{Correlation heatmap of the features in dataset 16.}
+        Shows the Pearson correlation between the features of dataset 16 (p \((0.0001\)).
+        Insignificant values were not plotted.
+    }
     \label{fig:cor-dataset2}
 \end{figure}
 
-    \section{mulset algorithm}
+\section{mulset algorithm}
 
 \begin{figure}[htpb]
     \includegraphics[width=\textwidth]{F2.large}
-    \caption{\textbf{taken from original work}}\label{fig:mulsetAlg}
+    \caption{
+        \textbf{taken from original work}
+        Graphical explanation of the mulset algorithm.
+        \textbf{A.} The intersection function is applied to the powerset of the features. For each intersection a donor look-up is done. If sufficient donors have a value for this feature, then generate a dataset.
+        \textbf{B.} A set of small datasets with complete data is generated.
+    }\label{fig:mulsetAlg}
 \end{figure}
 
-\begin{table}[htpb]
-\addtolength{\leftskip} {-2cm} % increase (absolute) value if needed
-\addtolength{\rightskip} {-2cm} % increase (absolute) value if needed
-\begin{tabular}{rrrrrlrllrrl}
-\toprule{}
-donor\_id & study & age & outcome & year & type & hai\_response & name & data\_name & assay & data & dup\\
-\midrule{}
-285 & 18 & 9.47 & 0 & 2009 & pre & 1 & CD4+ T cells & CD4\_pos\_T\_cells & 13 & 33.8 & TRUE\\
-285 & 18 & 9.47 & 0 & 2009 & pre & 1 & CD4+ T cells & CD4\_pos\_T\_cells & 13 & 34.1 & TRUE\\
-285 & 18 & 9.47 & 0 & 2009 & pre & 1 & CD4+ T cells & CD4\_pos\_T\_cells & 13 & 34.3 & TRUE\\
-285 & 18 & 9.47 & 0 & 2009 & pre & 1 & CD4+ T cells & CD4\_pos\_T\_cells & 13 & 33.0 & TRUE\\
-\bottomrule{}
-\end{tabular}
-    \caption{}\label{tbl:exampleDuplicate}
-\end{table}
+\section{Query that generates initial \simon data}
 
-
-
-    \section{Query that generates initial \simon data}
+\begin{minipage}{\linewidth}
 \begin{lstlisting}[language=sql, caption=Query of initial SIMON data, label={lst:QueryTemplate}]
 SELECT donors.id                        AS donor_id,
        donor_visits.age                 AS age,
@@ -972,6 +989,7 @@ WHERE  donors.gender IS NOT NULL
        AND donor_visits.vaccine = 4
 ORDER  BY donors.study_donor_id DESC
 \end{lstlisting}
+\end{minipage}
 
     \section{Full description of FluPrint clinical studies}
 \fptable{studies_table}{.7}
@@ -1021,21 +1039,6 @@ rest of the columns.}
             \toprule{}
             Original & Remapped \\
             \midrule{}
-            No& 0 \\
-            Yes& 1 \\
-            IIV injection/im& 2 \\
-            Doesn’t know/doesn’t remember/na/does not remember& 3 \\
-            LAIV4 intranasal/laiv\_std\_intranasal/laiv\_std\_ intranasal/nasal/intranasal& 4 \\
-            \bottomrule{}
-        \end{tabular}
-        \caption{caption}\label{tbl:remapHistory}
-    \end{table}
-
-    \begin{table}[htpb]
-        \begin{tabular}{ll}
-            \toprule{}
-            Original & Remapped \\
-            \midrule{}
             CMV EBV & 1 \\
             Other immunoassay & 2 \\
             Human Luminex 62–63 plex & 3 \\
@@ -1053,7 +1056,11 @@ rest of the columns.}
             Other Luminex & 16 \\
             \bottomrule{}
         \end{tabular}
-        \caption{caption}\label{tbl:remapAssays}
+        \caption{
+            Assay to id map used in the \flup database.
+            Note that in the actual data 1 is not used, and 17 is used.
+            Refer to \autoref{tbl:assays} for the actual mappings used in the database.
+        }\label{tbl:remapAssays}
     \end{table}
 \end{appendices}
 
