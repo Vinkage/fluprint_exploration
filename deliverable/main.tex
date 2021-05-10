@@ -857,10 +857,10 @@ Further, this pattern was also seen within the features that contributed the mos
 
 By following the guide on the \href{https://github.com/LogIN-/fluprint}{FluPrint Github Repository} the MySQL
 server was set up.
-All file paths mentioned refer to the github repository of this project which can be found below.
+All file paths mentioned referred to the github repository of this project which can be found below.
 
 In this work the FluPrint github was first added as a submodule.
-This module provides the php scripts to import raw data csv's into the MySQL database.
+This module provided the php scripts to import raw data csv's into the MySQL database.
 The operating system and versions of php and MySQL used in this work were OSX "Big Sur" (on Mac Book air 2017), php 7.3.24 (built-in mac version), and MySQL 8.0.23 (homebrew).
 
 In the \href{https://github.com/LogIN-/fluprint}{guide} the dependencies to run
@@ -869,7 +869,7 @@ except that the hash-file verification step was skipped.
 
 After the php dependencies were installed the MySQL server was started. By
 default homebrew recommends to use the \lstinline{homebrew services [option] [SERVICE]} command to start the MySQL server. However, in this work the server
-is started using \lstinline{mysql.server start} which provides a socket that
+was started using \lstinline{mysql.server start} which provides a socket that
 was symlinked using \lstinline{sudo ln -s /tmp/mysql.sock /var/mysql/mysql.sock}. This was done to prevent an error
 (\href{https://stackoverflow.com/questions/15016376/cant-connect-to-local-mysql-server-through-socket-homebrew/18090173}{StackOverflow: cant connect to local mysql server through socket homebrew}) thrown
 by the php import scripts. Before the import scripts were run a user was added to the
@@ -893,16 +893,16 @@ using \lstinline{php bin/import.php}.
 
 \subsubsection{Data selection}
 
-In this work immunological features correlating to a vaccine response were identified using wrapper based feature selection on data from the \flup SQL database.
+In this work, immunological features correlating to a vaccine response were identified using wrapper-based feature selection on data from the \flup SQL database.
 Suitable datasets without missing values were generated using the \href{https://cran.r-project.org/web/packages/mulset/index.html}{R package mulset}, as described in the data preparation section.
 These datasets were split into training and test splits using the createDataPartition function from the R package \href{https://topepo.github.io/caret/}{caret}.
 As described in the data preparation and selection sections, datasets were not considered if the test set had less than 10 donors.
-Lastly, from the generated datasets the number of donors in the \secondvis was used to choose datasets for further analysis. The \secondvis data was obtained from the database by a query that is avalaible in the github repository of this project.
+Lastly, from the generated datasets the number of donors in the \secondvis was used to choose datasets for further analysis. The \secondvis was obtained from the database by a query that is avalaible in the github repository of this project.
 
 \subsubsection{Model training, evaluation, exploration}
 
-Standard procedure were used for model training, models were trained only on the training datasets using 10-fold cross-validation that was repeated two times.
-The test data was used only as an independent dataset to estimate how much the model overfits on the training data.
+Standard procedures were used for model training, models were trained only on the training datasets using 10-fold cross-validation that was repeated two times.
+The test data was used only as an independent dataset to estimate how much the model overfitted on the training data.
 Model training itself was done using the \href{https://topepo.github.io/caret/}{caret} R package function train.
 Additionally, parameters were chosen based on the highest cross-validated accuracy automatically train function.
 
@@ -992,6 +992,7 @@ ORDER  BY donors.study_donor_id DESC
 \end{minipage}
 
     \section{Full description of FluPrint clinical studies}
+
 \fptable{studies_table}{.7}
 {Reference table of clinical studies}
 {Clinical study ID used (but remapped) in the database, age information,
